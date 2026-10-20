@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Classificação interativa do Brasileirão Séries A e B 2026, congelada em 17 de outubro." />
-  <title>Brasileirão 2026 — Rodada 30</title>
+  <meta name="description" content="Classificação interativa do Brasileirão Séries A e B 2026, com a Série A atualizada ao fim da 31ª rodada." />
+  <title>Brasileirão 2026 — Rodada 31</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=series-ab-20261017" />
+  <link rel="stylesheet" href="styles.css?v=rodada-31-20261020" />
 </head>
 <body>
   <header class="topbar">
@@ -28,8 +28,8 @@
       </div>
       <h1>O Brasil inteiro<br><em>em uma tabela.</em></h1>
       <div class="hero-meta">
-        <p id="heroDescription">Classificação final da <strong>30ª rodada</strong>, com o momento de cada clube em um só lugar.</p>
-        <div class="cutoff"><span>Dados congelados em</span><strong>17 OUT 2026</strong></div>
+        <p id="heroDescription">Classificação final da <strong>31ª rodada</strong>, com o momento de cada clube em um só lugar.</p>
+        <div class="cutoff"><span>Dados atualizados em</span><strong id="cutoffDate">20 OUT 2026</strong></div>
       </div>
     </section>
 
@@ -39,7 +39,7 @@
           <span class="section-num">01</span>
           <h2 id="tableTitle">Classificação</h2>
         </div>
-        <div class="round-select"><span>RECORTE EM</span><strong id="roundLabel">30 / 38</strong></div>
+        <div class="round-select"><span>APÓS A RODADA</span><strong id="roundLabel">31 / 38</strong></div>
       </div>
 
       <div class="desktop-table">
@@ -61,8 +61,8 @@
     <section class="method">
       <div><span class="section-num">02</span><h2>Sobre o recorte</h2></div>
       <div class="method-copy">
-        <p id="methodPrimary">Esta é uma fotografia do campeonato <strong>ao apito final da rodada 30</strong>.</p>
-        <p>Partidas, valores de mercado e notícias respeitam o corte de 17 de outubro. Os “próximos jogos” exibem o primeiro compromisso agendado após esse momento.</p>
+        <p id="methodPrimary">Esta é uma fotografia do campeonato <strong>ao apito final da rodada 31</strong>.</p>
+        <p id="methodSecondary">Partidas, classificação e estatísticas da Série A consideram os jogos concluídos até 19 de outubro. Os “próximos jogos” exibem o primeiro compromisso agendado após esse momento.</p>
       </div>
     </section>
   </main>
@@ -72,13 +72,13 @@
     <div class="sources">
       <span>FONTES CONSULTADAS</span>
       <a href="https://ge.globo.com/futebol/brasileirao-serie-a/" target="_blank" rel="noreferrer">ge — Brasileirão</a>
-      <a href="https://brasileirao360.com/rodada/30" target="_blank" rel="noreferrer">Brasileirão 360 — Rodada 30</a>
-      <a href="https://www.cbf.com.br/futebol-brasileiro/noticias/campeonato-brasileiro-serie-a/a/cbf-detalha-rodadas-27-a-30-do-brasileirao-betano" target="_blank" rel="noreferrer">CBF — Tabela detalhada</a>
+      <a href="https://ge.globo.com/futebol/brasileirao-serie-a/noticia/2026/09/27/cbf-desmembra-rodadas-do-brasileirao-com-duas-semanas-completas-de-jogos-veja-as-datas.ghtml" target="_blank" rel="noreferrer">ge — Rodadas 31 e 32</a>
+      <a href="https://www.cbf.com.br/futebol-brasileiro/noticias/campeonato-brasileiro-serie-a/a/serie-a-31-rodada-mantem-disputa-pela-lideranca-acirrada" target="_blank" rel="noreferrer">CBF — Rodada 31</a>
       <a href="https://www.transfermarkt.com.br/campeonato-brasileiro-serie-a/scorerliste/wettbewerb/BRA1" target="_blank" rel="noreferrer">Transfermarkt — Artilharia</a>
       <a href="https://www.transfermarkt.com.br/campeonato-brasileiro-serie-b/startseite/wettbewerb/BRA2" target="_blank" rel="noreferrer">Transfermarkt — Série B</a>
       <a href="https://www.espn.com.br/futebol/classificacao/_/liga/bra.2" target="_blank" rel="noreferrer">ESPN — Série B</a>
     </div>
-    <p class="stamp">ATUALIZADO EM 17.10.2026<br>CLASSIFICAÇÃO: RODADA 30</p>
+    <p class="stamp">ATUALIZADO EM 20.10.2026<br>CLASSIFICAÇÃO: RODADA 31</p>
   </footer>
 
   <div class="sheet-backdrop" id="backdrop"></div>
@@ -86,8 +86,8 @@
     <button class="close" id="closeSheet" aria-label="Fechar">×</button>
     <div id="detailContent"></div>
   </aside>
-  <script src="photos.js?v=series-ab-20261017"></script>
-  <script src="data.js?v=series-ab-20261017"></script>
-  <script src="app.js?v=series-ab-20261017"></script>
+  <script src="photos.js?v=rodada-31-20261020"></script>
+  <script src="data.js?v=rodada-31-20261020"></script>
+  <script src="app.js?v=rodada-31-20261020"></script>
 </body>
 </html>

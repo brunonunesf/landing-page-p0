@@ -1,6 +1,6 @@
 # Brasileirão 2026 — Séries A e B
 
-Landing page responsiva com as classificações do Campeonato Brasileiro Séries A e B, congeladas em 17 de outubro de 2026.
+Landing page responsiva com as classificações do Campeonato Brasileiro Séries A e B. A Série A está atualizada ao fim da 31ª rodada, encerrada em 19 de outubro de 2026; a Série B preserva seu recorte indicado na interface.
 
 ## Recursos
 

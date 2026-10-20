@@ -1,0 +1,1322 @@
+[
+  {
+    "code": "FLA",
+    "name": "Flamengo",
+    "pts": 67,
+    "j": 31,
+    "v": 20,
+    "e": 7,
+    "d": 4,
+    "gp": 61,
+    "gc": 25,
+    "recent": [
+      {
+        "result": "V",
+        "opp": "Corinthians",
+        "score": "2–1",
+        "date": "2026-09-13T20:30Z"
+      },
+      {
+        "result": "V",
+        "opp": "Bragantino",
+        "score": "2–1",
+        "date": "2026-09-20T21:30Z"
+      },
+      {
+        "result": "E",
+        "opp": "Santos",
+        "score": "2–2",
+        "date": "2026-10-08T22:30Z"
+      },
+      {
+        "result": "V",
+        "opp": "Fluminense",
+        "score": "1–0",
+        "date": "2026-10-11T20:30Z"
+      },
+      {
+        "result": "V",
+        "opp": "Bahia",
+        "score": "3–0",
+        "date": "2026-10-18T21:30Z"
+      }
+    ],
+    "next": {
+      "opp": "Atlético-MG",
+      "venue": "C",
+      "date": "2026-10-26T23:00Z"
+    },
+    "scorers": [
+      {
+        "name": "Pedro",
+        "goals": 16,
+        "id": "235017"
+      },
+      {
+        "name": "Samuel Lino",
+        "goals": 9,
+        "id": "253937"
+      },
+      {
+        "name": "Lucas Paquetá",
+        "goals": 7,
+        "id": "234715"
+      }
+    ],
+    "pos": 1
+  },
+  {
+    "code": "PAL",
+    "name": "Palmeiras",
+    "pts": 66,
+    "j": 31,
+    "v": 19,
+    "e": 9,
+    "d": 3,
+    "gp": 54,
+    "gc": 22,
+    "recent": [
+      {
+        "result": "V",
+        "opp": "São Paulo",
+        "score": "2–0",
+        "date": "2026-09-12T21:30Z"
+      },
+      {
+        "result": "E",
+        "opp": "Grêmio",
+        "score": "0–0",
+        "date": "2026-09-20T14:00Z"
+      },
+      {
+        "result": "V",
+        "opp": "Bahia",
+        "score": "1–0",
+        "date": "2026-10-09T00:30Z"
+      },
+      {
+        "result": "V",
+        "opp": "Corinthians",
+        "score": "4–1",
+        "date": "2026-10-11T20:30Z"
+      },
+      {
+        "result": "V",
+        "opp": "Athletico-PR",
+        "score": "2–0",
+        "date": "2026-10-17T22:30Z"
+      }
+    ],
+    "next": {
+      "opp": "Bragantino",
+      "venue": "C",
+      "date": "2026-10-24T21:30Z"
+    },
+    "scorers": [
+      {
+        "name": "José Manuel López",
+        "goals": 9,
+        "id": "311743"
+      },
+      {
+        "name": "Maurício",
+        "goals": 8,
+        "id": "289046"
+      },
+      {
+        "name": "Vitor Roque",
+        "goals": 5,
+        "id": "329383"
+      }
+    ],
+    "pos": 2
+  },
+  {
+    "code": "CAP",
+    "name": "Athletico-PR",
+    "pts": 53,
+    "j": 31,
+    "v": 15,
+    "e": 8,
+    "d": 8,
+    "gp": 49,
+    "gc": 37,
+    "recent": [
+      {
+        "result": "E",
+        "opp": "Coritiba",
+        "score": "3–3",
+        "date": "2026-09-12T00:00Z"
+      },
+      {
+        "result": "V",
+        "opp": "Bahia",
+        "score": "2–1",
+        "date": "2026-09-20T22:30Z"
+      },
+      {
+        "result": "E",
+        "opp": "Atlético-MG",
+        "score": "2–2",
+        "date": "2026-10-08T23:00Z"
+      },
+      {
+        "result": "V",
+        "opp": "Chapecoense",
+        "score": "4–1",
+        "date": "2026-10-12T22:30Z"
+      },
+      {
+        "result": "D",
+        "opp": "Palmeiras",
+        "score": "0–2",
+        "date": "2026-10-17T22:30Z"
+      }
+    ],
+    "next": {
+      "opp": "Vitória",
+      "venue": "F",
+      "date": "2026-10-24T19:30Z"
+    },
+    "scorers": [
+      {
+        "name": "Kevin Viveros",
+        "goals": 21,
+        "id": "268476"
+      },
+      {
+        "name": "Leozinho",
+        "goals": 5,
+        "id": "380327"
+      },
+      {
+        "name": "Stiven Mendoza",
+        "goals": 5,
+        "id": "197049"
+      }
+    ],
+    "pos": 3
+  },
+  {
+    "code": "FLU",
+    "name": "Fluminense",
+    "pts": 51,
+    "j": 31,
+    "v": 14,
+    "e": 9,
+    "d": 8,
+    "gp": 49,
+    "gc": 39,
+    "recent": [
+      {
+        "result": "D",
+        "opp": "Atlético-MG",
+        "score": "1–3",
+        "date": "2026-09-12T19:00Z"
+      },
+      {
+        "result": "V",
+        "opp": "Corinthians",
+        "score": "3–1",
+        "date": "2026-09-20T19:00Z"
+      },
+      {
+        "result": "V",
+        "opp": "Coritiba",
+        "score": "4–0",
+        "date": "2026-10-09T00:30Z"
+      },
+      {
+        "result": "D",
+        "opp": "Flamengo",
+        "score": "0–1",
+        "date": "2026-10-11T20:30Z"
+      },
+      {
+        "result": "D",
+        "opp": "Santos",
+        "score": "1–2",
+        "date": "2026-10-18T19:00Z"
+      }
+    ],
+    "next": {
+      "opp": "Chapecoense",
+      "venue": "F",
+      "date": "2026-10-24T22:30Z"
+    },
+    "scorers": [
+      {
+        "name": "John Kennedy",
+        "goals": 9,
+        "id": "312741"
+      },
+      {
+        "name": "Hulk",
+        "goals": 6,
+        "id": "124068"
+      },
+      {
+        "name": "Jefferson Savarino",
+        "goals": 6,
+        "id": "177219"
+      }
+    ],
+    "pos": 4
+  },
+  {
+    "code": "CRU",
+    "name": "Cruzeiro",
+    "pts": 51,
+    "j": 31,
+    "v": 15,
+    "e": 6,
+    "d": 10,
+    "gp": 50,
+    "gc": 46,
+    "recent": [
+      {
+        "result": "D",
+        "opp": "Santos",
+        "score": "1–2",
+        "date": "2026-09-13T00:00Z"
+      },
+      {
+        "result": "V",
+        "opp": "Vitória",
+        "score": "3–1",
+        "date": "2026-09-20T19:00Z"
+      },
+      {
+        "result": "V",
+        "opp": "São Paulo",
+        "score": "2–0",
+        "date": "2026-10-08T00:30Z"
+      },
+      {
+        "result": "D",
+        "opp": "Bragantino",
+        "score": "2–4",
+        "date": "2026-10-13T00:00Z"
+      },
+      {
+        "result": "V",
+        "opp": "Grêmio",
+        "score": "4–2",
+        "date": "2026-10-18T19:00Z"
+      }
+    ],
+    "next": {
+      "opp": "Remo",
+      "venue": "C",
+      "date": "2026-10-23T23:00Z"
+    },
+    "scorers": [
+      {
+        "name": "Kaio Jorge",
+        "goals": 11,
+        "id": "280978"
+      },
+      {
+        "name": "Matheus Pereira",
+        "goals": 9,
+        "id": "216098"
+      },
+      {
+        "name": "Christian",
+        "goals": 5,
+        "id": "287788"
+      }
+    ],
+    "pos": 5
+  },
+  {
+    "code": "CAM",
+    "name": "Atlético-MG",
+    "pts": 50,
+    "j": 31,
+    "v": 14,
+    "e": 8,
+    "d": 9,
+    "gp": 42,
+    "gc": 35,
+    "recent": [
+      {
+        "result": "E",
+        "opp": "Chapecoense",
+        "score": "1–1",
+        "date": "2026-09-19T19:00Z"
+      },
+      {
+        "result": "V",
+        "opp": "Bragantino",
+        "score": "1–0",
+        "date": "2026-10-03T21:30Z"
+      },
+      {
+        "result": "E",
+        "opp": "Athletico-PR",
+        "score": "2–2",
+        "date": "2026-10-08T23:00Z"
+      },
+      {
+        "result": "V",
+        "opp": "Santos",
+        "score": "2–1",
+        "date": "2026-10-11T19:00Z"
+      },
+      {
+        "result": "V",
+        "opp": "Coritiba",
+        "score": "1–0",
+        "date": "2026-10-17T21:30Z"
+      }
+    ],
+    "next": {
+      "opp": "Flamengo",
+      "venue": "F",
+      "date": "2026-10-26T23:00Z"
+    },
+    "scorers": [
+      {
+        "name": "Tomás Cuello",
+        "goals": 5,
+        "id": "252197"
+      },
+      {
+        "name": "Bernard",
+        "goals": 4,
+        "id": "158272"
+      },
+      {
+        "name": "Reiner",
+        "goals": 4,
+        "id": "286703"
+      }
+    ],
+    "pos": 6
+  },
+  {
+    "code": "BAH",
+    "name": "Bahia",
+    "pts": 49,
+    "j": 31,
+    "v": 13,
+    "e": 10,
+    "d": 8,
+    "gp": 44,
+    "gc": 39,
+    "recent": [
+      {
+        "result": "V",
+        "opp": "Remo",
+        "score": "2–1",
+        "date": "2026-09-14T23:00Z"
+      },
+      {
+        "result": "D",
+        "opp": "Athletico-PR",
+        "score": "1–2",
+        "date": "2026-09-20T22:30Z"
+      },
+      {
+        "result": "D",
+        "opp": "Palmeiras",
+        "score": "0–1",
+        "date": "2026-10-09T00:30Z"
+      },
+      {
+        "result": "V",
+        "opp": "Mirassol",
+        "score": "1–0",
+        "date": "2026-10-11T22:30Z"
+      },
+      {
+        "result": "D",
+        "opp": "Flamengo",
+        "score": "0–3",
+        "date": "2026-10-18T21:30Z"
+      }
+    ],
+    "next": {
+      "opp": "Santos",
+      "venue": "F",
+      "date": "2026-10-25T00:00Z"
+    },
+    "scorers": [
+      {
+        "name": "Luciano Juba",
+        "goals": 10,
+        "id": "304757"
+      },
+      {
+        "name": "Erick",
+        "goals": 4,
+        "id": "256044"
+      },
+      {
+        "name": "Everaldo",
+        "goals": 4,
+        "id": "167845"
+      }
+    ],
+    "pos": 7
+  },
+  {
+    "code": "SAN",
+    "name": "Santos",
+    "pts": 45,
+    "j": 31,
+    "v": 12,
+    "e": 9,
+    "d": 10,
+    "gp": 48,
+    "gc": 46,
+    "recent": [
+      {
+        "result": "V",
+        "opp": "Remo",
+        "score": "2–1",
+        "date": "2026-09-19T21:30Z"
+      },
+      {
+        "result": "V",
+        "opp": "São Paulo",
+        "score": "2–1",
+        "date": "2026-10-02T23:00Z"
+      },
+      {
+        "result": "E",
+        "opp": "Flamengo",
+        "score": "2–2",
+        "date": "2026-10-08T22:30Z"
+      },
+      {
+        "result": "D",
+        "opp": "Atlético-MG",
+        "score": "1–2",
+        "date": "2026-10-11T19:00Z"
+      },
+      {
+        "result": "V",
+        "opp": "Fluminense",
+        "score": "2–1",
+        "date": "2026-10-18T19:00Z"
+      }
+    ],
+    "next": {
+      "opp": "Bahia",
+      "venue": "C",
+      "date": "2026-10-25T00:00Z"
+    },
+    "scorers": [
+      {
+        "name": "Gabriel Barbosa",
+        "goals": 15,
+        "id": "182522"
+      },
+      {
+        "name": "Neymar",
+        "goals": 8,
+        "id": "132948"
+      },
+      {
+        "name": "Álvaro Barreal",
+        "goals": 5,
+        "id": "279454"
+      }
+    ],
+    "pos": 8
+  },
+  {
+    "code": "SAO",
+    "name": "São Paulo",
+    "pts": 42,
+    "j": 31,
+    "v": 12,
+    "e": 6,
+    "d": 13,
+    "gp": 36,
+    "gc": 35,
+    "recent": [
+      {
+        "result": "V",
+        "opp": "Internacional",
+        "score": "1–0",
+        "date": "2026-09-20T00:00Z"
+      },
+      {
+        "result": "D",
+        "opp": "Santos",
+        "score": "1–2",
+        "date": "2026-10-02T23:00Z"
+      },
+      {
+        "result": "D",
+        "opp": "Cruzeiro",
+        "score": "0–2",
+        "date": "2026-10-08T00:30Z"
+      },
+      {
+        "result": "V",
+        "opp": "Vitória",
+        "score": "2–1",
+        "date": "2026-10-11T00:00Z"
+      },
+      {
+        "result": "V",
+        "opp": "Vasco",
+        "score": "1–0",
+        "date": "2026-10-18T00:00Z"
+      }
+    ],
+    "next": {
+      "opp": "Mirassol",
+      "venue": "F",
+      "date": "2026-10-24T19:30Z"
+    },
+    "scorers": [
+      {
+        "name": "Jonathan Calleri",
+        "goals": 10,
+        "id": "162558"
+      },
+      {
+        "name": "Luciano",
+        "goals": 9,
+        "id": "190483"
+      },
+      {
+        "name": "Ferreira",
+        "goals": 4,
+        "id": "296573"
+      }
+    ],
+    "pos": 9
+  },
+  {
+    "code": "RBB",
+    "name": "Bragantino",
+    "pts": 41,
+    "j": 31,
+    "v": 11,
+    "e": 8,
+    "d": 12,
+    "gp": 39,
+    "gc": 36,
+    "recent": [
+      {
+        "result": "D",
+        "opp": "Flamengo",
+        "score": "1–2",
+        "date": "2026-09-20T21:30Z"
+      },
+      {
+        "result": "D",
+        "opp": "Atlético-MG",
+        "score": "0–1",
+        "date": "2026-10-03T21:30Z"
+      },
+      {
+        "result": "E",
+        "opp": "Mirassol",
+        "score": "1–1",
+        "date": "2026-10-07T22:30Z"
+      },
+      {
+        "result": "V",
+        "opp": "Cruzeiro",
+        "score": "4–2",
+        "date": "2026-10-13T00:00Z"
+      },
+      {
+        "result": "E",
+        "opp": "Remo",
+        "score": "1–1",
+        "date": "2026-10-18T22:30Z"
+      }
+    ],
+    "next": {
+      "opp": "Palmeiras",
+      "venue": "F",
+      "date": "2026-10-24T21:30Z"
+    },
+    "scorers": [
+      {
+        "name": "Lucas Barbosa",
+        "goals": 7,
+        "id": "248584"
+      },
+      {
+        "name": "Isidro Pitta",
+        "goals": 5,
+        "id": "287035"
+      },
+      {
+        "name": "Fernando",
+        "goals": 3,
+        "id": "267902"
+      }
+    ],
+    "pos": 10
+  },
+  {
+    "code": "BOT",
+    "name": "Botafogo",
+    "pts": 39,
+    "j": 31,
+    "v": 10,
+    "e": 9,
+    "d": 12,
+    "gp": 44,
+    "gc": 48,
+    "recent": [
+      {
+        "result": "V",
+        "opp": "Grêmio",
+        "score": "3–2",
+        "date": "2026-09-16T22:30Z"
+      },
+      {
+        "result": "D",
+        "opp": "Mirassol",
+        "score": "0–2",
+        "date": "2026-09-19T20:00Z"
+      },
+      {
+        "result": "D",
+        "opp": "Vasco",
+        "score": "1–2",
+        "date": "2026-10-07T23:30Z"
+      },
+      {
+        "result": "E",
+        "opp": "Coritiba",
+        "score": "1–1",
+        "date": "2026-10-12T19:00Z"
+      },
+      {
+        "result": "V",
+        "opp": "Chapecoense",
+        "score": "1–0",
+        "date": "2026-10-17T21:00Z"
+      }
+    ],
+    "next": {
+      "opp": "Internacional",
+      "venue": "F",
+      "date": "2026-10-24T19:30Z"
+    },
+    "scorers": [
+      {
+        "name": "Danilo Santos",
+        "goals": 10,
+        "id": "306764"
+      },
+      {
+        "name": "Arthur Cabral",
+        "goals": 7,
+        "id": "224103"
+      },
+      {
+        "name": "Alex Telles",
+        "goals": 4,
+        "id": "199734"
+      }
+    ],
+    "pos": 11
+  },
+  {
+    "code": "CFC",
+    "name": "Coritiba",
+    "pts": 39,
+    "j": 31,
+    "v": 10,
+    "e": 9,
+    "d": 12,
+    "gp": 38,
+    "gc": 49,
+    "recent": [
+      {
+        "result": "E",
+        "opp": "Athletico-PR",
+        "score": "3–3",
+        "date": "2026-09-12T00:00Z"
+      },
+      {
+        "result": "D",
+        "opp": "Vasco",
+        "score": "0–5",
+        "date": "2026-09-19T23:30Z"
+      },
+      {
+        "result": "D",
+        "opp": "Fluminense",
+        "score": "0–4",
+        "date": "2026-10-09T00:30Z"
+      },
+      {
+        "result": "E",
+        "opp": "Botafogo",
+        "score": "1–1",
+        "date": "2026-10-12T19:00Z"
+      },
+      {
+        "result": "D",
+        "opp": "Atlético-MG",
+        "score": "0–1",
+        "date": "2026-10-17T21:30Z"
+      }
+    ],
+    "next": {
+      "opp": "Grêmio",
+      "venue": "C",
+      "date": "2026-10-26T22:30Z"
+    },
+    "scorers": [
+      {
+        "name": "Breno",
+        "goals": 8,
+        "id": "236324"
+      },
+      {
+        "name": "Pedro Rocha",
+        "goals": 8,
+        "id": "216846"
+      },
+      {
+        "name": "Joaquín Lavega",
+        "goals": 5,
+        "id": "333306"
+      }
+    ],
+    "pos": 12
+  },
+  {
+    "code": "VIT",
+    "name": "Vitória",
+    "pts": 37,
+    "j": 31,
+    "v": 10,
+    "e": 7,
+    "d": 14,
+    "gp": 34,
+    "gc": 45,
+    "recent": [
+      {
+        "result": "E",
+        "opp": "Mirassol",
+        "score": "2–2",
+        "date": "2026-09-13T19:00Z"
+      },
+      {
+        "result": "D",
+        "opp": "Cruzeiro",
+        "score": "1–3",
+        "date": "2026-09-20T19:00Z"
+      },
+      {
+        "result": "V",
+        "opp": "Chapecoense",
+        "score": "4–0",
+        "date": "2026-10-07T23:00Z"
+      },
+      {
+        "result": "D",
+        "opp": "São Paulo",
+        "score": "1–2",
+        "date": "2026-10-11T00:00Z"
+      },
+      {
+        "result": "E",
+        "opp": "Corinthians",
+        "score": "1–1",
+        "date": "2026-10-19T23:00Z"
+      }
+    ],
+    "next": {
+      "opp": "Athletico-PR",
+      "venue": "C",
+      "date": "2026-10-24T19:30Z"
+    },
+    "scorers": [
+      {
+        "name": "Renê",
+        "goals": 10,
+        "id": "379359"
+      },
+      {
+        "name": "Erick",
+        "goals": 5,
+        "id": "256044"
+      },
+      {
+        "name": "Matheus",
+        "goals": 5,
+        "id": "218972"
+      }
+    ],
+    "pos": 13
+  },
+  {
+    "code": "MIR",
+    "name": "Mirassol",
+    "pts": 36,
+    "j": 31,
+    "v": 9,
+    "e": 9,
+    "d": 13,
+    "gp": 36,
+    "gc": 44,
+    "recent": [
+      {
+        "result": "E",
+        "opp": "Vitória",
+        "score": "2–2",
+        "date": "2026-09-13T19:00Z"
+      },
+      {
+        "result": "V",
+        "opp": "Botafogo",
+        "score": "2–0",
+        "date": "2026-09-19T20:00Z"
+      },
+      {
+        "result": "E",
+        "opp": "Bragantino",
+        "score": "1–1",
+        "date": "2026-10-07T22:30Z"
+      },
+      {
+        "result": "D",
+        "opp": "Bahia",
+        "score": "0–1",
+        "date": "2026-10-11T22:30Z"
+      },
+      {
+        "result": "V",
+        "opp": "Internacional",
+        "score": "2–0",
+        "date": "2026-10-16T23:00Z"
+      }
+    ],
+    "next": {
+      "opp": "São Paulo",
+      "venue": "C",
+      "date": "2026-10-24T19:30Z"
+    },
+    "scorers": [
+      {
+        "name": "Carlos Eduardo",
+        "goals": 8,
+        "id": "174782"
+      },
+      {
+        "name": "Igor Marques",
+        "goals": 4,
+        "id": "299967"
+      },
+      {
+        "name": "André Luis",
+        "goals": 3,
+        "id": "205448"
+      }
+    ],
+    "pos": 14
+  },
+  {
+    "code": "VAS",
+    "name": "Vasco",
+    "pts": 35,
+    "j": 30,
+    "v": 9,
+    "e": 8,
+    "d": 13,
+    "gp": 36,
+    "gc": 43,
+    "recent": [
+      {
+        "result": "V",
+        "opp": "Grêmio",
+        "score": "2–1",
+        "date": "2026-09-12T19:00Z"
+      },
+      {
+        "result": "V",
+        "opp": "Coritiba",
+        "score": "5–0",
+        "date": "2026-09-19T23:30Z"
+      },
+      {
+        "result": "V",
+        "opp": "Botafogo",
+        "score": "2–1",
+        "date": "2026-10-07T23:30Z"
+      },
+      {
+        "result": "E",
+        "opp": "Remo",
+        "score": "0–0",
+        "date": "2026-10-10T21:00Z"
+      },
+      {
+        "result": "D",
+        "opp": "São Paulo",
+        "score": "0–1",
+        "date": "2026-10-18T00:00Z"
+      }
+    ],
+    "next": {
+      "opp": "Corinthians",
+      "venue": "C",
+      "date": "2026-10-24T21:30Z"
+    },
+    "scorers": [
+      {
+        "name": "Andrés Gómez",
+        "goals": 5,
+        "id": "330924"
+      },
+      {
+        "name": "Thiago Mendes",
+        "goals": 5,
+        "id": "201717"
+      },
+      {
+        "name": "David",
+        "goals": 4,
+        "id": "219005"
+      }
+    ],
+    "pos": 15
+  },
+  {
+    "code": "COR",
+    "name": "Corinthians",
+    "pts": 33,
+    "j": 31,
+    "v": 8,
+    "e": 9,
+    "d": 14,
+    "gp": 32,
+    "gc": 39,
+    "recent": [
+      {
+        "result": "D",
+        "opp": "Flamengo",
+        "score": "1–2",
+        "date": "2026-09-13T20:30Z"
+      },
+      {
+        "result": "D",
+        "opp": "Fluminense",
+        "score": "1–3",
+        "date": "2026-09-20T19:00Z"
+      },
+      {
+        "result": "D",
+        "opp": "Internacional",
+        "score": "1–2",
+        "date": "2026-10-07T22:30Z"
+      },
+      {
+        "result": "D",
+        "opp": "Palmeiras",
+        "score": "1–4",
+        "date": "2026-10-11T20:30Z"
+      },
+      {
+        "result": "E",
+        "opp": "Vitória",
+        "score": "1–1",
+        "date": "2026-10-19T23:00Z"
+      }
+    ],
+    "next": {
+      "opp": "Vasco",
+      "venue": "F",
+      "date": "2026-10-24T21:30Z"
+    },
+    "scorers": [
+      {
+        "name": "André",
+        "goals": 4,
+        "id": "409662"
+      },
+      {
+        "name": "Yuri Alberto",
+        "goals": 4,
+        "id": "266666"
+      },
+      {
+        "name": "Gustavo Henrique",
+        "goals": 3,
+        "id": "168981"
+      }
+    ],
+    "pos": 16
+  },
+  {
+    "code": "INT",
+    "name": "Internacional",
+    "pts": 32,
+    "j": 31,
+    "v": 7,
+    "e": 11,
+    "d": 13,
+    "gp": 33,
+    "gc": 40,
+    "recent": [
+      {
+        "result": "V",
+        "opp": "Chapecoense",
+        "score": "2–1",
+        "date": "2026-09-12T20:00Z"
+      },
+      {
+        "result": "D",
+        "opp": "São Paulo",
+        "score": "0–1",
+        "date": "2026-09-20T00:00Z"
+      },
+      {
+        "result": "V",
+        "opp": "Corinthians",
+        "score": "2–1",
+        "date": "2026-10-07T22:30Z"
+      },
+      {
+        "result": "E",
+        "opp": "Grêmio",
+        "score": "1–1",
+        "date": "2026-10-11T20:30Z"
+      },
+      {
+        "result": "D",
+        "opp": "Mirassol",
+        "score": "0–2",
+        "date": "2026-10-16T23:00Z"
+      }
+    ],
+    "next": {
+      "opp": "Botafogo",
+      "venue": "C",
+      "date": "2026-10-24T19:30Z"
+    },
+    "scorers": [
+      {
+        "name": "Johan Carbonero",
+        "goals": 7,
+        "id": "270246"
+      },
+      {
+        "name": "Alan Patrick",
+        "goals": 5,
+        "id": "165232"
+      },
+      {
+        "name": "Alexander Bernabei",
+        "goals": 4,
+        "id": "285029"
+      }
+    ],
+    "pos": 17
+  },
+  {
+    "code": "GRE",
+    "name": "Grêmio",
+    "pts": 31,
+    "j": 31,
+    "v": 7,
+    "e": 10,
+    "d": 14,
+    "gp": 34,
+    "gc": 44,
+    "recent": [
+      {
+        "result": "D",
+        "opp": "Botafogo",
+        "score": "2–3",
+        "date": "2026-09-16T22:30Z"
+      },
+      {
+        "result": "E",
+        "opp": "Palmeiras",
+        "score": "0–0",
+        "date": "2026-09-20T14:00Z"
+      },
+      {
+        "result": "E",
+        "opp": "Remo",
+        "score": "1–1",
+        "date": "2026-10-07T22:30Z"
+      },
+      {
+        "result": "E",
+        "opp": "Internacional",
+        "score": "1–1",
+        "date": "2026-10-11T20:30Z"
+      },
+      {
+        "result": "D",
+        "opp": "Cruzeiro",
+        "score": "2–4",
+        "date": "2026-10-18T19:00Z"
+      }
+    ],
+    "next": {
+      "opp": "Coritiba",
+      "venue": "F",
+      "date": "2026-10-26T22:30Z"
+    },
+    "scorers": [
+      {
+        "name": "Carlos Vinícius",
+        "goals": 11,
+        "id": "252576"
+      },
+      {
+        "name": "Cristian Pavón",
+        "goals": 3,
+        "id": "24388"
+      },
+      {
+        "name": "Gustavo Martins",
+        "goals": 3,
+        "id": "314603"
+      }
+    ],
+    "pos": 18
+  },
+  {
+    "code": "REM",
+    "name": "Remo",
+    "pts": 26,
+    "j": 31,
+    "v": 5,
+    "e": 11,
+    "d": 15,
+    "gp": 34,
+    "gc": 49,
+    "recent": [
+      {
+        "result": "D",
+        "opp": "Bahia",
+        "score": "1–2",
+        "date": "2026-09-14T23:00Z"
+      },
+      {
+        "result": "D",
+        "opp": "Santos",
+        "score": "1–2",
+        "date": "2026-09-19T21:30Z"
+      },
+      {
+        "result": "E",
+        "opp": "Grêmio",
+        "score": "1–1",
+        "date": "2026-10-07T22:30Z"
+      },
+      {
+        "result": "E",
+        "opp": "Vasco",
+        "score": "0–0",
+        "date": "2026-10-10T21:00Z"
+      },
+      {
+        "result": "E",
+        "opp": "Bragantino",
+        "score": "1–1",
+        "date": "2026-10-18T22:30Z"
+      }
+    ],
+    "next": {
+      "opp": "Cruzeiro",
+      "venue": "F",
+      "date": "2026-10-23T23:00Z"
+    },
+    "scorers": [
+      {
+        "name": "Jajá",
+        "goals": 8,
+        "id": "301185"
+      },
+      {
+        "name": "Alef Manga",
+        "goals": 5,
+        "id": "301188"
+      },
+      {
+        "name": "Gabriel Taliari",
+        "goals": 4,
+        "id": "235385"
+      }
+    ],
+    "pos": 19
+  },
+  {
+    "code": "CHA",
+    "name": "Chapecoense",
+    "pts": 18,
+    "j": 30,
+    "v": 3,
+    "e": 9,
+    "d": 18,
+    "gp": 30,
+    "gc": 62,
+    "recent": [
+      {
+        "result": "D",
+        "opp": "Internacional",
+        "score": "1–2",
+        "date": "2026-09-12T20:00Z"
+      },
+      {
+        "result": "E",
+        "opp": "Atlético-MG",
+        "score": "1–1",
+        "date": "2026-09-19T19:00Z"
+      },
+      {
+        "result": "D",
+        "opp": "Vitória",
+        "score": "0–4",
+        "date": "2026-10-07T23:00Z"
+      },
+      {
+        "result": "D",
+        "opp": "Athletico-PR",
+        "score": "1–4",
+        "date": "2026-10-12T22:30Z"
+      },
+      {
+        "result": "D",
+        "opp": "Botafogo",
+        "score": "0–1",
+        "date": "2026-10-17T21:00Z"
+      }
+    ],
+    "next": {
+      "opp": "Fluminense",
+      "venue": "C",
+      "date": "2026-10-24T22:30Z"
+    },
+    "scorers": [
+      {
+        "name": "Marcinho",
+        "goals": 5,
+        "id": "64671"
+      },
+      {
+        "name": "Maurício Garcez",
+        "goals": 3,
+        "id": "307717"
+      },
+      {
+        "name": "Túlio Eduardo Silva De Oliveira",
+        "goals": 3,
+        "id": "3108270"
+      }
+    ],
+    "pos": 20
+  }
+]
