@@ -46,6 +46,7 @@
     "runtime": {
       "status": "pass",
       "http": 200,
+      "faviconHttp": 200,
       "consoleErrorsOrWarnings": 0,
       "javascriptSyntax": "pass",
       "invalidLinks": 0,
