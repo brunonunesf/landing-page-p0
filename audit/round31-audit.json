@@ -1,0 +1,2931 @@
+{
+  "generatedAt": "2026-10-20T18:27:06.174Z",
+  "cutoff": "2026-10-20T02:59:59.000Z",
+  "sources": {
+    "results": "CBF — encerramento da 31ª rodada",
+    "fixtures": "ge — tabela das rodadas 31 e 32",
+    "matchData": "ESPN scoreboard e súmulas",
+    "assistsCrossCheck": "Wikipedia — líderes de assistências"
+  },
+  "processedMatches": 309,
+  "pass": true,
+  "checks": [
+    {
+      "name": "Dez resultados oficiais da rodada 31",
+      "pass": true,
+      "evidence": "10/10 placares encontrados"
+    },
+    {
+      "name": "Classificação e estatísticas coletivas",
+      "pass": true,
+      "evidence": "20/20 clubes sem divergência"
+    },
+    {
+      "name": "Top 3 artilheiros por clube",
+      "pass": true,
+      "evidence": "20/20 clubes sem divergência"
+    },
+    {
+      "name": "Top 3 assistentes por clube",
+      "pass": true,
+      "evidence": "20/20 clubes sincronizados com 309 súmulas"
+    },
+    {
+      "name": "Líderes globais de assistências",
+      "pass": true,
+      "evidence": "Andreas Pereira|10, Josué|10, Jorge Carrascal|8, Samuel Lino|8"
+    },
+    {
+      "name": "Último confronto de cada clube",
+      "pass": true,
+      "evidence": "20/20 clubes corretos"
+    },
+    {
+      "name": "Próximo confronto da rodada 32",
+      "pass": true,
+      "evidence": "20/20 clubes corretos"
+    }
+  ],
+  "resultChecks": [
+    {
+      "name": "Remo 1–1 Bragantino",
+      "pass": true,
+      "evidence": "placar confirmado"
+    },
+    {
+      "name": "Bahia 0–3 Flamengo",
+      "pass": true,
+      "evidence": "placar confirmado"
+    },
+    {
+      "name": "Grêmio 2–4 Cruzeiro",
+      "pass": true,
+      "evidence": "placar confirmado"
+    },
+    {
+      "name": "Fluminense 1–2 Santos",
+      "pass": true,
+      "evidence": "placar confirmado"
+    },
+    {
+      "name": "São Paulo 1–0 Vasco",
+      "pass": true,
+      "evidence": "placar confirmado"
+    },
+    {
+      "name": "Athletico-PR 0–2 Palmeiras",
+      "pass": true,
+      "evidence": "placar confirmado"
+    },
+    {
+      "name": "Atlético-MG 1–0 Coritiba",
+      "pass": true,
+      "evidence": "placar confirmado"
+    },
+    {
+      "name": "Botafogo 1–0 Chapecoense",
+      "pass": true,
+      "evidence": "placar confirmado"
+    },
+    {
+      "name": "Mirassol 2–0 Internacional",
+      "pass": true,
+      "evidence": "placar confirmado"
+    },
+    {
+      "name": "Corinthians 1–1 Vitória",
+      "pass": true,
+      "evidence": "placar confirmado"
+    }
+  ],
+  "tableRows": [
+    {
+      "code": "FLA",
+      "pass": true,
+      "fresh": {
+        "code": "FLA",
+        "pts": 67,
+        "j": 31,
+        "v": 20,
+        "e": 7,
+        "d": 4,
+        "gp": 61,
+        "gc": 25,
+        "recent": [
+          {
+            "result": "V",
+            "opp": "Corinthians",
+            "score": "2–1"
+          },
+          {
+            "result": "V",
+            "opp": "Bragantino",
+            "score": "2–1"
+          },
+          {
+            "result": "E",
+            "opp": "Santos",
+            "score": "2–2"
+          },
+          {
+            "result": "V",
+            "opp": "Fluminense",
+            "score": "1–0"
+          },
+          {
+            "result": "V",
+            "opp": "Bahia",
+            "score": "3–0"
+          }
+        ],
+        "pos": 1
+      },
+      "site": {
+        "code": "FLA",
+        "name": "Flamengo",
+        "pts": 67,
+        "j": 31,
+        "v": 20,
+        "e": 7,
+        "d": 4,
+        "gp": 61,
+        "gc": 25,
+        "form": "VVEVV",
+        "scorers": [
+          "Pedro|16",
+          "Samuel Lino|9",
+          "Lucas Paquetá|7"
+        ],
+        "assists": [
+          "Jorge Carrascal|8",
+          "Samuel Lino|8",
+          "Pedro|6"
+        ],
+        "next": "Atlético-MG",
+        "venue": "C",
+        "date": "26/10 · 20:00",
+        "pos": 1,
+        "games": [
+          {
+            "r": "V",
+            "opp": "Corinthians",
+            "score": "2–1",
+            "date": "13/09 · 17:30"
+          },
+          {
+            "r": "V",
+            "opp": "Bragantino",
+            "score": "2–1",
+            "date": "20/09 · 18:30"
+          },
+          {
+            "r": "E",
+            "opp": "Santos",
+            "score": "2–2",
+            "date": "08/10 · 19:30"
+          },
+          {
+            "r": "V",
+            "opp": "Fluminense",
+            "score": "1–0",
+            "date": "11/10 · 17:30"
+          },
+          {
+            "r": "V",
+            "opp": "Bahia",
+            "score": "3–0",
+            "date": "18/10 · 18:30"
+          }
+        ]
+      },
+      "differences": []
+    },
+    {
+      "code": "PAL",
+      "pass": true,
+      "fresh": {
+        "code": "PAL",
+        "pts": 66,
+        "j": 31,
+        "v": 19,
+        "e": 9,
+        "d": 3,
+        "gp": 54,
+        "gc": 22,
+        "recent": [
+          {
+            "result": "V",
+            "opp": "São Paulo",
+            "score": "2–0"
+          },
+          {
+            "result": "E",
+            "opp": "Grêmio",
+            "score": "0–0"
+          },
+          {
+            "result": "V",
+            "opp": "Bahia",
+            "score": "1–0"
+          },
+          {
+            "result": "V",
+            "opp": "Corinthians",
+            "score": "4–1"
+          },
+          {
+            "result": "V",
+            "opp": "Athletico-PR",
+            "score": "2–0"
+          }
+        ],
+        "pos": 2
+      },
+      "site": {
+        "code": "PAL",
+        "name": "Palmeiras",
+        "pts": 66,
+        "j": 31,
+        "v": 19,
+        "e": 9,
+        "d": 3,
+        "gp": 54,
+        "gc": 22,
+        "form": "VEVVV",
+        "scorers": [
+          "José Manuel López|9",
+          "Maurício|8",
+          "Vitor Roque|5"
+        ],
+        "assists": [
+          "Andreas Pereira|10",
+          "Joaquín Piquerez|4",
+          "Allan|3"
+        ],
+        "next": "Bragantino",
+        "venue": "C",
+        "date": "24/10 · 18:30",
+        "pos": 2,
+        "games": [
+          {
+            "r": "V",
+            "opp": "São Paulo",
+            "score": "2–0",
+            "date": "12/09 · 18:30"
+          },
+          {
+            "r": "E",
+            "opp": "Grêmio",
+            "score": "0–0",
+            "date": "20/09 · 11:00"
+          },
+          {
+            "r": "V",
+            "opp": "Bahia",
+            "score": "1–0",
+            "date": "08/10 · 21:30"
+          },
+          {
+            "r": "V",
+            "opp": "Corinthians",
+            "score": "4–1",
+            "date": "11/10 · 17:30"
+          },
+          {
+            "r": "V",
+            "opp": "Athletico-PR",
+            "score": "2–0",
+            "date": "17/10 · 19:30"
+          }
+        ]
+      },
+      "differences": []
+    },
+    {
+      "code": "CAP",
+      "pass": true,
+      "fresh": {
+        "code": "CAP",
+        "pts": 53,
+        "j": 31,
+        "v": 15,
+        "e": 8,
+        "d": 8,
+        "gp": 49,
+        "gc": 37,
+        "recent": [
+          {
+            "result": "E",
+            "opp": "Coritiba",
+            "score": "3–3"
+          },
+          {
+            "result": "V",
+            "opp": "Bahia",
+            "score": "2–1"
+          },
+          {
+            "result": "E",
+            "opp": "Atlético-MG",
+            "score": "2–2"
+          },
+          {
+            "result": "V",
+            "opp": "Chapecoense",
+            "score": "4–1"
+          },
+          {
+            "result": "D",
+            "opp": "Palmeiras",
+            "score": "0–2"
+          }
+        ],
+        "pos": 3
+      },
+      "site": {
+        "code": "CAP",
+        "name": "Athletico-PR",
+        "pts": 53,
+        "j": 31,
+        "v": 15,
+        "e": 8,
+        "d": 8,
+        "gp": 49,
+        "gc": 37,
+        "form": "EVEVD",
+        "scorers": [
+          "Kevin Viveros|21",
+          "Leozinho|5",
+          "Stiven Mendoza|5"
+        ],
+        "assists": [
+          "Gastón Benavídez|5",
+          "João Cruz|5",
+          "Lucas Esquivel|5"
+        ],
+        "next": "Vitória",
+        "venue": "F",
+        "date": "24/10 · 16:30",
+        "pos": 3,
+        "games": [
+          {
+            "r": "E",
+            "opp": "Coritiba",
+            "score": "3–3",
+            "date": "11/09 · 21:00"
+          },
+          {
+            "r": "V",
+            "opp": "Bahia",
+            "score": "2–1",
+            "date": "20/09 · 19:30"
+          },
+          {
+            "r": "E",
+            "opp": "Atlético-MG",
+            "score": "2–2",
+            "date": "08/10 · 20:00"
+          },
+          {
+            "r": "V",
+            "opp": "Chapecoense",
+            "score": "4–1",
+            "date": "12/10 · 19:30"
+          },
+          {
+            "r": "D",
+            "opp": "Palmeiras",
+            "score": "0–2",
+            "date": "17/10 · 19:30"
+          }
+        ]
+      },
+      "differences": []
+    },
+    {
+      "code": "FLU",
+      "pass": true,
+      "fresh": {
+        "code": "FLU",
+        "pts": 51,
+        "j": 31,
+        "v": 14,
+        "e": 9,
+        "d": 8,
+        "gp": 49,
+        "gc": 39,
+        "recent": [
+          {
+            "result": "D",
+            "opp": "Atlético-MG",
+            "score": "1–3"
+          },
+          {
+            "result": "V",
+            "opp": "Corinthians",
+            "score": "3–1"
+          },
+          {
+            "result": "V",
+            "opp": "Coritiba",
+            "score": "4–0"
+          },
+          {
+            "result": "D",
+            "opp": "Flamengo",
+            "score": "0–1"
+          },
+          {
+            "result": "D",
+            "opp": "Santos",
+            "score": "1–2"
+          }
+        ],
+        "pos": 4
+      },
+      "site": {
+        "code": "FLU",
+        "name": "Fluminense",
+        "pts": 51,
+        "j": 31,
+        "v": 14,
+        "e": 9,
+        "d": 8,
+        "gp": 49,
+        "gc": 39,
+        "form": "DVVDD",
+        "scorers": [
+          "John Kennedy|9",
+          "Hulk|6",
+          "Jefferson Savarino|6"
+        ],
+        "assists": [
+          "Lucho Acosta|5",
+          "Kevin Serna|4",
+          "Agustín Canobbio|3"
+        ],
+        "next": "Chapecoense",
+        "venue": "F",
+        "date": "24/10 · 19:30",
+        "pos": 4,
+        "games": [
+          {
+            "r": "D",
+            "opp": "Atlético-MG",
+            "score": "1–3",
+            "date": "12/09 · 16:00"
+          },
+          {
+            "r": "V",
+            "opp": "Corinthians",
+            "score": "3–1",
+            "date": "20/09 · 16:00"
+          },
+          {
+            "r": "V",
+            "opp": "Coritiba",
+            "score": "4–0",
+            "date": "08/10 · 21:30"
+          },
+          {
+            "r": "D",
+            "opp": "Flamengo",
+            "score": "0–1",
+            "date": "11/10 · 17:30"
+          },
+          {
+            "r": "D",
+            "opp": "Santos",
+            "score": "1–2",
+            "date": "18/10 · 16:00"
+          }
+        ]
+      },
+      "differences": []
+    },
+    {
+      "code": "CRU",
+      "pass": true,
+      "fresh": {
+        "code": "CRU",
+        "pts": 51,
+        "j": 31,
+        "v": 15,
+        "e": 6,
+        "d": 10,
+        "gp": 50,
+        "gc": 46,
+        "recent": [
+          {
+            "result": "D",
+            "opp": "Santos",
+            "score": "1–2"
+          },
+          {
+            "result": "V",
+            "opp": "Vitória",
+            "score": "3–1"
+          },
+          {
+            "result": "V",
+            "opp": "São Paulo",
+            "score": "2–0"
+          },
+          {
+            "result": "D",
+            "opp": "Bragantino",
+            "score": "2–4"
+          },
+          {
+            "result": "V",
+            "opp": "Grêmio",
+            "score": "4–2"
+          }
+        ],
+        "pos": 5
+      },
+      "site": {
+        "code": "CRU",
+        "name": "Cruzeiro",
+        "pts": 51,
+        "j": 31,
+        "v": 15,
+        "e": 6,
+        "d": 10,
+        "gp": 50,
+        "gc": 46,
+        "form": "DVVDV",
+        "scorers": [
+          "Kaio Jorge|11",
+          "Matheus Pereira|9",
+          "Christian|5"
+        ],
+        "assists": [
+          "Matheus Pereira|6",
+          "Fágner|4",
+          "Gerson|4"
+        ],
+        "next": "Remo",
+        "venue": "C",
+        "date": "23/10 · 20:00",
+        "pos": 5,
+        "games": [
+          {
+            "r": "D",
+            "opp": "Santos",
+            "score": "1–2",
+            "date": "12/09 · 21:00"
+          },
+          {
+            "r": "V",
+            "opp": "Vitória",
+            "score": "3–1",
+            "date": "20/09 · 16:00"
+          },
+          {
+            "r": "V",
+            "opp": "São Paulo",
+            "score": "2–0",
+            "date": "07/10 · 21:30"
+          },
+          {
+            "r": "D",
+            "opp": "Bragantino",
+            "score": "2–4",
+            "date": "12/10 · 21:00"
+          },
+          {
+            "r": "V",
+            "opp": "Grêmio",
+            "score": "4–2",
+            "date": "18/10 · 16:00"
+          }
+        ]
+      },
+      "differences": []
+    },
+    {
+      "code": "CAM",
+      "pass": true,
+      "fresh": {
+        "code": "CAM",
+        "pts": 50,
+        "j": 31,
+        "v": 14,
+        "e": 8,
+        "d": 9,
+        "gp": 42,
+        "gc": 35,
+        "recent": [
+          {
+            "result": "E",
+            "opp": "Chapecoense",
+            "score": "1–1"
+          },
+          {
+            "result": "V",
+            "opp": "Bragantino",
+            "score": "1–0"
+          },
+          {
+            "result": "E",
+            "opp": "Athletico-PR",
+            "score": "2–2"
+          },
+          {
+            "result": "V",
+            "opp": "Santos",
+            "score": "2–1"
+          },
+          {
+            "result": "V",
+            "opp": "Coritiba",
+            "score": "1–0"
+          }
+        ],
+        "pos": 6
+      },
+      "site": {
+        "code": "CAM",
+        "name": "Atlético-MG",
+        "pts": 50,
+        "j": 31,
+        "v": 14,
+        "e": 8,
+        "d": 9,
+        "gp": 42,
+        "gc": 35,
+        "form": "EVEVV",
+        "scorers": [
+          "Tomás Cuello|5",
+          "Bernard|4",
+          "Reiner|4"
+        ],
+        "assists": [
+          "Alan Minda|3",
+          "Bernard|3",
+          "Hulk|3"
+        ],
+        "next": "Flamengo",
+        "venue": "F",
+        "date": "26/10 · 20:00",
+        "pos": 6,
+        "games": [
+          {
+            "r": "E",
+            "opp": "Chapecoense",
+            "score": "1–1",
+            "date": "19/09 · 16:00"
+          },
+          {
+            "r": "V",
+            "opp": "Bragantino",
+            "score": "1–0",
+            "date": "03/10 · 18:30"
+          },
+          {
+            "r": "E",
+            "opp": "Athletico-PR",
+            "score": "2–2",
+            "date": "08/10 · 20:00"
+          },
+          {
+            "r": "V",
+            "opp": "Santos",
+            "score": "2–1",
+            "date": "11/10 · 16:00"
+          },
+          {
+            "r": "V",
+            "opp": "Coritiba",
+            "score": "1–0",
+            "date": "17/10 · 18:30"
+          }
+        ]
+      },
+      "differences": []
+    },
+    {
+      "code": "BAH",
+      "pass": true,
+      "fresh": {
+        "code": "BAH",
+        "pts": 49,
+        "j": 31,
+        "v": 13,
+        "e": 10,
+        "d": 8,
+        "gp": 44,
+        "gc": 39,
+        "recent": [
+          {
+            "result": "V",
+            "opp": "Remo",
+            "score": "2–1"
+          },
+          {
+            "result": "D",
+            "opp": "Athletico-PR",
+            "score": "1–2"
+          },
+          {
+            "result": "D",
+            "opp": "Palmeiras",
+            "score": "0–1"
+          },
+          {
+            "result": "V",
+            "opp": "Mirassol",
+            "score": "1–0"
+          },
+          {
+            "result": "D",
+            "opp": "Flamengo",
+            "score": "0–3"
+          }
+        ],
+        "pos": 7
+      },
+      "site": {
+        "code": "BAH",
+        "name": "Bahia",
+        "pts": 49,
+        "j": 31,
+        "v": 13,
+        "e": 10,
+        "d": 8,
+        "gp": 44,
+        "gc": 39,
+        "form": "VDDVD",
+        "scorers": [
+          "Luciano Juba|10",
+          "Erick|4",
+          "Everaldo|4"
+        ],
+        "assists": [
+          "Éverton Ribeiro|4",
+          "Rodrigo Nestor|4",
+          "Jean Lucas|3"
+        ],
+        "next": "Santos",
+        "venue": "F",
+        "date": "24/10 · 21:00",
+        "pos": 7,
+        "games": [
+          {
+            "r": "V",
+            "opp": "Remo",
+            "score": "2–1",
+            "date": "14/09 · 20:00"
+          },
+          {
+            "r": "D",
+            "opp": "Athletico-PR",
+            "score": "1–2",
+            "date": "20/09 · 19:30"
+          },
+          {
+            "r": "D",
+            "opp": "Palmeiras",
+            "score": "0–1",
+            "date": "08/10 · 21:30"
+          },
+          {
+            "r": "V",
+            "opp": "Mirassol",
+            "score": "1–0",
+            "date": "11/10 · 19:30"
+          },
+          {
+            "r": "D",
+            "opp": "Flamengo",
+            "score": "0–3",
+            "date": "18/10 · 18:30"
+          }
+        ]
+      },
+      "differences": []
+    },
+    {
+      "code": "SAN",
+      "pass": true,
+      "fresh": {
+        "code": "SAN",
+        "pts": 45,
+        "j": 31,
+        "v": 12,
+        "e": 9,
+        "d": 10,
+        "gp": 48,
+        "gc": 46,
+        "recent": [
+          {
+            "result": "V",
+            "opp": "Remo",
+            "score": "2–1"
+          },
+          {
+            "result": "V",
+            "opp": "São Paulo",
+            "score": "2–1"
+          },
+          {
+            "result": "E",
+            "opp": "Flamengo",
+            "score": "2–2"
+          },
+          {
+            "result": "D",
+            "opp": "Atlético-MG",
+            "score": "1–2"
+          },
+          {
+            "result": "V",
+            "opp": "Fluminense",
+            "score": "2–1"
+          }
+        ],
+        "pos": 8
+      },
+      "site": {
+        "code": "SAN",
+        "name": "Santos",
+        "pts": 45,
+        "j": 31,
+        "v": 12,
+        "e": 9,
+        "d": 10,
+        "gp": 48,
+        "gc": 46,
+        "form": "VVEDV",
+        "scorers": [
+          "Gabriel Barbosa|15",
+          "Neymar|8",
+          "Álvaro Barreal|5"
+        ],
+        "assists": [
+          "Gabriel Barbosa|3",
+          "Gabriel Bontempo|3",
+          "Neymar|3"
+        ],
+        "next": "Bahia",
+        "venue": "C",
+        "date": "24/10 · 21:00",
+        "pos": 8,
+        "games": [
+          {
+            "r": "V",
+            "opp": "Remo",
+            "score": "2–1",
+            "date": "19/09 · 18:30"
+          },
+          {
+            "r": "V",
+            "opp": "São Paulo",
+            "score": "2–1",
+            "date": "02/10 · 20:00"
+          },
+          {
+            "r": "E",
+            "opp": "Flamengo",
+            "score": "2–2",
+            "date": "08/10 · 19:30"
+          },
+          {
+            "r": "D",
+            "opp": "Atlético-MG",
+            "score": "1–2",
+            "date": "11/10 · 16:00"
+          },
+          {
+            "r": "V",
+            "opp": "Fluminense",
+            "score": "2–1",
+            "date": "18/10 · 16:00"
+          }
+        ]
+      },
+      "differences": []
+    },
+    {
+      "code": "SAO",
+      "pass": true,
+      "fresh": {
+        "code": "SAO",
+        "pts": 42,
+        "j": 31,
+        "v": 12,
+        "e": 6,
+        "d": 13,
+        "gp": 36,
+        "gc": 35,
+        "recent": [
+          {
+            "result": "V",
+            "opp": "Internacional",
+            "score": "1–0"
+          },
+          {
+            "result": "D",
+            "opp": "Santos",
+            "score": "1–2"
+          },
+          {
+            "result": "D",
+            "opp": "Cruzeiro",
+            "score": "0–2"
+          },
+          {
+            "result": "V",
+            "opp": "Vitória",
+            "score": "2–1"
+          },
+          {
+            "result": "V",
+            "opp": "Vasco",
+            "score": "1–0"
+          }
+        ],
+        "pos": 9
+      },
+      "site": {
+        "code": "SAO",
+        "name": "São Paulo",
+        "pts": 42,
+        "j": 31,
+        "v": 12,
+        "e": 6,
+        "d": 13,
+        "gp": 36,
+        "gc": 35,
+        "form": "VDDVV",
+        "scorers": [
+          "Jonathan Calleri|10",
+          "Luciano|9",
+          "Ferreira|4"
+        ],
+        "assists": [
+          "Wendell|3",
+          "Artur|2",
+          "Lucas Ramon|2"
+        ],
+        "next": "Mirassol",
+        "venue": "F",
+        "date": "24/10 · 16:30",
+        "pos": 9,
+        "games": [
+          {
+            "r": "V",
+            "opp": "Internacional",
+            "score": "1–0",
+            "date": "19/09 · 21:00"
+          },
+          {
+            "r": "D",
+            "opp": "Santos",
+            "score": "1–2",
+            "date": "02/10 · 20:00"
+          },
+          {
+            "r": "D",
+            "opp": "Cruzeiro",
+            "score": "0–2",
+            "date": "07/10 · 21:30"
+          },
+          {
+            "r": "V",
+            "opp": "Vitória",
+            "score": "2–1",
+            "date": "10/10 · 21:00"
+          },
+          {
+            "r": "V",
+            "opp": "Vasco",
+            "score": "1–0",
+            "date": "17/10 · 21:00"
+          }
+        ]
+      },
+      "differences": []
+    },
+    {
+      "code": "RBB",
+      "pass": true,
+      "fresh": {
+        "code": "RBB",
+        "pts": 41,
+        "j": 31,
+        "v": 11,
+        "e": 8,
+        "d": 12,
+        "gp": 39,
+        "gc": 36,
+        "recent": [
+          {
+            "result": "D",
+            "opp": "Flamengo",
+            "score": "1–2"
+          },
+          {
+            "result": "D",
+            "opp": "Atlético-MG",
+            "score": "0–1"
+          },
+          {
+            "result": "E",
+            "opp": "Mirassol",
+            "score": "1–1"
+          },
+          {
+            "result": "V",
+            "opp": "Cruzeiro",
+            "score": "4–2"
+          },
+          {
+            "result": "E",
+            "opp": "Remo",
+            "score": "1–1"
+          }
+        ],
+        "pos": 10
+      },
+      "site": {
+        "code": "RBB",
+        "name": "Bragantino",
+        "pts": 41,
+        "j": 31,
+        "v": 11,
+        "e": 8,
+        "d": 12,
+        "gp": 39,
+        "gc": 36,
+        "form": "DDEVE",
+        "scorers": [
+          "Lucas Barbosa|7",
+          "Isidro Pitta|5",
+          "Fernando|3"
+        ],
+        "assists": [
+          "Henry Mosquera|4",
+          "Isidro Pitta|3",
+          "Agustín Sant'Anna|2"
+        ],
+        "next": "Palmeiras",
+        "venue": "F",
+        "date": "24/10 · 18:30",
+        "pos": 10,
+        "games": [
+          {
+            "r": "D",
+            "opp": "Flamengo",
+            "score": "1–2",
+            "date": "20/09 · 18:30"
+          },
+          {
+            "r": "D",
+            "opp": "Atlético-MG",
+            "score": "0–1",
+            "date": "03/10 · 18:30"
+          },
+          {
+            "r": "E",
+            "opp": "Mirassol",
+            "score": "1–1",
+            "date": "07/10 · 19:30"
+          },
+          {
+            "r": "V",
+            "opp": "Cruzeiro",
+            "score": "4–2",
+            "date": "12/10 · 21:00"
+          },
+          {
+            "r": "E",
+            "opp": "Remo",
+            "score": "1–1",
+            "date": "18/10 · 19:30"
+          }
+        ]
+      },
+      "differences": []
+    },
+    {
+      "code": "BOT",
+      "pass": true,
+      "fresh": {
+        "code": "BOT",
+        "pts": 39,
+        "j": 31,
+        "v": 10,
+        "e": 9,
+        "d": 12,
+        "gp": 44,
+        "gc": 48,
+        "recent": [
+          {
+            "result": "V",
+            "opp": "Grêmio",
+            "score": "3–2"
+          },
+          {
+            "result": "D",
+            "opp": "Mirassol",
+            "score": "0–2"
+          },
+          {
+            "result": "D",
+            "opp": "Vasco",
+            "score": "1–2"
+          },
+          {
+            "result": "E",
+            "opp": "Coritiba",
+            "score": "1–1"
+          },
+          {
+            "result": "V",
+            "opp": "Chapecoense",
+            "score": "1–0"
+          }
+        ],
+        "pos": 11
+      },
+      "site": {
+        "code": "BOT",
+        "name": "Botafogo",
+        "pts": 39,
+        "j": 31,
+        "v": 10,
+        "e": 9,
+        "d": 12,
+        "gp": 44,
+        "gc": 48,
+        "form": "VDDEV",
+        "scorers": [
+          "Danilo Santos|10",
+          "Arthur Cabral|7",
+          "Alex Telles|4"
+        ],
+        "assists": [
+          "Álvaro Montoro|5",
+          "Alex Telles|4",
+          "Danilo|3"
+        ],
+        "next": "Internacional",
+        "venue": "F",
+        "date": "24/10 · 16:30",
+        "pos": 11,
+        "games": [
+          {
+            "r": "V",
+            "opp": "Grêmio",
+            "score": "3–2",
+            "date": "16/09 · 19:30"
+          },
+          {
+            "r": "D",
+            "opp": "Mirassol",
+            "score": "0–2",
+            "date": "19/09 · 17:00"
+          },
+          {
+            "r": "D",
+            "opp": "Vasco",
+            "score": "1–2",
+            "date": "07/10 · 20:30"
+          },
+          {
+            "r": "E",
+            "opp": "Coritiba",
+            "score": "1–1",
+            "date": "12/10 · 16:00"
+          },
+          {
+            "r": "V",
+            "opp": "Chapecoense",
+            "score": "1–0",
+            "date": "17/10 · 18:00"
+          }
+        ]
+      },
+      "differences": []
+    },
+    {
+      "code": "CFC",
+      "pass": true,
+      "fresh": {
+        "code": "CFC",
+        "pts": 39,
+        "j": 31,
+        "v": 10,
+        "e": 9,
+        "d": 12,
+        "gp": 38,
+        "gc": 49,
+        "recent": [
+          {
+            "result": "E",
+            "opp": "Athletico-PR",
+            "score": "3–3"
+          },
+          {
+            "result": "D",
+            "opp": "Vasco",
+            "score": "0–5"
+          },
+          {
+            "result": "D",
+            "opp": "Fluminense",
+            "score": "0–4"
+          },
+          {
+            "result": "E",
+            "opp": "Botafogo",
+            "score": "1–1"
+          },
+          {
+            "result": "D",
+            "opp": "Atlético-MG",
+            "score": "0–1"
+          }
+        ],
+        "pos": 12
+      },
+      "site": {
+        "code": "CFC",
+        "name": "Coritiba",
+        "pts": 39,
+        "j": 31,
+        "v": 10,
+        "e": 9,
+        "d": 12,
+        "gp": 38,
+        "gc": 49,
+        "form": "EDDED",
+        "scorers": [
+          "Breno|8",
+          "Pedro Rocha|8",
+          "Joaquín Lavega|5"
+        ],
+        "assists": [
+          "Josué|10",
+          "Breno Lopes|2",
+          "João Pedro Chermont|2"
+        ],
+        "next": "Grêmio",
+        "venue": "C",
+        "date": "26/10 · 19:30",
+        "pos": 12,
+        "games": [
+          {
+            "r": "E",
+            "opp": "Athletico-PR",
+            "score": "3–3",
+            "date": "11/09 · 21:00"
+          },
+          {
+            "r": "D",
+            "opp": "Vasco",
+            "score": "0–5",
+            "date": "19/09 · 20:30"
+          },
+          {
+            "r": "D",
+            "opp": "Fluminense",
+            "score": "0–4",
+            "date": "08/10 · 21:30"
+          },
+          {
+            "r": "E",
+            "opp": "Botafogo",
+            "score": "1–1",
+            "date": "12/10 · 16:00"
+          },
+          {
+            "r": "D",
+            "opp": "Atlético-MG",
+            "score": "0–1",
+            "date": "17/10 · 18:30"
+          }
+        ]
+      },
+      "differences": []
+    },
+    {
+      "code": "VIT",
+      "pass": true,
+      "fresh": {
+        "code": "VIT",
+        "pts": 37,
+        "j": 31,
+        "v": 10,
+        "e": 7,
+        "d": 14,
+        "gp": 34,
+        "gc": 45,
+        "recent": [
+          {
+            "result": "E",
+            "opp": "Mirassol",
+            "score": "2–2"
+          },
+          {
+            "result": "D",
+            "opp": "Cruzeiro",
+            "score": "1–3"
+          },
+          {
+            "result": "V",
+            "opp": "Chapecoense",
+            "score": "4–0"
+          },
+          {
+            "result": "D",
+            "opp": "São Paulo",
+            "score": "1–2"
+          },
+          {
+            "result": "E",
+            "opp": "Corinthians",
+            "score": "1–1"
+          }
+        ],
+        "pos": 13
+      },
+      "site": {
+        "code": "VIT",
+        "name": "Vitória",
+        "pts": 37,
+        "j": 31,
+        "v": 10,
+        "e": 7,
+        "d": 14,
+        "gp": 34,
+        "gc": 45,
+        "form": "EDVDE",
+        "scorers": [
+          "Renê|10",
+          "Erick|5",
+          "Matheus|5"
+        ],
+        "assists": [
+          "Erick|5",
+          "Matheuzinho|4",
+          "Gabriel Baralhas|3"
+        ],
+        "next": "Athletico-PR",
+        "venue": "C",
+        "date": "24/10 · 16:30",
+        "pos": 13,
+        "games": [
+          {
+            "r": "E",
+            "opp": "Mirassol",
+            "score": "2–2",
+            "date": "13/09 · 16:00"
+          },
+          {
+            "r": "D",
+            "opp": "Cruzeiro",
+            "score": "1–3",
+            "date": "20/09 · 16:00"
+          },
+          {
+            "r": "V",
+            "opp": "Chapecoense",
+            "score": "4–0",
+            "date": "07/10 · 20:00"
+          },
+          {
+            "r": "D",
+            "opp": "São Paulo",
+            "score": "1–2",
+            "date": "10/10 · 21:00"
+          },
+          {
+            "r": "E",
+            "opp": "Corinthians",
+            "score": "1–1",
+            "date": "19/10 · 20:00"
+          }
+        ]
+      },
+      "differences": []
+    },
+    {
+      "code": "MIR",
+      "pass": true,
+      "fresh": {
+        "code": "MIR",
+        "pts": 36,
+        "j": 31,
+        "v": 9,
+        "e": 9,
+        "d": 13,
+        "gp": 36,
+        "gc": 44,
+        "recent": [
+          {
+            "result": "E",
+            "opp": "Vitória",
+            "score": "2–2"
+          },
+          {
+            "result": "V",
+            "opp": "Botafogo",
+            "score": "2–0"
+          },
+          {
+            "result": "E",
+            "opp": "Bragantino",
+            "score": "1–1"
+          },
+          {
+            "result": "D",
+            "opp": "Bahia",
+            "score": "0–1"
+          },
+          {
+            "result": "V",
+            "opp": "Internacional",
+            "score": "2–0"
+          }
+        ],
+        "pos": 14
+      },
+      "site": {
+        "code": "MIR",
+        "name": "Mirassol",
+        "pts": 36,
+        "j": 31,
+        "v": 9,
+        "e": 9,
+        "d": 13,
+        "gp": 36,
+        "gc": 44,
+        "form": "EVEDV",
+        "scorers": [
+          "Carlos Eduardo|8",
+          "Igor Marques|4",
+          "André Luis|3"
+        ],
+        "assists": [
+          "Alesson|5",
+          "Igor Formiga|5",
+          "Reinaldo|4"
+        ],
+        "next": "São Paulo",
+        "venue": "C",
+        "date": "24/10 · 16:30",
+        "pos": 14,
+        "games": [
+          {
+            "r": "E",
+            "opp": "Vitória",
+            "score": "2–2",
+            "date": "13/09 · 16:00"
+          },
+          {
+            "r": "V",
+            "opp": "Botafogo",
+            "score": "2–0",
+            "date": "19/09 · 17:00"
+          },
+          {
+            "r": "E",
+            "opp": "Bragantino",
+            "score": "1–1",
+            "date": "07/10 · 19:30"
+          },
+          {
+            "r": "D",
+            "opp": "Bahia",
+            "score": "0–1",
+            "date": "11/10 · 19:30"
+          },
+          {
+            "r": "V",
+            "opp": "Internacional",
+            "score": "2–0",
+            "date": "16/10 · 20:00"
+          }
+        ]
+      },
+      "differences": []
+    },
+    {
+      "code": "VAS",
+      "pass": true,
+      "fresh": {
+        "code": "VAS",
+        "pts": 35,
+        "j": 30,
+        "v": 9,
+        "e": 8,
+        "d": 13,
+        "gp": 36,
+        "gc": 43,
+        "recent": [
+          {
+            "result": "V",
+            "opp": "Grêmio",
+            "score": "2–1"
+          },
+          {
+            "result": "V",
+            "opp": "Coritiba",
+            "score": "5–0"
+          },
+          {
+            "result": "V",
+            "opp": "Botafogo",
+            "score": "2–1"
+          },
+          {
+            "result": "E",
+            "opp": "Remo",
+            "score": "0–0"
+          },
+          {
+            "result": "D",
+            "opp": "São Paulo",
+            "score": "0–1"
+          }
+        ],
+        "pos": 15
+      },
+      "site": {
+        "code": "VAS",
+        "name": "Vasco",
+        "pts": 35,
+        "j": 30,
+        "v": 9,
+        "e": 8,
+        "d": 13,
+        "gp": 36,
+        "gc": 43,
+        "form": "VVVED",
+        "scorers": [
+          "Andrés Gómez|5",
+          "Thiago Mendes|5",
+          "David|4"
+        ],
+        "assists": [
+          "Cuiabano|4",
+          "José Rodríguez|4",
+          "Andrés Gómez|2"
+        ],
+        "next": "Corinthians",
+        "venue": "C",
+        "date": "24/10 · 18:30",
+        "pos": 15,
+        "games": [
+          {
+            "r": "V",
+            "opp": "Grêmio",
+            "score": "2–1",
+            "date": "12/09 · 16:00"
+          },
+          {
+            "r": "V",
+            "opp": "Coritiba",
+            "score": "5–0",
+            "date": "19/09 · 20:30"
+          },
+          {
+            "r": "V",
+            "opp": "Botafogo",
+            "score": "2–1",
+            "date": "07/10 · 20:30"
+          },
+          {
+            "r": "E",
+            "opp": "Remo",
+            "score": "0–0",
+            "date": "10/10 · 18:00"
+          },
+          {
+            "r": "D",
+            "opp": "São Paulo",
+            "score": "0–1",
+            "date": "17/10 · 21:00"
+          }
+        ]
+      },
+      "differences": []
+    },
+    {
+      "code": "COR",
+      "pass": true,
+      "fresh": {
+        "code": "COR",
+        "pts": 33,
+        "j": 31,
+        "v": 8,
+        "e": 9,
+        "d": 14,
+        "gp": 32,
+        "gc": 39,
+        "recent": [
+          {
+            "result": "D",
+            "opp": "Flamengo",
+            "score": "1–2"
+          },
+          {
+            "result": "D",
+            "opp": "Fluminense",
+            "score": "1–3"
+          },
+          {
+            "result": "D",
+            "opp": "Internacional",
+            "score": "1–2"
+          },
+          {
+            "result": "D",
+            "opp": "Palmeiras",
+            "score": "1–4"
+          },
+          {
+            "result": "E",
+            "opp": "Vitória",
+            "score": "1–1"
+          }
+        ],
+        "pos": 16
+      },
+      "site": {
+        "code": "COR",
+        "name": "Corinthians",
+        "pts": 33,
+        "j": 31,
+        "v": 8,
+        "e": 9,
+        "d": 14,
+        "gp": 32,
+        "gc": 39,
+        "form": "DDDDE",
+        "scorers": [
+          "André|4",
+          "Yuri Alberto|4",
+          "Gustavo Henrique|3"
+        ],
+        "assists": [
+          "Rodrigo Garro|6",
+          "André|2",
+          "Kaio César|2"
+        ],
+        "next": "Vasco",
+        "venue": "F",
+        "date": "24/10 · 18:30",
+        "pos": 16,
+        "games": [
+          {
+            "r": "D",
+            "opp": "Flamengo",
+            "score": "1–2",
+            "date": "13/09 · 17:30"
+          },
+          {
+            "r": "D",
+            "opp": "Fluminense",
+            "score": "1–3",
+            "date": "20/09 · 16:00"
+          },
+          {
+            "r": "D",
+            "opp": "Internacional",
+            "score": "1–2",
+            "date": "07/10 · 19:30"
+          },
+          {
+            "r": "D",
+            "opp": "Palmeiras",
+            "score": "1–4",
+            "date": "11/10 · 17:30"
+          },
+          {
+            "r": "E",
+            "opp": "Vitória",
+            "score": "1–1",
+            "date": "19/10 · 20:00"
+          }
+        ]
+      },
+      "differences": []
+    },
+    {
+      "code": "INT",
+      "pass": true,
+      "fresh": {
+        "code": "INT",
+        "pts": 32,
+        "j": 31,
+        "v": 7,
+        "e": 11,
+        "d": 13,
+        "gp": 33,
+        "gc": 40,
+        "recent": [
+          {
+            "result": "V",
+            "opp": "Chapecoense",
+            "score": "2–1"
+          },
+          {
+            "result": "D",
+            "opp": "São Paulo",
+            "score": "0–1"
+          },
+          {
+            "result": "V",
+            "opp": "Corinthians",
+            "score": "2–1"
+          },
+          {
+            "result": "E",
+            "opp": "Grêmio",
+            "score": "1–1"
+          },
+          {
+            "result": "D",
+            "opp": "Mirassol",
+            "score": "0–2"
+          }
+        ],
+        "pos": 17
+      },
+      "site": {
+        "code": "INT",
+        "name": "Internacional",
+        "pts": 32,
+        "j": 31,
+        "v": 7,
+        "e": 11,
+        "d": 13,
+        "gp": 33,
+        "gc": 40,
+        "form": "VDVED",
+        "scorers": [
+          "Johan Carbonero|7",
+          "Alan Patrick|5",
+          "Alexander Bernabei|4"
+        ],
+        "assists": [
+          "Alerrandro|4",
+          "Johan Carbonero|4",
+          "Vitinho|3"
+        ],
+        "next": "Botafogo",
+        "venue": "C",
+        "date": "24/10 · 16:30",
+        "pos": 17,
+        "games": [
+          {
+            "r": "V",
+            "opp": "Chapecoense",
+            "score": "2–1",
+            "date": "12/09 · 17:00"
+          },
+          {
+            "r": "D",
+            "opp": "São Paulo",
+            "score": "0–1",
+            "date": "19/09 · 21:00"
+          },
+          {
+            "r": "V",
+            "opp": "Corinthians",
+            "score": "2–1",
+            "date": "07/10 · 19:30"
+          },
+          {
+            "r": "E",
+            "opp": "Grêmio",
+            "score": "1–1",
+            "date": "11/10 · 17:30"
+          },
+          {
+            "r": "D",
+            "opp": "Mirassol",
+            "score": "0–2",
+            "date": "16/10 · 20:00"
+          }
+        ]
+      },
+      "differences": []
+    },
+    {
+      "code": "GRE",
+      "pass": true,
+      "fresh": {
+        "code": "GRE",
+        "pts": 31,
+        "j": 31,
+        "v": 7,
+        "e": 10,
+        "d": 14,
+        "gp": 34,
+        "gc": 44,
+        "recent": [
+          {
+            "result": "D",
+            "opp": "Botafogo",
+            "score": "2–3"
+          },
+          {
+            "result": "E",
+            "opp": "Palmeiras",
+            "score": "0–0"
+          },
+          {
+            "result": "E",
+            "opp": "Remo",
+            "score": "1–1"
+          },
+          {
+            "result": "E",
+            "opp": "Internacional",
+            "score": "1–1"
+          },
+          {
+            "result": "D",
+            "opp": "Cruzeiro",
+            "score": "2–4"
+          }
+        ],
+        "pos": 18
+      },
+      "site": {
+        "code": "GRE",
+        "name": "Grêmio",
+        "pts": 31,
+        "j": 31,
+        "v": 7,
+        "e": 10,
+        "d": 14,
+        "gp": 34,
+        "gc": 44,
+        "form": "DEEED",
+        "scorers": [
+          "Carlos Vinícius|11",
+          "Cristian Pavón|3",
+          "Gustavo Martins|3"
+        ],
+        "assists": [
+          "Cristian Pavón|4",
+          "Francis Amuzu|3",
+          "José Enamorado|3"
+        ],
+        "next": "Coritiba",
+        "venue": "F",
+        "date": "26/10 · 19:30",
+        "pos": 18,
+        "games": [
+          {
+            "r": "D",
+            "opp": "Botafogo",
+            "score": "2–3",
+            "date": "16/09 · 19:30"
+          },
+          {
+            "r": "E",
+            "opp": "Palmeiras",
+            "score": "0–0",
+            "date": "20/09 · 11:00"
+          },
+          {
+            "r": "E",
+            "opp": "Remo",
+            "score": "1–1",
+            "date": "07/10 · 19:30"
+          },
+          {
+            "r": "E",
+            "opp": "Internacional",
+            "score": "1–1",
+            "date": "11/10 · 17:30"
+          },
+          {
+            "r": "D",
+            "opp": "Cruzeiro",
+            "score": "2–4",
+            "date": "18/10 · 16:00"
+          }
+        ]
+      },
+      "differences": []
+    },
+    {
+      "code": "REM",
+      "pass": true,
+      "fresh": {
+        "code": "REM",
+        "pts": 26,
+        "j": 31,
+        "v": 5,
+        "e": 11,
+        "d": 15,
+        "gp": 34,
+        "gc": 49,
+        "recent": [
+          {
+            "result": "D",
+            "opp": "Bahia",
+            "score": "1–2"
+          },
+          {
+            "result": "D",
+            "opp": "Santos",
+            "score": "1–2"
+          },
+          {
+            "result": "E",
+            "opp": "Grêmio",
+            "score": "1–1"
+          },
+          {
+            "result": "E",
+            "opp": "Vasco",
+            "score": "0–0"
+          },
+          {
+            "result": "E",
+            "opp": "Bragantino",
+            "score": "1–1"
+          }
+        ],
+        "pos": 19
+      },
+      "site": {
+        "code": "REM",
+        "name": "Remo",
+        "pts": 26,
+        "j": 31,
+        "v": 5,
+        "e": 11,
+        "d": 15,
+        "gp": 34,
+        "gc": 49,
+        "form": "DDEEE",
+        "scorers": [
+          "Jajá|8",
+          "Alef Manga|5",
+          "Gabriel Taliari|4"
+        ],
+        "assists": [
+          "Alef Manga|3",
+          "Vitor Bueno|3",
+          "Gabriel Taliari|2"
+        ],
+        "next": "Cruzeiro",
+        "venue": "F",
+        "date": "23/10 · 20:00",
+        "pos": 19,
+        "games": [
+          {
+            "r": "D",
+            "opp": "Bahia",
+            "score": "1–2",
+            "date": "14/09 · 20:00"
+          },
+          {
+            "r": "D",
+            "opp": "Santos",
+            "score": "1–2",
+            "date": "19/09 · 18:30"
+          },
+          {
+            "r": "E",
+            "opp": "Grêmio",
+            "score": "1–1",
+            "date": "07/10 · 19:30"
+          },
+          {
+            "r": "E",
+            "opp": "Vasco",
+            "score": "0–0",
+            "date": "10/10 · 18:00"
+          },
+          {
+            "r": "E",
+            "opp": "Bragantino",
+            "score": "1–1",
+            "date": "18/10 · 19:30"
+          }
+        ]
+      },
+      "differences": []
+    },
+    {
+      "code": "CHA",
+      "pass": true,
+      "fresh": {
+        "code": "CHA",
+        "pts": 18,
+        "j": 30,
+        "v": 3,
+        "e": 9,
+        "d": 18,
+        "gp": 30,
+        "gc": 62,
+        "recent": [
+          {
+            "result": "D",
+            "opp": "Internacional",
+            "score": "1–2"
+          },
+          {
+            "result": "E",
+            "opp": "Atlético-MG",
+            "score": "1–1"
+          },
+          {
+            "result": "D",
+            "opp": "Vitória",
+            "score": "0–4"
+          },
+          {
+            "result": "D",
+            "opp": "Athletico-PR",
+            "score": "1–4"
+          },
+          {
+            "result": "D",
+            "opp": "Botafogo",
+            "score": "0–1"
+          }
+        ],
+        "pos": 20
+      },
+      "site": {
+        "code": "CHA",
+        "name": "Chapecoense",
+        "pts": 18,
+        "j": 30,
+        "v": 3,
+        "e": 9,
+        "d": 18,
+        "gp": 30,
+        "gc": 62,
+        "form": "DEDDD",
+        "scorers": [
+          "Marcinho|5",
+          "Maurício Garcez|3",
+          "Túlio Eduardo Silva De Oliveira|3"
+        ],
+        "assists": [
+          "Giovanni Augusto|5",
+          "Bruno Pacheco|3",
+          "Yannick Bolasie|3"
+        ],
+        "next": "Fluminense",
+        "venue": "C",
+        "date": "24/10 · 19:30",
+        "pos": 20,
+        "games": [
+          {
+            "r": "D",
+            "opp": "Internacional",
+            "score": "1–2",
+            "date": "12/09 · 17:00"
+          },
+          {
+            "r": "E",
+            "opp": "Atlético-MG",
+            "score": "1–1",
+            "date": "19/09 · 16:00"
+          },
+          {
+            "r": "D",
+            "opp": "Vitória",
+            "score": "0–4",
+            "date": "07/10 · 20:00"
+          },
+          {
+            "r": "D",
+            "opp": "Athletico-PR",
+            "score": "1–4",
+            "date": "12/10 · 19:30"
+          },
+          {
+            "r": "D",
+            "opp": "Botafogo",
+            "score": "0–1",
+            "date": "17/10 · 18:00"
+          }
+        ]
+      },
+      "differences": []
+    }
+  ],
+  "scorerRows": [
+    {
+      "code": "FLA",
+      "expected": [
+        "Pedro|16",
+        "Samuel Lino|9",
+        "Lucas Paquetá|7"
+      ],
+      "site": [
+        "Pedro|16",
+        "Samuel Lino|9",
+        "Lucas Paquetá|7"
+      ],
+      "pass": true
+    },
+    {
+      "code": "PAL",
+      "expected": [
+        "José Manuel López|9",
+        "Maurício|8",
+        "Vitor Roque|5"
+      ],
+      "site": [
+        "José Manuel López|9",
+        "Maurício|8",
+        "Vitor Roque|5"
+      ],
+      "pass": true
+    },
+    {
+      "code": "CAP",
+      "expected": [
+        "Kevin Viveros|21",
+        "Leozinho|5",
+        "Stiven Mendoza|5"
+      ],
+      "site": [
+        "Kevin Viveros|21",
+        "Leozinho|5",
+        "Stiven Mendoza|5"
+      ],
+      "pass": true
+    },
+    {
+      "code": "FLU",
+      "expected": [
+        "John Kennedy|9",
+        "Hulk|6",
+        "Jefferson Savarino|6"
+      ],
+      "site": [
+        "John Kennedy|9",
+        "Hulk|6",
+        "Jefferson Savarino|6"
+      ],
+      "pass": true
+    },
+    {
+      "code": "CRU",
+      "expected": [
+        "Kaio Jorge|11",
+        "Matheus Pereira|9",
+        "Christian|5"
+      ],
+      "site": [
+        "Kaio Jorge|11",
+        "Matheus Pereira|9",
+        "Christian|5"
+      ],
+      "pass": true
+    },
+    {
+      "code": "CAM",
+      "expected": [
+        "Tomás Cuello|5",
+        "Bernard|4",
+        "Reiner|4"
+      ],
+      "site": [
+        "Tomás Cuello|5",
+        "Bernard|4",
+        "Reiner|4"
+      ],
+      "pass": true
+    },
+    {
+      "code": "BAH",
+      "expected": [
+        "Luciano Juba|10",
+        "Erick|4",
+        "Everaldo|4"
+      ],
+      "site": [
+        "Luciano Juba|10",
+        "Erick|4",
+        "Everaldo|4"
+      ],
+      "pass": true
+    },
+    {
+      "code": "SAN",
+      "expected": [
+        "Gabriel Barbosa|15",
+        "Neymar|8",
+        "Álvaro Barreal|5"
+      ],
+      "site": [
+        "Gabriel Barbosa|15",
+        "Neymar|8",
+        "Álvaro Barreal|5"
+      ],
+      "pass": true
+    },
+    {
+      "code": "SAO",
+      "expected": [
+        "Jonathan Calleri|10",
+        "Luciano|9",
+        "Ferreira|4"
+      ],
+      "site": [
+        "Jonathan Calleri|10",
+        "Luciano|9",
+        "Ferreira|4"
+      ],
+      "pass": true
+    },
+    {
+      "code": "RBB",
+      "expected": [
+        "Lucas Barbosa|7",
+        "Isidro Pitta|5",
+        "Fernando|3"
+      ],
+      "site": [
+        "Lucas Barbosa|7",
+        "Isidro Pitta|5",
+        "Fernando|3"
+      ],
+      "pass": true
+    },
+    {
+      "code": "BOT",
+      "expected": [
+        "Danilo Santos|10",
+        "Arthur Cabral|7",
+        "Alex Telles|4"
+      ],
+      "site": [
+        "Danilo Santos|10",
+        "Arthur Cabral|7",
+        "Alex Telles|4"
+      ],
+      "pass": true
+    },
+    {
+      "code": "CFC",
+      "expected": [
+        "Breno|8",
+        "Pedro Rocha|8",
+        "Joaquín Lavega|5"
+      ],
+      "site": [
+        "Breno|8",
+        "Pedro Rocha|8",
+        "Joaquín Lavega|5"
+      ],
+      "pass": true
+    },
+    {
+      "code": "VIT",
+      "expected": [
+        "Renê|10",
+        "Erick|5",
+        "Matheus|5"
+      ],
+      "site": [
+        "Renê|10",
+        "Erick|5",
+        "Matheus|5"
+      ],
+      "pass": true
+    },
+    {
+      "code": "MIR",
+      "expected": [
+        "Carlos Eduardo|8",
+        "Igor Marques|4",
+        "André Luis|3"
+      ],
+      "site": [
+        "Carlos Eduardo|8",
+        "Igor Marques|4",
+        "André Luis|3"
+      ],
+      "pass": true
+    },
+    {
+      "code": "VAS",
+      "expected": [
+        "Andrés Gómez|5",
+        "Thiago Mendes|5",
+        "David|4"
+      ],
+      "site": [
+        "Andrés Gómez|5",
+        "Thiago Mendes|5",
+        "David|4"
+      ],
+      "pass": true
+    },
+    {
+      "code": "COR",
+      "expected": [
+        "André|4",
+        "Yuri Alberto|4",
+        "Gustavo Henrique|3"
+      ],
+      "site": [
+        "André|4",
+        "Yuri Alberto|4",
+        "Gustavo Henrique|3"
+      ],
+      "pass": true
+    },
+    {
+      "code": "INT",
+      "expected": [
+        "Johan Carbonero|7",
+        "Alan Patrick|5",
+        "Alexander Bernabei|4"
+      ],
+      "site": [
+        "Johan Carbonero|7",
+        "Alan Patrick|5",
+        "Alexander Bernabei|4"
+      ],
+      "pass": true
+    },
+    {
+      "code": "GRE",
+      "expected": [
+        "Carlos Vinícius|11",
+        "Cristian Pavón|3",
+        "Gustavo Martins|3"
+      ],
+      "site": [
+        "Carlos Vinícius|11",
+        "Cristian Pavón|3",
+        "Gustavo Martins|3"
+      ],
+      "pass": true
+    },
+    {
+      "code": "REM",
+      "expected": [
+        "Jajá|8",
+        "Alef Manga|5",
+        "Gabriel Taliari|4"
+      ],
+      "site": [
+        "Jajá|8",
+        "Alef Manga|5",
+        "Gabriel Taliari|4"
+      ],
+      "pass": true
+    },
+    {
+      "code": "CHA",
+      "expected": [
+        "Marcinho|5",
+        "Maurício Garcez|3",
+        "Túlio Eduardo Silva De Oliveira|3"
+      ],
+      "site": [
+        "Marcinho|5",
+        "Maurício Garcez|3",
+        "Túlio Eduardo Silva De Oliveira|3"
+      ],
+      "pass": true
+    }
+  ],
+  "assistRows": [
+    {
+      "code": "FLA",
+      "expected": [
+        "Jorge Carrascal|8",
+        "Samuel Lino|8",
+        "Pedro|6"
+      ],
+      "site": [
+        "Jorge Carrascal|8",
+        "Samuel Lino|8",
+        "Pedro|6"
+      ],
+      "pass": true
+    },
+    {
+      "code": "PAL",
+      "expected": [
+        "Andreas Pereira|10",
+        "Joaquín Piquerez|4",
+        "Allan|3"
+      ],
+      "site": [
+        "Andreas Pereira|10",
+        "Joaquín Piquerez|4",
+        "Allan|3"
+      ],
+      "pass": true
+    },
+    {
+      "code": "CAP",
+      "expected": [
+        "Gastón Benavídez|5",
+        "João Cruz|5",
+        "Lucas Esquivel|5"
+      ],
+      "site": [
+        "Gastón Benavídez|5",
+        "João Cruz|5",
+        "Lucas Esquivel|5"
+      ],
+      "pass": true
+    },
+    {
+      "code": "FLU",
+      "expected": [
+        "Lucho Acosta|5",
+        "Kevin Serna|4",
+        "Agustín Canobbio|3"
+      ],
+      "site": [
+        "Lucho Acosta|5",
+        "Kevin Serna|4",
+        "Agustín Canobbio|3"
+      ],
+      "pass": true
+    },
+    {
+      "code": "CRU",
+      "expected": [
+        "Matheus Pereira|6",
+        "Fágner|4",
+        "Gerson|4"
+      ],
+      "site": [
+        "Matheus Pereira|6",
+        "Fágner|4",
+        "Gerson|4"
+      ],
+      "pass": true
+    },
+    {
+      "code": "CAM",
+      "expected": [
+        "Alan Minda|3",
+        "Bernard|3",
+        "Hulk|3"
+      ],
+      "site": [
+        "Alan Minda|3",
+        "Bernard|3",
+        "Hulk|3"
+      ],
+      "pass": true
+    },
+    {
+      "code": "BAH",
+      "expected": [
+        "Éverton Ribeiro|4",
+        "Rodrigo Nestor|4",
+        "Jean Lucas|3"
+      ],
+      "site": [
+        "Éverton Ribeiro|4",
+        "Rodrigo Nestor|4",
+        "Jean Lucas|3"
+      ],
+      "pass": true
+    },
+    {
+      "code": "SAN",
+      "expected": [
+        "Gabriel Barbosa|3",
+        "Gabriel Bontempo|3",
+        "Neymar|3"
+      ],
+      "site": [
+        "Gabriel Barbosa|3",
+        "Gabriel Bontempo|3",
+        "Neymar|3"
+      ],
+      "pass": true
+    },
+    {
+      "code": "SAO",
+      "expected": [
+        "Wendell|3",
+        "Artur|2",
+        "Lucas Ramon|2"
+      ],
+      "site": [
+        "Wendell|3",
+        "Artur|2",
+        "Lucas Ramon|2"
+      ],
+      "pass": true
+    },
+    {
+      "code": "RBB",
+      "expected": [
+        "Henry Mosquera|4",
+        "Isidro Pitta|3",
+        "Agustín Sant'Anna|2"
+      ],
+      "site": [
+        "Henry Mosquera|4",
+        "Isidro Pitta|3",
+        "Agustín Sant'Anna|2"
+      ],
+      "pass": true
+    },
+    {
+      "code": "BOT",
+      "expected": [
+        "Álvaro Montoro|5",
+        "Alex Telles|4",
+        "Danilo|3"
+      ],
+      "site": [
+        "Álvaro Montoro|5",
+        "Alex Telles|4",
+        "Danilo|3"
+      ],
+      "pass": true
+    },
+    {
+      "code": "CFC",
+      "expected": [
+        "Josué|10",
+        "Breno Lopes|2",
+        "João Pedro Chermont|2"
+      ],
+      "site": [
+        "Josué|10",
+        "Breno Lopes|2",
+        "João Pedro Chermont|2"
+      ],
+      "pass": true
+    },
+    {
+      "code": "VIT",
+      "expected": [
+        "Erick|5",
+        "Matheuzinho|4",
+        "Gabriel Baralhas|3"
+      ],
+      "site": [
+        "Erick|5",
+        "Matheuzinho|4",
+        "Gabriel Baralhas|3"
+      ],
+      "pass": true
+    },
+    {
+      "code": "MIR",
+      "expected": [
+        "Alesson|5",
+        "Igor Formiga|5",
+        "Reinaldo|4"
+      ],
+      "site": [
+        "Alesson|5",
+        "Igor Formiga|5",
+        "Reinaldo|4"
+      ],
+      "pass": true
+    },
+    {
+      "code": "VAS",
+      "expected": [
+        "Cuiabano|4",
+        "José Rodríguez|4",
+        "Andrés Gómez|2"
+      ],
+      "site": [
+        "Cuiabano|4",
+        "José Rodríguez|4",
+        "Andrés Gómez|2"
+      ],
+      "pass": true
+    },
+    {
+      "code": "COR",
+      "expected": [
+        "Rodrigo Garro|6",
+        "André|2",
+        "Kaio César|2"
+      ],
+      "site": [
+        "Rodrigo Garro|6",
+        "André|2",
+        "Kaio César|2"
+      ],
+      "pass": true
+    },
+    {
+      "code": "INT",
+      "expected": [
+        "Alerrandro|4",
+        "Johan Carbonero|4",
+        "Vitinho|3"
+      ],
+      "site": [
+        "Alerrandro|4",
+        "Johan Carbonero|4",
+        "Vitinho|3"
+      ],
+      "pass": true
+    },
+    {
+      "code": "GRE",
+      "expected": [
+        "Cristian Pavón|4",
+        "Francis Amuzu|3",
+        "José Enamorado|3"
+      ],
+      "site": [
+        "Cristian Pavón|4",
+        "Francis Amuzu|3",
+        "José Enamorado|3"
+      ],
+      "pass": true
+    },
+    {
+      "code": "REM",
+      "expected": [
+        "Alef Manga|3",
+        "Vitor Bueno|3",
+        "Gabriel Taliari|2"
+      ],
+      "site": [
+        "Alef Manga|3",
+        "Vitor Bueno|3",
+        "Gabriel Taliari|2"
+      ],
+      "pass": true
+    },
+    {
+      "code": "CHA",
+      "expected": [
+        "Giovanni Augusto|5",
+        "Bruno Pacheco|3",
+        "Yannick Bolasie|3"
+      ],
+      "site": [
+        "Giovanni Augusto|5",
+        "Bruno Pacheco|3",
+        "Yannick Bolasie|3"
+      ],
+      "pass": true
+    }
+  ],
+  "lastRows": [
+    {
+      "code": "REM",
+      "expected": "Bragantino 1–1",
+      "site": "Bragantino 1–1",
+      "pass": true
+    },
+    {
+      "code": "RBB",
+      "expected": "Remo 1–1",
+      "site": "Remo 1–1",
+      "pass": true
+    },
+    {
+      "code": "BAH",
+      "expected": "Flamengo 0–3",
+      "site": "Flamengo 0–3",
+      "pass": true
+    },
+    {
+      "code": "FLA",
+      "expected": "Bahia 3–0",
+      "site": "Bahia 3–0",
+      "pass": true
+    },
+    {
+      "code": "GRE",
+      "expected": "Cruzeiro 2–4",
+      "site": "Cruzeiro 2–4",
+      "pass": true
+    },
+    {
+      "code": "CRU",
+      "expected": "Grêmio 4–2",
+      "site": "Grêmio 4–2",
+      "pass": true
+    },
+    {
+      "code": "FLU",
+      "expected": "Santos 1–2",
+      "site": "Santos 1–2",
+      "pass": true
+    },
+    {
+      "code": "SAN",
+      "expected": "Fluminense 2–1",
+      "site": "Fluminense 2–1",
+      "pass": true
+    },
+    {
+      "code": "SAO",
+      "expected": "Vasco 1–0",
+      "site": "Vasco 1–0",
+      "pass": true
+    },
+    {
+      "code": "VAS",
+      "expected": "São Paulo 0–1",
+      "site": "São Paulo 0–1",
+      "pass": true
+    },
+    {
+      "code": "CAP",
+      "expected": "Palmeiras 0–2",
+      "site": "Palmeiras 0–2",
+      "pass": true
+    },
+    {
+      "code": "PAL",
+      "expected": "Athletico-PR 2–0",
+      "site": "Athletico-PR 2–0",
+      "pass": true
+    },
+    {
+      "code": "CAM",
+      "expected": "Coritiba 1–0",
+      "site": "Coritiba 1–0",
+      "pass": true
+    },
+    {
+      "code": "CFC",
+      "expected": "Atlético-MG 0–1",
+      "site": "Atlético-MG 0–1",
+      "pass": true
+    },
+    {
+      "code": "BOT",
+      "expected": "Chapecoense 1–0",
+      "site": "Chapecoense 1–0",
+      "pass": true
+    },
+    {
+      "code": "CHA",
+      "expected": "Botafogo 0–1",
+      "site": "Botafogo 0–1",
+      "pass": true
+    },
+    {
+      "code": "MIR",
+      "expected": "Internacional 2–0",
+      "site": "Internacional 2–0",
+      "pass": true
+    },
+    {
+      "code": "INT",
+      "expected": "Mirassol 0–2",
+      "site": "Mirassol 0–2",
+      "pass": true
+    },
+    {
+      "code": "COR",
+      "expected": "Vitória 1–1",
+      "site": "Vitória 1–1",
+      "pass": true
+    },
+    {
+      "code": "VIT",
+      "expected": "Corinthians 1–1",
+      "site": "Corinthians 1–1",
+      "pass": true
+    }
+  ],
+  "nextRows": [
+    {
+      "code": "CRU",
+      "expected": "Remo · C",
+      "site": "Remo · C",
+      "pass": true
+    },
+    {
+      "code": "REM",
+      "expected": "Cruzeiro · F",
+      "site": "Cruzeiro · F",
+      "pass": true
+    },
+    {
+      "code": "MIR",
+      "expected": "São Paulo · C",
+      "site": "São Paulo · C",
+      "pass": true
+    },
+    {
+      "code": "SAO",
+      "expected": "Mirassol · F",
+      "site": "Mirassol · F",
+      "pass": true
+    },
+    {
+      "code": "INT",
+      "expected": "Botafogo · C",
+      "site": "Botafogo · C",
+      "pass": true
+    },
+    {
+      "code": "BOT",
+      "expected": "Internacional · F",
+      "site": "Internacional · F",
+      "pass": true
+    },
+    {
+      "code": "VIT",
+      "expected": "Athletico-PR · C",
+      "site": "Athletico-PR · C",
+      "pass": true
+    },
+    {
+      "code": "CAP",
+      "expected": "Vitória · F",
+      "site": "Vitória · F",
+      "pass": true
+    },
+    {
+      "code": "VAS",
+      "expected": "Corinthians · C",
+      "site": "Corinthians · C",
+      "pass": true
+    },
+    {
+      "code": "COR",
+      "expected": "Vasco · F",
+      "site": "Vasco · F",
+      "pass": true
+    },
+    {
+      "code": "PAL",
+      "expected": "Bragantino · C",
+      "site": "Bragantino · C",
+      "pass": true
+    },
+    {
+      "code": "RBB",
+      "expected": "Palmeiras · F",
+      "site": "Palmeiras · F",
+      "pass": true
+    },
+    {
+      "code": "CHA",
+      "expected": "Fluminense · C",
+      "site": "Fluminense · C",
+      "pass": true
+    },
+    {
+      "code": "FLU",
+      "expected": "Chapecoense · F",
+      "site": "Chapecoense · F",
+      "pass": true
+    },
+    {
+      "code": "SAN",
+      "expected": "Bahia · C",
+      "site": "Bahia · C",
+      "pass": true
+    },
+    {
+      "code": "BAH",
+      "expected": "Santos · F",
+      "site": "Santos · F",
+      "pass": true
+    },
+    {
+      "code": "CFC",
+      "expected": "Grêmio · C",
+      "site": "Grêmio · C",
+      "pass": true
+    },
+    {
+      "code": "GRE",
+      "expected": "Coritiba · F",
+      "site": "Coritiba · F",
+      "pass": true
+    },
+    {
+      "code": "FLA",
+      "expected": "Atlético-MG · C",
+      "site": "Atlético-MG · C",
+      "pass": true
+    },
+    {
+      "code": "CAM",
+      "expected": "Flamengo · F",
+      "site": "Flamengo · F",
+      "pass": true
+    }
+  ]
+}

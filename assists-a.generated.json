@@ -1,0 +1,342 @@
+{
+  "FLA": [
+    {
+      "name": "Jorge Carrascal",
+      "assists": 8,
+      "id": "208700"
+    },
+    {
+      "name": "Samuel Lino",
+      "assists": 8,
+      "id": "253937"
+    },
+    {
+      "name": "Pedro",
+      "assists": 6,
+      "id": "235017"
+    }
+  ],
+  "COR": [
+    {
+      "name": "Rodrigo Garro",
+      "assists": 6,
+      "id": "270562"
+    },
+    {
+      "name": "André",
+      "assists": 2,
+      "id": "409662"
+    },
+    {
+      "name": "Kaio César",
+      "assists": 2,
+      "id": null
+    }
+  ],
+  "INT": [
+    {
+      "name": "Alerrandro",
+      "assists": 4,
+      "id": null
+    },
+    {
+      "name": "Johan Carbonero",
+      "assists": 4,
+      "id": "270246"
+    },
+    {
+      "name": "Vitinho",
+      "assists": 3,
+      "id": "171652"
+    }
+  ],
+  "CRU": [
+    {
+      "name": "Matheus Pereira",
+      "assists": 6,
+      "id": "216098"
+    },
+    {
+      "name": "Fágner",
+      "assists": 4,
+      "id": null
+    },
+    {
+      "name": "Gerson",
+      "assists": 4,
+      "id": "210135"
+    }
+  ],
+  "SAO": [
+    {
+      "name": "Wendell",
+      "assists": 3,
+      "id": "199065"
+    },
+    {
+      "name": "Artur",
+      "assists": 2,
+      "id": "236596"
+    },
+    {
+      "name": "Lucas Ramon",
+      "assists": 2,
+      "id": "206953"
+    }
+  ],
+  "PAL": [
+    {
+      "name": "Andreas Pereira",
+      "assists": 10,
+      "id": "210143"
+    },
+    {
+      "name": "Joaquín Piquerez",
+      "assists": 4,
+      "id": "254007"
+    },
+    {
+      "name": "Allan",
+      "assists": 3,
+      "id": "223437"
+    }
+  ],
+  "SAN": [
+    {
+      "name": "Gabriel Barbosa",
+      "assists": 3,
+      "id": "182522"
+    },
+    {
+      "name": "Gabriel Bontempo",
+      "assists": 3,
+      "id": "399179"
+    },
+    {
+      "name": "Neymar",
+      "assists": 3,
+      "id": "132948"
+    }
+  ],
+  "FLU": [
+    {
+      "name": "Lucho Acosta",
+      "assists": 5,
+      "id": null
+    },
+    {
+      "name": "Kevin Serna",
+      "assists": 4,
+      "id": "287633"
+    },
+    {
+      "name": "Agustín Canobbio",
+      "assists": 3,
+      "id": "241466"
+    }
+  ],
+  "VAS": [
+    {
+      "name": "Cuiabano",
+      "assists": 4,
+      "id": "334756"
+    },
+    {
+      "name": "José Rodríguez",
+      "assists": 4,
+      "id": null
+    },
+    {
+      "name": "Andrés Gómez",
+      "assists": 2,
+      "id": "330924"
+    }
+  ],
+  "CFC": [
+    {
+      "name": "Josué",
+      "assists": 10,
+      "id": null
+    },
+    {
+      "name": "Breno Lopes",
+      "assists": 2,
+      "id": null
+    },
+    {
+      "name": "João Pedro Chermont",
+      "assists": 2,
+      "id": "371527"
+    }
+  ],
+  "VIT": [
+    {
+      "name": "Erick",
+      "assists": 5,
+      "id": "256044"
+    },
+    {
+      "name": "Matheuzinho",
+      "assists": 4,
+      "id": null
+    },
+    {
+      "name": "Gabriel Baralhas",
+      "assists": 3,
+      "id": "269852"
+    }
+  ],
+  "CAP": [
+    {
+      "name": "Gastón Benavídez",
+      "assists": 5,
+      "id": "287688"
+    },
+    {
+      "name": "João Cruz",
+      "assists": 5,
+      "id": "361359"
+    },
+    {
+      "name": "Lucas Esquivel",
+      "assists": 5,
+      "id": "309499"
+    }
+  ],
+  "REM": [
+    {
+      "name": "Alef Manga",
+      "assists": 3,
+      "id": "301188"
+    },
+    {
+      "name": "Vitor Bueno",
+      "assists": 3,
+      "id": "200775"
+    },
+    {
+      "name": "Gabriel Taliari",
+      "assists": 2,
+      "id": "235385"
+    }
+  ],
+  "RBB": [
+    {
+      "name": "Henry Mosquera",
+      "assists": 4,
+      "id": "333314"
+    },
+    {
+      "name": "Isidro Pitta",
+      "assists": 3,
+      "id": "287035"
+    },
+    {
+      "name": "Agustín Sant'Anna",
+      "assists": 2,
+      "id": "253486"
+    }
+  ],
+  "BOT": [
+    {
+      "name": "Álvaro Montoro",
+      "assists": 5,
+      "id": "379785"
+    },
+    {
+      "name": "Alex Telles",
+      "assists": 4,
+      "id": "199734"
+    },
+    {
+      "name": "Danilo",
+      "assists": 3,
+      "id": "272224"
+    }
+  ],
+  "GRE": [
+    {
+      "name": "Cristian Pavón",
+      "assists": 4,
+      "id": "24388"
+    },
+    {
+      "name": "Francis Amuzu",
+      "assists": 3,
+      "id": "269079"
+    },
+    {
+      "name": "José Enamorado",
+      "assists": 3,
+      "id": "286714"
+    }
+  ],
+  "CAM": [
+    {
+      "name": "Alan Minda",
+      "assists": 3,
+      "id": "319422"
+    },
+    {
+      "name": "Bernard",
+      "assists": 3,
+      "id": "158272"
+    },
+    {
+      "name": "Hulk",
+      "assists": 3,
+      "id": "124068"
+    }
+  ],
+  "MIR": [
+    {
+      "name": "Alesson",
+      "assists": 5,
+      "id": "250388"
+    },
+    {
+      "name": "Igor Formiga",
+      "assists": 5,
+      "id": null
+    },
+    {
+      "name": "Reinaldo",
+      "assists": 4,
+      "id": "115379"
+    }
+  ],
+  "CHA": [
+    {
+      "name": "Giovanni Augusto",
+      "assists": 5,
+      "id": "140012"
+    },
+    {
+      "name": "Bruno Pacheco",
+      "assists": 3,
+      "id": "236283"
+    },
+    {
+      "name": "Yannick Bolasie",
+      "assists": 3,
+      "id": "121921"
+    }
+  ],
+  "BAH": [
+    {
+      "name": "Éverton Ribeiro",
+      "assists": 4,
+      "id": "199017"
+    },
+    {
+      "name": "Rodrigo Nestor",
+      "assists": 4,
+      "id": "266664"
+    },
+    {
+      "name": "Jean Lucas",
+      "assists": 3,
+      "id": "269910"
+    }
+  ]
+}

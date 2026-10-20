@@ -23,7 +23,8 @@ const clubsAFallback=[
 ].map((c,i)=>({code:c[0],name:c[1],pts:c[2],j:c[3],v:c[4],e:c[5],d:c[6],gp:c[7],gc:c[8],form:c[9],scorers:c[10],next:c[11],venue:c[12],date:c[13],pos:i+1}));
 const clubsA=window.seriesAData||clubsAFallback;
 const clubsB=window.seriesBData||[];
-Object.assign(playerPhotos,window.seriesPhotos||{});
+Object.entries(window.seriesPhotos||{}).forEach(([name,url])=>{if(!playerPhotos[name])playerPhotos[name]=url});
+playerPhotos['Jorge Carrascal']='https://storage.googleapis.com/crf-strapi-media-prd/CARRASCAL_Fut_Prof_Masc_69cb5c6eed/CARRASCAL_Fut_Prof_Masc_69cb5c6eed.png';
 let division='A',clubs=clubsA;
 
 const zone=p=>division==='B'?(p<=4?'#c8f631':p>=17?'#ee604e':'transparent'):(p<=4?'#c8f631':p<=6?'#4bd57d':p<=12?'#52a7d8':p>=17?'#ee604e':'transparent');
@@ -42,7 +43,7 @@ FLA:{o:['Fluminense','Botafogo','Cruzeiro','Palmeiras','Santos'],a:['Arrascaeta|
 };
 const reviewedOpponents={FLA:['Fluminense','Santos','Bragantino','Corinthians','Remo'],PAL:['Corinthians','Bahia','Grêmio','São Paulo','Botafogo'],CAP:['Chapecoense','Atlético-MG','Bahia','Coritiba','Cruzeiro'],FLU:['Flamengo','Coritiba','Corinthians','Atlético-MG','Vasco'],BAH:['Mirassol','Palmeiras','Athletico-PR','Remo','Bragantino'],CRU:['Bragantino','São Paulo','Vitória','Santos','Athletico-PR'],CAM:['Santos','Athletico-PR','Bragantino','Chapecoense','Fluminense'],SAN:['Atlético-MG','Flamengo','São Paulo','Remo','Cruzeiro'],RBB:['Cruzeiro','Mirassol','Atlético-MG','Flamengo','Botafogo'],SAO:['Vitória','Cruzeiro','Santos','Internacional','Palmeiras'],CFC:['Botafogo','Fluminense','Vasco','Athletico-PR','Mirassol'],VIT:['São Paulo','Chapecoense','Cruzeiro','Mirassol','Grêmio'],BOT:['Coritiba','Vasco','Mirassol','Grêmio','Bragantino'],VAS:['Remo','Botafogo','Coritiba','Grêmio','Fluminense'],MIR:['Bahia','Bragantino','Botafogo','Vitória','Coritiba'],COR:['Palmeiras','Internacional','Fluminense','Flamengo','Chapecoense'],INT:['Grêmio','Corinthians','São Paulo','Chapecoense','Santos'],GRE:['Internacional','Remo','Palmeiras','Botafogo','Vasco'],REM:['Vasco','Grêmio','Santos','Bahia','Flamengo'],CHA:['Athletico-PR','Vitória','Atlético-MG','Internacional','Corinthians']};
 Object.entries(reviewedOpponents).forEach(([code,opponents])=>{extras[code].o=opponents});
-function playerVisual(name){const initials=name.split(' ').map(x=>x[0]).join('').slice(0,2);return playerPhotos[name]?`<img class="avatar" src="${playerPhotos[name]}" alt="Foto de ${name}" loading="lazy" onerror="this.outerHTML='<span class=&quot;avatar-fallback&quot;>${initials}</span>'">`:`<span class="avatar-fallback" title="Retrato não disponível">${initials}</span>`}
+function playerVisual(name){const initials=name.split(' ').map(x=>x[0]).join('').slice(0,2);return playerPhotos[name]?`<img class="avatar" src="${playerPhotos[name]}" alt="Foto de ${name}" onerror="this.outerHTML='<span class=&quot;avatar-fallback&quot;>${initials}</span>'">`:`<span class="avatar-fallback" title="Retrato não disponível">${initials}</span>`}
 let pinned=false,closeTimer;
 const rankList=(items,label)=>items.map((s,i)=>{const[n,v]=s.split('|');return `<div class="scorer assist"><div class="assist-photo">${playerVisual(n)}<span class="assist-rank">0${i+1}</span></div><b>${n}</b><em>${v} ${label}</em></div>`}).join('');
 const searchUrl=q=>`https://www.google.com/search?q=${encodeURIComponent(`${q} site:ge.globo.com antes:${division==='A'?'2026-10-21':'2026-10-18'}`)}`;
@@ -52,7 +53,7 @@ function openClub(code,expanded=false){
   pinned=expanded;sheet.classList.toggle('expanded',expanded);
   const games=c.games||[...c.form].map((r,i)=>({r,opp:x?.o[i]||'Adversário',score:''}));
   const scorers=c.scorers.length?`<div class="detail-section"><h4>TOP 3 ARTILHEIROS · BRASILEIRÃO</h4>${c.scorers.map((s,i)=>{const[n,g]=s.split('|');return `<div class="scorer">${playerVisual(n)}<b><small>0${i+1}</small>${n}</b><em>${g} GOLS</em></div>`}).join('')}</div>`:'';
-  const assists=division==='A'&&x?.a?`<div class="detail-section"><h4>TOP 3 EM ASSISTÊNCIAS</h4>${rankList(x.a,'ASSIST.')}</div>`:`<div class="data-note">Assistências individuais da Série B não foram exibidas sem uma fonte consolidada no recorte. A artilharia foi calculada pelas súmulas dos jogos.</div>`;
+  const assists=division==='A'&&c.assists?.length?`<div class="detail-section"><h4>TOP 3 EM ASSISTÊNCIAS</h4>${rankList(c.assists,'ASSIST.')}</div>`:`<div class="data-note">Assistências individuais da Série B não foram exibidas sem uma fonte consolidada no recorte. A artilharia foi calculada pelas súmulas dos jogos.</div>`;
   const valuables=marketList(code)||'<div class="data-note">Avaliações individuais não disponíveis.</div>';
   const newsUrl=searchUrl(`${c.name} últimas notícias futebol`),previewUrl=searchUrl(`${c.name} x ${c.next} prévia próximo jogo`);
   content.innerHTML=`<div class="detail-top"><img class="crest" src="${crest(c.code)}" alt="Escudo do ${c.name}"><div><small>SÉRIE ${division} · ${String(c.pos).padStart(2,'0')}º NA CLASSIFICAÇÃO</small><h3>${c.name}</h3></div></div>
@@ -77,3 +78,12 @@ const themeBtn=document.querySelector('#themeBtn');
 function setTheme(dark){document.body.classList.toggle('dark',dark);themeBtn.setAttribute('aria-pressed',String(dark));themeBtn.querySelector('.theme-label').textContent=dark?'Modo claro':'Modo escuro';themeBtn.querySelector('.theme-icon').textContent=dark?'☀':'◐';localStorage.setItem('br26-theme',dark?'dark':'light')}
 setTheme(localStorage.getItem('br26-theme')==='dark'||(!localStorage.getItem('br26-theme')&&matchMedia('(prefers-color-scheme:dark)').matches));
 themeBtn.addEventListener('click',()=>setTheme(!document.body.classList.contains('dark')));
+
+// Modo determinístico usado apenas para a captura de auditoria solicitada.
+if(new URLSearchParams(location.search).get('capture')==='round31'){
+  document.body.classList.add('capture-mode');
+  setDivision('A');
+  document.querySelector('main').insertBefore(sheet,document.querySelector('.method'));
+  openClub('FLA',true);
+  document.body.style.overflow='auto';
+}

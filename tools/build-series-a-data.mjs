@@ -7,6 +7,7 @@ const codeMap={"Athletico-PR":"CAP","Atlético-MG":"CAM","Bahia":"BAH","Botafogo
 const records=Object.fromEntries(teams.map(t=>[t.displayName,{code:codeMap[t.displayName],name:t.displayName==='Red Bull Bragantino'?'Bragantino':t.displayName==='Vasco da Gama'?'Vasco':t.displayName,pts:0,j:0,v:0,e:0,d:0,gp:0,gc:0,recent:[],next:null}]));
 const idToName=Object.fromEntries(teams.map(t=>[t.id,t.displayName]));
 const scorerCounts={},playerIds={};
+let assistsByClub={};try{assistsByClub=JSON.parse(await fs.readFile('assists-a.generated.json','utf8'));}catch{}
 for(const event of [...games].sort((a,b)=>new Date(a.date)-new Date(b.date))){
   const pair=event.competitions?.[0]?.competitors;if(!pair?.length)continue;const home=pair.find(x=>x.homeAway==='home'),away=pair.find(x=>x.homeAway==='away');
   if(!records[home.team.displayName]||!records[away.team.displayName])continue;const date=new Date(event.date);
@@ -16,5 +17,5 @@ for(const event of [...games].sort((a,b)=>new Date(a.date)-new Date(b.date))){
     for(const play of event.competitions[0].details||[]){if(!play.scoringPlay||play.ownGoal)continue;const athlete=play.athletesInvolved?.[0],club=idToName[play.team?.id];if(!athlete||!club)continue;scorerCounts[club]??={};scorerCounts[club][athlete.displayName]=(scorerCounts[club][athlete.displayName]||0)+1;playerIds[athlete.displayName]=athlete.id;}
   }else if(date>cutoff){for(const [side,opp] of [[home,away],[away,home]]){const r=records[side.team.displayName];if(!r.next)r.next={opp:records[opp.team.displayName].name,venue:side.homeAway==='home'?'C':'F',date:event.date};}}
 }
-const sorted=Object.entries(records).map(([sourceName,r])=>({...r,recent:r.recent.slice(-5),scorers:Object.entries(scorerCounts[sourceName]||{}).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0],'pt-BR')).slice(0,3).map(([name,goals])=>({name,goals,id:playerIds[name]}))})).sort((a,b)=>b.pts-a.pts||(b.gp-b.gc)-(a.gp-a.gc)||b.gp-a.gp||a.name.localeCompare(b.name,'pt-BR')).map((r,i)=>({...r,pos:i+1}));
+const sorted=Object.entries(records).map(([sourceName,r])=>({...r,recent:r.recent.slice(-5),scorers:Object.entries(scorerCounts[sourceName]||{}).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0],'pt-BR')).slice(0,3).map(([name,goals])=>({name,goals,id:playerIds[name]})),assists:assistsByClub[r.code]||[]})).sort((a,b)=>b.pts-a.pts||(b.gp-b.gc)-(a.gp-a.gc)||b.gp-a.gp||a.name.localeCompare(b.name,'pt-BR')).map((r,i)=>({...r,pos:i+1}));
 await fs.writeFile('series-a.generated.json',JSON.stringify(sorted,null,2));

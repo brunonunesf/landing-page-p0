@@ -63,6 +63,23 @@
         "id": "234715"
       }
     ],
+    "assists": [
+      {
+        "name": "Jorge Carrascal",
+        "assists": 8,
+        "id": "208700"
+      },
+      {
+        "name": "Samuel Lino",
+        "assists": 8,
+        "id": "253937"
+      },
+      {
+        "name": "Pedro",
+        "assists": 6,
+        "id": "235017"
+      }
+    ],
     "pos": 1
   },
   {
@@ -127,6 +144,23 @@
         "name": "Vitor Roque",
         "goals": 5,
         "id": "329383"
+      }
+    ],
+    "assists": [
+      {
+        "name": "Andreas Pereira",
+        "assists": 10,
+        "id": "210143"
+      },
+      {
+        "name": "Joaquín Piquerez",
+        "assists": 4,
+        "id": "254007"
+      },
+      {
+        "name": "Allan",
+        "assists": 3,
+        "id": "223437"
       }
     ],
     "pos": 2
@@ -195,6 +229,23 @@
         "id": "197049"
       }
     ],
+    "assists": [
+      {
+        "name": "Gastón Benavídez",
+        "assists": 5,
+        "id": "287688"
+      },
+      {
+        "name": "João Cruz",
+        "assists": 5,
+        "id": "361359"
+      },
+      {
+        "name": "Lucas Esquivel",
+        "assists": 5,
+        "id": "309499"
+      }
+    ],
     "pos": 3
   },
   {
@@ -259,6 +310,23 @@
         "name": "Jefferson Savarino",
         "goals": 6,
         "id": "177219"
+      }
+    ],
+    "assists": [
+      {
+        "name": "Lucho Acosta",
+        "assists": 5,
+        "id": null
+      },
+      {
+        "name": "Kevin Serna",
+        "assists": 4,
+        "id": "287633"
+      },
+      {
+        "name": "Agustín Canobbio",
+        "assists": 3,
+        "id": "241466"
       }
     ],
     "pos": 4
@@ -327,6 +395,23 @@
         "id": "287788"
       }
     ],
+    "assists": [
+      {
+        "name": "Matheus Pereira",
+        "assists": 6,
+        "id": "216098"
+      },
+      {
+        "name": "Fágner",
+        "assists": 4,
+        "id": null
+      },
+      {
+        "name": "Gerson",
+        "assists": 4,
+        "id": "210135"
+      }
+    ],
     "pos": 5
   },
   {
@@ -391,6 +476,23 @@
         "name": "Reiner",
         "goals": 4,
         "id": "286703"
+      }
+    ],
+    "assists": [
+      {
+        "name": "Alan Minda",
+        "assists": 3,
+        "id": "319422"
+      },
+      {
+        "name": "Bernard",
+        "assists": 3,
+        "id": "158272"
+      },
+      {
+        "name": "Hulk",
+        "assists": 3,
+        "id": "124068"
       }
     ],
     "pos": 6
@@ -459,6 +561,23 @@
         "id": "167845"
       }
     ],
+    "assists": [
+      {
+        "name": "Éverton Ribeiro",
+        "assists": 4,
+        "id": "199017"
+      },
+      {
+        "name": "Rodrigo Nestor",
+        "assists": 4,
+        "id": "266664"
+      },
+      {
+        "name": "Jean Lucas",
+        "assists": 3,
+        "id": "269910"
+      }
+    ],
     "pos": 7
   },
   {
@@ -523,6 +642,23 @@
         "name": "Álvaro Barreal",
         "goals": 5,
         "id": "279454"
+      }
+    ],
+    "assists": [
+      {
+        "name": "Gabriel Barbosa",
+        "assists": 3,
+        "id": "182522"
+      },
+      {
+        "name": "Gabriel Bontempo",
+        "assists": 3,
+        "id": "399179"
+      },
+      {
+        "name": "Neymar",
+        "assists": 3,
+        "id": "132948"
       }
     ],
     "pos": 8
@@ -591,6 +727,23 @@
         "id": "296573"
       }
     ],
+    "assists": [
+      {
+        "name": "Wendell",
+        "assists": 3,
+        "id": "199065"
+      },
+      {
+        "name": "Artur",
+        "assists": 2,
+        "id": "236596"
+      },
+      {
+        "name": "Lucas Ramon",
+        "assists": 2,
+        "id": "206953"
+      }
+    ],
     "pos": 9
   },
   {
@@ -655,6 +808,23 @@
         "name": "Fernando",
         "goals": 3,
         "id": "267902"
+      }
+    ],
+    "assists": [
+      {
+        "name": "Henry Mosquera",
+        "assists": 4,
+        "id": "333314"
+      },
+      {
+        "name": "Isidro Pitta",
+        "assists": 3,
+        "id": "287035"
+      },
+      {
+        "name": "Agustín Sant'Anna",
+        "assists": 2,
+        "id": "253486"
       }
     ],
     "pos": 10
@@ -723,6 +893,23 @@
         "id": "199734"
       }
     ],
+    "assists": [
+      {
+        "name": "Álvaro Montoro",
+        "assists": 5,
+        "id": "379785"
+      },
+      {
+        "name": "Alex Telles",
+        "assists": 4,
+        "id": "199734"
+      },
+      {
+        "name": "Danilo",
+        "assists": 3,
+        "id": "272224"
+      }
+    ],
     "pos": 11
   },
   {
@@ -787,6 +974,23 @@
         "name": "Joaquín Lavega",
         "goals": 5,
         "id": "333306"
+      }
+    ],
+    "assists": [
+      {
+        "name": "Josué",
+        "assists": 10,
+        "id": null
+      },
+      {
+        "name": "Breno Lopes",
+        "assists": 2,
+        "id": null
+      },
+      {
+        "name": "João Pedro Chermont",
+        "assists": 2,
+        "id": "371527"
       }
     ],
     "pos": 12
@@ -855,6 +1059,23 @@
         "id": "218972"
       }
     ],
+    "assists": [
+      {
+        "name": "Erick",
+        "assists": 5,
+        "id": "256044"
+      },
+      {
+        "name": "Matheuzinho",
+        "assists": 4,
+        "id": null
+      },
+      {
+        "name": "Gabriel Baralhas",
+        "assists": 3,
+        "id": "269852"
+      }
+    ],
     "pos": 13
   },
   {
@@ -919,6 +1140,23 @@
         "name": "André Luis",
         "goals": 3,
         "id": "205448"
+      }
+    ],
+    "assists": [
+      {
+        "name": "Alesson",
+        "assists": 5,
+        "id": "250388"
+      },
+      {
+        "name": "Igor Formiga",
+        "assists": 5,
+        "id": null
+      },
+      {
+        "name": "Reinaldo",
+        "assists": 4,
+        "id": "115379"
       }
     ],
     "pos": 14
@@ -987,6 +1225,23 @@
         "id": "219005"
       }
     ],
+    "assists": [
+      {
+        "name": "Cuiabano",
+        "assists": 4,
+        "id": "334756"
+      },
+      {
+        "name": "José Rodríguez",
+        "assists": 4,
+        "id": null
+      },
+      {
+        "name": "Andrés Gómez",
+        "assists": 2,
+        "id": "330924"
+      }
+    ],
     "pos": 15
   },
   {
@@ -1051,6 +1306,23 @@
         "name": "Gustavo Henrique",
         "goals": 3,
         "id": "168981"
+      }
+    ],
+    "assists": [
+      {
+        "name": "Rodrigo Garro",
+        "assists": 6,
+        "id": "270562"
+      },
+      {
+        "name": "André",
+        "assists": 2,
+        "id": "409662"
+      },
+      {
+        "name": "Kaio César",
+        "assists": 2,
+        "id": null
       }
     ],
     "pos": 16
@@ -1119,6 +1391,23 @@
         "id": "285029"
       }
     ],
+    "assists": [
+      {
+        "name": "Alerrandro",
+        "assists": 4,
+        "id": null
+      },
+      {
+        "name": "Johan Carbonero",
+        "assists": 4,
+        "id": "270246"
+      },
+      {
+        "name": "Vitinho",
+        "assists": 3,
+        "id": "171652"
+      }
+    ],
     "pos": 17
   },
   {
@@ -1183,6 +1472,23 @@
         "name": "Gustavo Martins",
         "goals": 3,
         "id": "314603"
+      }
+    ],
+    "assists": [
+      {
+        "name": "Cristian Pavón",
+        "assists": 4,
+        "id": "24388"
+      },
+      {
+        "name": "Francis Amuzu",
+        "assists": 3,
+        "id": "269079"
+      },
+      {
+        "name": "José Enamorado",
+        "assists": 3,
+        "id": "286714"
       }
     ],
     "pos": 18
@@ -1251,6 +1557,23 @@
         "id": "235385"
       }
     ],
+    "assists": [
+      {
+        "name": "Alef Manga",
+        "assists": 3,
+        "id": "301188"
+      },
+      {
+        "name": "Vitor Bueno",
+        "assists": 3,
+        "id": "200775"
+      },
+      {
+        "name": "Gabriel Taliari",
+        "assists": 2,
+        "id": "235385"
+      }
+    ],
     "pos": 19
   },
   {
@@ -1315,6 +1638,23 @@
         "name": "Túlio Eduardo Silva De Oliveira",
         "goals": 3,
         "id": "3108270"
+      }
+    ],
+    "assists": [
+      {
+        "name": "Giovanni Augusto",
+        "assists": 5,
+        "id": "140012"
+      },
+      {
+        "name": "Bruno Pacheco",
+        "assists": 3,
+        "id": "236283"
+      },
+      {
+        "name": "Yannick Bolasie",
+        "assists": 3,
+        "id": "121921"
       }
     ],
     "pos": 20

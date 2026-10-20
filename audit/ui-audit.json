@@ -1,0 +1,43 @@
+{
+  "status": "APROVADO",
+  "desktop": {
+    "viewport": "1440x900",
+    "standingsRows": 20,
+    "horizontalOverflow": false,
+    "flamengoPanel": {
+      "open": true,
+      "recentMatches": 5,
+      "scorers": 3,
+      "assists": 3,
+      "nextMatch": "Atlético-MG · C · 26/10 20:00",
+      "horizontalOverflow": false
+    }
+  },
+  "mobile": {
+    "viewport": "390x844",
+    "cards": 20,
+    "desktopTableHidden": true,
+    "mobileCardsVisible": true,
+    "horizontalOverflow": false,
+    "flamengoPanelWidth": 390,
+    "keyboardOpen": true
+  },
+  "interactions": {
+    "clubClickOpensExpandedPanel": true,
+    "enterOpensPanel": true,
+    "hoverExpansionRulePresent": true,
+    "seriesToggle": "A → B → A",
+    "themeToggle": true,
+    "darkNextMatchContrast": "texto rgb(13,23,17) sobre fundo rgb(217,255,67)"
+  },
+  "capture": {
+    "file": "rodada-31-1000px.jpg",
+    "dimensions": "1000x4953",
+    "standingsRows": 20,
+    "panelClub": "Flamengo",
+    "panelPosition": "relative",
+    "tablePanelOverlap": false,
+    "documentHorizontalOverflow": false,
+    "allSixPlayerPhotosLoaded": true
+  }
+}
