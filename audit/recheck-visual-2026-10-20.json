@@ -1,0 +1,77 @@
+{
+  "status": "APROVADO",
+  "date": "2026-10-20",
+  "story": "Tabela estática interativa das Séries A e B, com dados locais renderizados no navegador.",
+  "checks": {
+    "lightTheme": {
+      "status": "pass",
+      "viewport": "1280x900",
+      "bodyContrast": 16.04,
+      "heroContrast": 16.04,
+      "panelMutedContrast": 6.11,
+      "nextMatchContrast": 15.97
+    },
+    "darkTheme": {
+      "status": "pass",
+      "viewport": "1280x900",
+      "bodyContrast": 16.15,
+      "tableHeaderContrast": 7.35,
+      "panelMutedContrast": 6.11,
+      "nextMatchContrast": 15.97
+    },
+    "responsive": {
+      "status": "pass",
+      "testedWidths": [1280, 1024, 851, 850, 600, 390, 320],
+      "horizontalOverflow": false,
+      "desktopMobileTransition": "851px desktop; 850px mobile"
+    },
+    "series": {
+      "status": "pass",
+      "serieAClubs": 20,
+      "serieBClubs": 20,
+      "recentIndicatorsPerClub": 5,
+      "missingCrests": 0
+    },
+    "accessibility": {
+      "status": "pass",
+      "duplicateIds": 0,
+      "imagesMissingAlt": 0,
+      "buttonsMissingName": 0,
+      "dialogSemantics": true,
+      "focusMovesIntoDialog": true,
+      "focusTrap": true,
+      "focusReturnsToClub": true,
+      "escapeCloses": true
+    },
+    "runtime": {
+      "status": "pass",
+      "http": 200,
+      "consoleErrorsOrWarnings": 0,
+      "javascriptSyntax": "pass",
+      "invalidLinks": 0,
+      "panelPhotosLoaded": true
+    }
+  },
+  "issuesFixed": [
+    {
+      "issue": "Sobreposição entre Classificação e 31 / 38 em 320px",
+      "attempts": 1,
+      "result": "fixed"
+    },
+    {
+      "issue": "Diálogo sem semântica e foco inicial consistente",
+      "attempts": 2,
+      "result": "fixed"
+    },
+    {
+      "issue": "Shift+Tab escapava do diálogo",
+      "attempts": 1,
+      "result": "fixed"
+    }
+  ],
+  "evidence": [
+    "recheck-light.jpg",
+    "recheck-dark.jpg",
+    "recheck-mobile-320-fixed.jpg"
+  ]
+}

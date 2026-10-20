@@ -20,5 +20,7 @@ body{transition:background .3s,color .3s}body.dark{--ink:#edf1eb;--paper:#101512
 @media(max-width:600px){.hero-switch{align-items:flex-start;flex-direction:column;gap:10px}.market-total{grid-template-columns:1fr}.market-total strong{grid-row:auto}.market-player{grid-template-columns:46px 1fr auto}.series-toggle button{padding:8px 16px}}
 .hero:after{content:"31"}
 
+@media(max-width:380px){.board-head{display:grid;gap:18px}.round-select{width:100%;min-width:0}.round-select span{display:block}}
+
 /* A captura de auditoria mantém tabela e painel no fluxo, sem sobreposição. */
 .capture-mode .sheet-backdrop{display:none}.capture-mode .detail-sheet,.capture-mode .detail-sheet.expanded{position:relative;inset:auto;width:auto;height:auto;overflow:visible;transform:none;margin:0 4.5vw 60px;padding:38px 5vw;border-radius:18px}.capture-mode .detail-sheet .close{display:none}.capture-mode .detail-stats{grid-template-columns:repeat(3,1fr)}
