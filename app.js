@@ -24,6 +24,11 @@ const clubsAFallback=[
 const clubsA=window.seriesAData||clubsAFallback;
 const clubsB=window.seriesBData||[];
 Object.entries(window.seriesPhotos||{}).forEach(([name,url])=>{if(!playerPhotos[name])playerPhotos[name]=url});
+const normalizedName=name=>name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+Object.values(window.marketData||{}).flatMap(club=>club.players||[]).forEach(player=>{
+  const matchingName=[...clubsA,...clubsB].flatMap(club=>club.scorers||[]).map(item=>item.split('|')[0]).find(name=>normalizedName(name)===normalizedName(player.name));
+  if(matchingName)playerPhotos[matchingName]=player.photo;
+});
 playerPhotos['Jorge Carrascal']='https://storage.googleapis.com/crf-strapi-media-prd/CARRASCAL_Fut_Prof_Masc_69cb5c6eed/CARRASCAL_Fut_Prof_Masc_69cb5c6eed.png';
 let division='A',clubs=clubsA;
 
@@ -43,17 +48,17 @@ FLA:{o:['Fluminense','Botafogo','Cruzeiro','Palmeiras','Santos'],a:['Arrascaeta|
 };
 const reviewedOpponents={FLA:['Fluminense','Santos','Bragantino','Corinthians','Remo'],PAL:['Corinthians','Bahia','Grêmio','São Paulo','Botafogo'],CAP:['Chapecoense','Atlético-MG','Bahia','Coritiba','Cruzeiro'],FLU:['Flamengo','Coritiba','Corinthians','Atlético-MG','Vasco'],BAH:['Mirassol','Palmeiras','Athletico-PR','Remo','Bragantino'],CRU:['Bragantino','São Paulo','Vitória','Santos','Athletico-PR'],CAM:['Santos','Athletico-PR','Bragantino','Chapecoense','Fluminense'],SAN:['Atlético-MG','Flamengo','São Paulo','Remo','Cruzeiro'],RBB:['Cruzeiro','Mirassol','Atlético-MG','Flamengo','Botafogo'],SAO:['Vitória','Cruzeiro','Santos','Internacional','Palmeiras'],CFC:['Botafogo','Fluminense','Vasco','Athletico-PR','Mirassol'],VIT:['São Paulo','Chapecoense','Cruzeiro','Mirassol','Grêmio'],BOT:['Coritiba','Vasco','Mirassol','Grêmio','Bragantino'],VAS:['Remo','Botafogo','Coritiba','Grêmio','Fluminense'],MIR:['Bahia','Bragantino','Botafogo','Vitória','Coritiba'],COR:['Palmeiras','Internacional','Fluminense','Flamengo','Chapecoense'],INT:['Grêmio','Corinthians','São Paulo','Chapecoense','Santos'],GRE:['Internacional','Remo','Palmeiras','Botafogo','Vasco'],REM:['Vasco','Grêmio','Santos','Bahia','Flamengo'],CHA:['Athletico-PR','Vitória','Atlético-MG','Internacional','Corinthians']};
 Object.entries(reviewedOpponents).forEach(([code,opponents])=>{extras[code].o=opponents});
-function playerVisual(name){const initials=name.split(' ').map(x=>x[0]).join('').slice(0,2);return playerPhotos[name]?`<img class="avatar" src="${playerPhotos[name]}" alt="Foto de ${name}" onerror="this.outerHTML='<span class=&quot;avatar-fallback&quot;>${initials}</span>'">`:`<span class="avatar-fallback" title="Retrato não disponível">${initials}</span>`}
+function playerVisual(name,clubCode){const fallback=clubCode?crest(clubCode):'';return playerPhotos[name]?`<img class="avatar" src="${playerPhotos[name]}" alt="Foto de ${name}" onerror="this.onerror=null;this.src='${fallback}';this.classList.add('club-photo-fallback')">`:`<img class="avatar club-photo-fallback" src="${fallback}" alt="Escudo do clube de ${name}">`}
 let pinned=false,closeTimer,lastTrigger=null;
-const rankList=(items,label)=>items.map((s,i)=>{const[n,v]=s.split('|');return `<div class="scorer assist"><div class="assist-photo">${playerVisual(n)}<span class="assist-rank">0${i+1}</span></div><b>${n}</b><em>${v} ${label}</em></div>`}).join('');
+const rankList=(items,label,clubCode)=>items.map((s,i)=>{const[n,v]=s.split('|');return `<div class="scorer assist"><div class="assist-photo">${playerVisual(n,clubCode)}<span class="assist-rank">0${i+1}</span></div><b>${n}</b><em>${v} ${label}</em></div>`}).join('');
 const searchUrl=q=>`https://www.google.com/search?q=${encodeURIComponent(`${q} site:ge.globo.com antes:${division==='A'?'2026-10-21':'2026-10-18'}`)}`;
 const marketList=code=>(marketData[code]?.players||[]).map((p,i)=>`<a class="market-player" href="${marketData[code].kader}" target="_blank" rel="noreferrer"><img src="${p.photo}" alt="Foto de ${p.name}" loading="lazy"><span><small>0${i+1}</small><b>${p.name}</b></span><em>${p.value}</em></a>`).join('');
 function openClub(code,expanded=false){
   const c=clubs.find(x=>x.code===code),x=extras[code],market=marketData[code],pct=((c.pts/(c.j*3))*100).toFixed(1).replace('.',',');
   pinned=expanded;sheet.classList.toggle('expanded',expanded);
   const games=c.games||[...c.form].map((r,i)=>({r,opp:x?.o[i]||'Adversário',score:''}));
-  const scorers=c.scorers.length?`<div class="detail-section"><h4>TOP 3 ARTILHEIROS · BRASILEIRÃO</h4>${c.scorers.map((s,i)=>{const[n,g]=s.split('|');return `<div class="scorer">${playerVisual(n)}<b><small>0${i+1}</small>${n}</b><em>${g} GOLS</em></div>`}).join('')}</div>`:'';
-  const assists=division==='A'&&c.assists?.length?`<div class="detail-section"><h4>TOP 3 EM ASSISTÊNCIAS</h4>${rankList(c.assists,'ASSIST.')}</div>`:`<div class="data-note">Assistências individuais da Série B não foram exibidas sem uma fonte consolidada no recorte. A artilharia foi calculada pelas súmulas dos jogos.</div>`;
+  const scorers=c.scorers.length?`<div class="detail-section"><h4>TOP 3 ARTILHEIROS · BRASILEIRÃO</h4>${c.scorers.map((s,i)=>{const[n,g]=s.split('|');return `<div class="scorer">${playerVisual(n,c.code)}<b><small>0${i+1}</small>${n}</b><em>${g} GOLS</em></div>`}).join('')}</div>`:'';
+  const assists=division==='A'&&c.assists?.length?`<div class="detail-section"><h4>TOP 3 EM ASSISTÊNCIAS</h4>${rankList(c.assists,'ASSIST.',c.code)}</div>`:`<div class="data-note">Assistências individuais da Série B não foram exibidas sem uma fonte consolidada no recorte. A artilharia foi calculada pelas súmulas dos jogos.</div>`;
   const valuables=marketList(code)||'<div class="data-note">Avaliações individuais não disponíveis.</div>';
   const newsUrl=searchUrl(`${c.name} últimas notícias futebol`),previewUrl=searchUrl(`${c.name} x ${c.next} prévia próximo jogo`);
   content.innerHTML=`<div class="detail-top"><img class="crest" src="${crest(c.code)}" alt="Escudo do ${c.name}"><div><small>SÉRIE ${division} · ${String(c.pos).padStart(2,'0')}º NA CLASSIFICAÇÃO</small><h3>${c.name}</h3></div></div>
@@ -78,6 +83,19 @@ const themeBtn=document.querySelector('#themeBtn');
 function setTheme(dark){document.body.classList.toggle('dark',dark);themeBtn.setAttribute('aria-pressed',String(dark));themeBtn.querySelector('.theme-label').textContent=dark?'Modo claro':'Modo escuro';themeBtn.querySelector('.theme-icon').textContent=dark?'☀':'◐';localStorage.setItem('br26-theme',dark?'dark':'light')}
 setTheme(localStorage.getItem('br26-theme')==='dark'||(!localStorage.getItem('br26-theme')&&matchMedia('(prefers-color-scheme:dark)').matches));
 themeBtn.addEventListener('click',()=>setTheme(!document.body.classList.contains('dark')));
+
+const backToTop=document.querySelector('#backToTop');
+let scrollTicking=false;
+function syncBackToTop(){
+  const visible=window.scrollY>Math.min(480,window.innerHeight*.6);
+  backToTop.classList.toggle('is-visible',visible);
+  backToTop.setAttribute('aria-hidden',String(!visible));
+  backToTop.tabIndex=visible?0:-1;
+  scrollTicking=false;
+}
+window.addEventListener('scroll',()=>{if(!scrollTicking){scrollTicking=true;requestAnimationFrame(syncBackToTop)}},{passive:true});
+backToTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}));
+syncBackToTop();
 
 // Modo determinístico usado apenas para a captura de auditoria solicitada.
 if(new URLSearchParams(location.search).get('capture')==='round31'){
