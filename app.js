@@ -21,7 +21,8 @@ const clubsAFallback=[
 ['REM','Remo',25,30,5,10,15,33,48,'EEDDD',['Jajá|7','Alef Manga|5','Pedro Rocha|4'],'Bragantino','C','18/10 · 18h30'],
 ['CHA','Chapecoense',18,30,3,9,18,30,61,'DDEDV',['Marcinho|6','Perotti|5','Walterson|4'],'Botafogo','F','17/10 · 18h00']
 ].map((c,i)=>({code:c[0],name:c[1],pts:c[2],j:c[3],v:c[4],e:c[5],d:c[6],gp:c[7],gc:c[8],form:c[9],scorers:c[10],next:c[11],venue:c[12],date:c[13],pos:i+1}));
-const clubsA=window.seriesAData||clubsAFallback;
+const clubsA=[...(window.seriesAData||clubsAFallback)].sort((a,b)=>b.pts-a.pts||b.v-a.v||(b.gp-b.gc)-(a.gp-a.gc)||b.gp-a.gp);
+clubsA.forEach((club,index)=>{club.pos=index+1});
 const clubsB=window.seriesBData||[];
 Object.entries(window.seriesPhotos||{}).forEach(([name,url])=>{if(!playerPhotos[name])playerPhotos[name]=url});
 const normalizedName=name=>name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
