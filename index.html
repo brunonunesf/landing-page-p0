@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=rodada-31-qa-visual-1" />
+  <link rel="stylesheet" href="styles.css?v=historia-2" />
 </head>
 <body>
   <header class="topbar">
@@ -66,6 +66,51 @@
         <p id="methodSecondary">Partidas, classificação e estatísticas da Série A consideram os jogos concluídos até 19 de outubro. Os “próximos jogos” exibem o primeiro compromisso agendado após esse momento.</p>
       </div>
     </section>
+
+    <section class="history" aria-labelledby="historyTitle">
+      <div class="history-heading">
+        <div><span class="section-num">03</span><h2 id="historyTitle">Muito antes do apito de hoje.</h2></div>
+        <p>Os nomes, os gols e as mudanças que fizeram o Brasileirão.</p>
+        <button class="history-toggle" id="historyToggle" type="button" aria-expanded="false" aria-controls="historyContent"><span>Explorar a história</span><span class="history-toggle-icon" aria-hidden="true">+</span></button>
+      </div>
+      <div id="historyContent" class="history-content" hidden>
+        <div class="history-section-heading"><span class="history-eyebrow">LENDAS DO GOL</span><h3>Os maiores artilheiros</h3><p>Top 5 da primeira divisão, na contagem histórica consolidada até 2025. Os números não incluem estaduais, Copa do Brasil ou Série B.</p></div>
+        <ol class="history-scorers">
+          <li class="history-scorer"><div class="history-portrait"><img src="assets/historia/dinamite.jpg" alt="Retrato de Roberto Dinamite" loading="lazy" width="320" height="360"><span class="history-rank">01</span></div><h4>Roberto Dinamite</h4><p><strong>190</strong> <span>GOLS</span></p></li>
+          <li class="history-scorer"><div class="history-portrait"><img src="assets/historia/fred.jpg" alt="Retrato de Fred" loading="lazy" width="320" height="360"><span class="history-rank">02</span></div><h4>Fred</h4><p><strong>158</strong> <span>GOLS</span></p></li>
+          <li class="history-scorer"><div class="history-portrait"><img src="assets/historia/romario.jpg" alt="Retrato de Romário" loading="lazy" width="320" height="360"><span class="history-rank">03</span></div><h4>Romário</h4><p><strong>154</strong> <span>GOLS</span></p></li>
+          <li class="history-scorer"><div class="history-portrait"><img src="assets/historia/edmundo.jpg" alt="Retrato de Edmundo" loading="lazy" width="320" height="360"><span class="history-rank">04</span></div><h4>Edmundo</h4><p><strong>153</strong> <span>GOLS</span></p></li>
+          <li class="history-scorer"><div class="history-portrait"><img src="assets/historia/zico.jpg" alt="Retrato de Zico" loading="lazy" width="320" height="360"><span class="history-rank">05</span></div><h4>Zico</h4><p><strong>135</strong> <span>GOLS</span></p></li>
+        </ol>
+        <section class="history-champions" aria-labelledby="championsTitle">
+          <div class="history-section-heading"><span class="history-eyebrow">QUEM MAIS LEVANTOU A TAÇA</span><h3 id="championsTitle">Os maiores campeões</h3><p>Os cinco clubes com mais títulos brasileiros da primeira divisão até 2025, incluindo Taça Brasil e Robertão. Clubes empatados dividem a posição.</p></div>
+          <ol class="champions-grid">
+            <li class="champion-card" value="1"><div class="champion-top"><span class="history-eyebrow">1º LUGAR</span><img src="assets/escudos/PAL.png" alt="Escudo do Palmeiras" width="56" height="56" loading="lazy"></div><h4>Palmeiras</h4><p class="champion-total"><strong>12</strong> <span>TÍTULOS</span></p><p class="champion-years"><span>ANOS DAS CONQUISTAS</span>1960 · 1967 (Taça Brasil) · 1967 (Robertão) · 1969 · 1972 · 1973 · 1993 · 1994 · 2016 · 2018 · 2022 · 2023</p></li>
+            <li class="champion-card" value="2"><div class="champion-top"><span class="history-eyebrow">2º LUGAR</span><img src="assets/escudos/FLA.png" alt="Escudo do Flamengo" width="56" height="56" loading="lazy"></div><h4>Flamengo</h4><p class="champion-total"><strong>8</strong> <span>TÍTULOS</span></p><p class="champion-years"><span>ANOS DAS CONQUISTAS</span>1980 · 1982 · 1983 · 1992 · 2009 · 2019 · 2020 · 2025</p></li>
+            <li class="champion-card" value="2"><div class="champion-top"><span class="history-eyebrow">2º LUGAR</span><img src="assets/escudos/SAN.png" alt="Escudo do Santos" width="56" height="56" loading="lazy"></div><h4>Santos</h4><p class="champion-total"><strong>8</strong> <span>TÍTULOS</span></p><p class="champion-years"><span>ANOS DAS CONQUISTAS</span>1961 · 1962 · 1963 · 1964 · 1965 · 1968 · 2002 · 2004</p></li>
+            <li class="champion-card" value="4"><div class="champion-top"><span class="history-eyebrow">4º LUGAR</span><img src="assets/escudos/COR.png" alt="Escudo do Corinthians" width="56" height="56" loading="lazy"></div><h4>Corinthians</h4><p class="champion-total"><strong>7</strong> <span>TÍTULOS</span></p><p class="champion-years"><span>ANOS DAS CONQUISTAS</span>1990 · 1998 · 1999 · 2005 · 2011 · 2015 · 2017</p></li>
+            <li class="champion-card" value="5"><div class="champion-top"><span class="history-eyebrow">5º LUGAR</span><img src="assets/escudos/SAO.png" alt="Escudo do São Paulo" width="56" height="56" loading="lazy"></div><h4>São Paulo</h4><p class="champion-total"><strong>6</strong> <span>TÍTULOS</span></p><p class="champion-years"><span>ANOS DAS CONQUISTAS</span>1977 · 1986 · 1991 · 2006 · 2007 · 2008</p></li>
+          </ol>
+          <p class="champions-note">Critério: títulos reconhecidos pela CBF. Em 1967, o Palmeiras venceu dois torneios nacionais. A Copa União de 1987, vencida pelo Flamengo, não entra nesta contagem: a CBF reconhece o Sport como campeão brasileiro daquele ano.</p>
+          <div class="history-sources champions-sources"><span>FONTES DO RANKING</span><a href="https://www.palmeiras.com.br/galeria-de-titulos/" target="_blank" rel="noreferrer">Palmeiras ↗</a><a href="https://www.cbf.com.br/futebol-brasileiro/noticias/noticias-campeonato-brasileiro-serie-d/a/flamengo-e-campeao-do-brasileirao-betano-2025" target="_blank" rel="noreferrer">CBF — Campeão de 2025 ↗</a><a href="https://www.santosfc.com.br/titulos/" target="_blank" rel="noreferrer">Santos ↗</a><a href="https://www.tituloscorinthians.com.br/" target="_blank" rel="noreferrer">Corinthians ↗</a><a href="https://www.saopaulofc.net/enciclopedia-campeonato-brasileiro-2/" target="_blank" rel="noreferrer">São Paulo ↗</a><a href="https://www.cbf.com.br/a-cbf/noticias/juridico/a/resolucao-da-presidencia-062011" target="_blank" rel="noreferrer">CBF — Critério de 1987 ↗</a></div>
+        </section>
+        <div class="history-evolution">
+          <div class="history-section-heading"><span class="history-eyebrow">UM CAMPEONATO, MUITAS ERAS</span><h3>Do mata-mata à regularidade.</h3><p>O Brasileirão mudou de nome, tamanho e formato. A disputa que hoje premia a campanha de uma temporada já teve finais e eliminatórias.</p></div>
+          <ol class="history-timeline">
+            <li><span>1937</span><div><h4>Um título reconhecido décadas depois</h4><p>O Atlético-MG vence o Torneio dos Campeões, reconhecido pela CBF como Campeonato Brasileiro em 2023.</p></div></li>
+            <li><span>1959</span><div><h4>Taça Brasil</h4><p>Um torneio nacional em eliminatórias reúne campeões estaduais. O Bahia conquista a primeira edição, vencendo o Santos na decisão.</p></div></li>
+            <li><span>1967</span><div><h4>A era do Robertão</h4><p>O Torneio Roberto Gomes Pedrosa amplia o antigo Rio–São Paulo, com clubes de outros estados. Convive com a Taça Brasil em 1967 e 1968.</p></div></li>
+            <li><span>1971</span><div><h4>Campeonato Nacional</h4><p>O Atlético-MG vence a edição inaugural com esse nome. Nas décadas seguintes, regulamentos e quantidade de participantes variam bastante.</p></div></li>
+            <li><span>2003</span><div><h4>Começam os pontos corridos</h4><p>No século XXI, a Série A abandona a final: todos se enfrentam em turno e returno, e o clube com mais pontos é campeão. O Cruzeiro conquista o primeiro título do novo formato.</p></div></li>
+            <li><span>2006</span><div><h4>20 clubes, 38 rodadas</h4><p>A competição chega ao tamanho atual. Cada time enfrenta os outros 19 em casa e fora, com três pontos por vitória e um por empate.</p></div></li>
+          </ol>
+        </div>
+        <div class="history-facts"><article><span class="history-eyebrow">UMA EDIÇÃO INESQUECÍVEL</span><strong>34 gols</strong><h4>Washington, em 2004</h4><p>Pelo Athletico-PR, o atacante estabeleceu o recorde de gols em uma única edição do Brasileirão.</p></article><article><span class="history-eyebrow">ANTES DO NOME ATUAL</span><strong>2010</strong><h4>O passado foi unificado</h4><p>A CBF reconheceu Taça Brasil e Robertão como títulos brasileiros. Essas conquistas integram a história da primeira divisão, ao lado do torneio de 1937, reconhecido em 2023.</p></article></div>
+        <p class="history-scope">Memória da Série A · estatísticas encerradas em 2025. Esta seção é a mesma ao alternar entre as Séries A e B; os dados da temporada acima mantêm seu próprio recorte.</p>
+        <div class="history-sources"><span>PARA CONTINUAR A LEITURA</span><a href="https://www.cbf.com.br/futebol-brasileiro/noticias/campeonato-brasileiro-serie-a/a/gabigol-sobe-para-a-8-posicao-na-artilharia-historia-do-brasileirao" target="_blank" rel="noreferrer">CBF — Artilharia histórica ↗</a><a href="https://www.cbf.com.br/futebol-brasileiro/noticias/supercopa-masculino/a/sao-paulo-x-flamengo-vale-a-lideranca-do-ranking-dos-pontos-corridos" target="_blank" rel="noreferrer">CBF — Era dos pontos corridos ↗</a></div>
+        <div class="history-credits"><p>Créditos dos retratos · Wikimedia Commons. Imagens em escala de cinza e reenquadradas.</p><span><a href="https://commons.wikimedia.org/wiki/File:Roberto_Dinamite_Vasco_da_Gama.jpg" target="_blank" rel="noreferrer">Roberto Dinamite</a> — International Federation of Football History and Statistics · Public domain</span><span><a href="https://commons.wikimedia.org/wiki/File:Fred_Silver_Boot%2C_Confederations_Cup_2013.jpg" target="_blank" rel="noreferrer">Fred</a> — Tânia Rêgo/ABr · <a href="https://creativecommons.org/licenses/by/3.0/br/deed.en" target="_blank" rel="noreferrer">CC BY 3.0 br</a></span><span><a href="https://commons.wikimedia.org/wiki/File:Senadores_da_57%C2%AA_Legislatura_%2852689451805%29_%28cropped_-_3x4%29.jpg" target="_blank" rel="noreferrer">Romário</a> — Agência Senado from Brasilia, Brazil · <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noreferrer">CC BY 2.0</a></span><span><a href="https://commons.wikimedia.org/wiki/File:EdmundoVasco2008.jpg" target="_blank" rel="noreferrer">Edmundo</a> — Alex Carvalho · <a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="noreferrer">CC BY-SA 2.0</a></span><span><a href="https://commons.wikimedia.org/wiki/File:Zico6.jpg" target="_blank" rel="noreferrer">Zico</a> — Мельников Александр · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noreferrer">CC BY-SA 3.0</a></span></div>
+      </div>
+    </section>
   </main>
 
   <footer>
@@ -89,6 +134,6 @@
   </aside>
   <script src="photos.js?v=rodada-31-20261020"></script>
   <script src="data.js?v=rodada-31-20261020"></script>
-  <script src="app.js?v=rodada-31-qa-a11y-3"></script>
+  <script src="app.js?v=historia-1"></script>
 </body>
 </html>

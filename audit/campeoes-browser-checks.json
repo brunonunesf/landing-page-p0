@@ -1,0 +1,103 @@
+{
+  "matrix": [
+    {
+      "cards": 5,
+      "columns": "234.875px 234.883px 234.883px 234.883px 234.883px",
+      "dark": false,
+      "overflow": false,
+      "series": "A",
+      "width": 1440,
+      "yearsCountMatch": true
+    },
+    {
+      "cards": 5,
+      "columns": "234.875px 234.883px 234.883px 234.883px 234.883px",
+      "dark": true,
+      "overflow": false,
+      "series": "A",
+      "width": 1440,
+      "yearsCountMatch": true
+    },
+    {
+      "cards": 5,
+      "columns": "234.875px 234.883px 234.883px 234.883px 234.883px",
+      "dark": false,
+      "overflow": false,
+      "series": "B",
+      "width": 1440,
+      "yearsCountMatch": true
+    },
+    {
+      "cards": 5,
+      "columns": "234.875px 234.883px 234.883px 234.883px 234.883px",
+      "dark": true,
+      "overflow": false,
+      "series": "B",
+      "width": 1440,
+      "yearsCountMatch": true
+    },
+    {
+      "cards": 5,
+      "columns": "288px",
+      "dark": false,
+      "overflow": false,
+      "series": "A",
+      "width": 320,
+      "yearsCountMatch": true
+    },
+    {
+      "cards": 5,
+      "columns": "288px",
+      "dark": true,
+      "overflow": false,
+      "series": "A",
+      "width": 320,
+      "yearsCountMatch": true
+    },
+    {
+      "cards": 5,
+      "columns": "288px",
+      "dark": false,
+      "overflow": false,
+      "series": "B",
+      "width": 320,
+      "yearsCountMatch": true
+    },
+    {
+      "cards": 5,
+      "columns": "288px",
+      "dark": true,
+      "overflow": false,
+      "series": "B",
+      "width": 320,
+      "yearsCountMatch": true
+    }
+  ],
+  "yearCounts": [
+    {
+      "club": "Palmeiras",
+      "total": 12,
+      "years": 12
+    },
+    {
+      "club": "Flamengo",
+      "total": 8,
+      "years": 8
+    },
+    {
+      "club": "Santos",
+      "total": 8,
+      "years": 8
+    },
+    {
+      "club": "Corinthians",
+      "total": 7,
+      "years": 7
+    },
+    {
+      "club": "São Paulo",
+      "total": 6,
+      "years": 6
+    }
+  ]
+}

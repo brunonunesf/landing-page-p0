@@ -87,3 +87,14 @@ if(new URLSearchParams(location.search).get('capture')==='round31'){
   openClub('FLA',true);
   document.body.style.overflow='auto';
 }
+
+// A memória do campeonato é independente da divisão exibida na tabela.
+const historyToggle=document.querySelector('#historyToggle');
+const historyContent=document.querySelector('#historyContent');
+historyToggle.addEventListener('click',()=>{
+  const expanded=historyToggle.getAttribute('aria-expanded')!=='true';
+  historyToggle.setAttribute('aria-expanded',String(expanded));
+  historyContent.hidden=!expanded;
+  historyToggle.querySelector('span').textContent=expanded?'Recolher a história':'Explorar a história';
+  historyToggle.querySelector('.history-toggle-icon').textContent=expanded?'−':'+';
+});
