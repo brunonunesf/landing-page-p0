@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 410" fill="#cf1730">
+  <title>Estudo gráfico: urubu, Cristo Redentor, Maracanã e comemoração</title>
+  <!-- Desenhos vetoriais esquemáticos originais, não traçados de fotografias. -->
+  <g opacity=".52" transform="translate(390 30)">
+    <path d="M0 55 26 40 64 32 99 41 133 15 174 0 155 26 131 45 114 60 90 58 76 65 63 56 40 58 18 69Z"/>
+    <path d="m72 50 7 26 10 12 10-4-6-12 4-17Z"/>
+  </g>
+  <g opacity=".48" transform="translate(500 100)">
+    <circle cx="45" cy="15" r="10"/>
+    <path d="M34 29 0 35-36 0-5 48 30 47 29 83 16 144 73 144 61 84 60 47 95 43 125 1 87 32 55 28Z"/>
+    <path d="M17 146H76V154H17Z"/>
+  </g>
+  <g opacity=".48" transform="translate(310 205)">
+    <circle cx="44" cy="17" r="15"/>
+    <path d="M28 34 13 38-4 24-11 1-27 3-26 34 1 64 20 59 23 112 64 112 68 59 87 64 115 34 114 3 98 1 92 25 75 38 59 34Z"/>
+    <path d="M23 115 18 159 32 200 48 197 39 155 45 137 54 157 57 198 73 198 74 150 65 115Z"/>
+  </g>
+  <g opacity=".78" transform="translate(30 310)">
+    <path fill-rule="evenodd" d="M0 28C65-10 200-10 265 28L252 69C187 99 70 99 13 69ZM30 28C92 3 184 3 234 28 184 50 86 50 30 28Z"/>
+    <path d="M15 49C80 78 188 78 250 49L246 64C176 91 81 91 19 64Z"/>
+    <path d="M18 25V0H21V25M62 10V-12H65V10M208 10V-12H211V10M250 25V0H253V25"/>
+  </g>
+</svg>
