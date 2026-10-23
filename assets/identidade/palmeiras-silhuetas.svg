@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Grafismos da identidade do Palmeiras</title>
+  <desc id="desc">Composição autoral com uma cabeça de porco, o Nubank Parque, Abel Ferreira e linhas de prancheta.</desc>
+  <g fill="none" stroke="#65d98b" stroke-width="3" opacity=".55">
+    <circle cx="690" cy="116" r="78"/>
+    <circle cx="690" cy="116" r="111" opacity=".48"/>
+    <path d="M470 44h310M546 23v42M624 23v42M702 23v42M780 23v42" opacity=".45"/>
+    <path d="M516 106c44-52 91-72 174-72 84 0 137 20 178 72l-24 49H538z"/>
+    <path d="M537 154h307v50H537zM563 154v50M615 154v50M667 154v50M719 154v50M771 154v50M823 154v50" opacity=".62"/>
+    <path d="M520 204h340l18 28H502z"/>
+    <path d="M425 412h430V265H425zM640 265v147M425 338h430M596 338a44 44 0 1 0 88 0 44 44 0 1 0-88 0z" opacity=".32"/>
+    <path d="M467 300h38v76h-38M813 300h-38v76h38" opacity=".32"/>
+  </g>
+  <g opacity=".48" transform="translate(28 255) scale(.72)">
+    <path fill="#65d98b" d="M160 24c-25 0-47 8-66 24L38 14l15 75c-18 24-25 53-18 83l25 29 33 15 19 30h96l19-30 33-15 25-29c7-30 0-59-18-83l15-75-56 34c-19-16-41-24-66-24Z"/>
+    <path fill="#061b13" d="m76 115 49 9-20 19-34-10 5-18Zm168 0-49 9 20 19 34-10-5-18ZM104 166c5-32 24-50 56-50s51 18 56 50l-18 48-38 20-38-20-18-48Z"/>
+    <path fill="#65d98b" d="M119 166c7-17 21-25 41-25s34 8 41 25l-8 32-33 18-33-18-8-32Z"/>
+    <path fill="#f5fff7" d="M102 178c-13 4-25 2-36-5 8 22 22 36 43 42l14-19-21-18Zm116 0c13 4 25 2 36-5-8 22-22 36-43 42l-14-19 21-18Z"/>
+  </g>
+  <g fill="#65d98b">
+    <path d="M702 252c22 0 39 18 39 41 0 19-11 33-24 39l22 32 31 27-17 18-48-31-15-24-14 24-48 31-17-18 31-27 22-32c-14-6-24-20-24-39 0-23 17-41 38-41z" opacity=".42"/>
+    <path d="M643 348l47 28 47-28 31 13-22 37-56-15-56 15-22-37z" opacity=".56"/>
+  </g>
+  <g fill="#f5fff7">
+    <text x="32" y="118" font-family="Arial, sans-serif" font-size="84" font-weight="800" letter-spacing="-5" opacity=".11">ACADEMIA</text>
+    <text x="34" y="151" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="6" opacity=".28">CABEÇA FRIA · CORAÇÃO QUENTE</text>
+  </g>
+  <g fill="none" stroke="#d5b85a" stroke-width="2" opacity=".38">
+    <path d="M354 88h88M398 44v88"/>
+    <circle cx="398" cy="88" r="27"/>
+    <path d="m386 88 9 9 18-22"/>
+  </g>
+</svg>

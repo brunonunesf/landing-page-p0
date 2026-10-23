@@ -298,6 +298,13 @@ body.dark{
   filter:drop-shadow(0 18px 22px rgba(0,0,0,.45));
   opacity:0;
 }
+.club-intro__symbol-art{
+  width:min(290px,72vw);
+  max-height:220px;
+  object-fit:contain;
+  filter:drop-shadow(0 18px 22px rgba(0,0,0,.45));
+  opacity:0;
+}
 .club-intro__wing{transform-box:fill-box}
 .club-intro__wing--left{transform-origin:right center}
 .club-intro__wing--right{transform-origin:left center}
@@ -326,6 +333,7 @@ body.dark{
 .club-intro.is-playing{animation:club-intro-dismiss var(--intro-duration,2.6s) linear both}
 .club-intro.is-playing .club-intro__stripes{animation:club-intro-stripes var(--intro-duration,2.6s) cubic-bezier(.2,.8,.2,1) both}
 .club-intro.is-playing .club-intro__bird{animation:club-intro-bird 1.15s cubic-bezier(.16,.9,.28,1.18) .12s both}
+.club-intro.is-playing .club-intro__symbol-art{animation:club-intro-symbol 1.08s cubic-bezier(.16,.9,.28,1.18) .1s both}
 .club-intro.is-playing .club-intro__wing--left{animation:club-wing-left .28s ease-in-out .12s 4 alternate}
 .club-intro.is-playing .club-intro__wing--right{animation:club-wing-right .28s ease-in-out .12s 4 alternate}
 .club-intro.is-playing .club-intro__stage p{animation:club-intro-copy .35s ease-out .75s both}
@@ -334,6 +342,7 @@ body.dark{
 @keyframes club-intro-dismiss{0%,82%{opacity:1}100%{opacity:0}}
 @keyframes club-intro-stripes{0%{transform:translateX(-9%) scale(1.14)}65%,100%{transform:translateX(0) scale(1)}}
 @keyframes club-intro-bird{0%{opacity:0;transform:translate(-180px,90px) rotate(-16deg) scale(.36)}58%{opacity:1;transform:translate(12px,-8px) rotate(4deg) scale(1.08)}100%{opacity:1;transform:translate(0) rotate(0) scale(1)}}
+@keyframes club-intro-symbol{0%{opacity:0;transform:translateX(-220px) scale(.62)}64%{opacity:1;transform:translateX(15px) scale(1.05)}100%{opacity:1;transform:translateX(0) scale(1)}}
 @keyframes club-wing-left{from{transform:rotate(12deg)}to{transform:rotate(-18deg)}}
 @keyframes club-wing-right{from{transform:rotate(-12deg)}to{transform:rotate(18deg)}}
 @keyframes club-intro-copy{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
@@ -511,6 +520,7 @@ body.dark{
   background:linear-gradient(180deg,color-mix(in srgb,var(--club-accent) 24%,transparent),var(--club-surface) 520px),repeating-linear-gradient(0deg,var(--club-surface) 0 82px,var(--club-stripe) 82px 164px);
 }
 .detail-sheet.has-club-identity.expanded{width:min(650px,100%)}
+.detail-sheet.has-club-art::before{content:"";position:absolute;z-index:0;top:12px;right:0;width:100%;height:470px;background:var(--club-symbols) center top/cover no-repeat;opacity:.27;pointer-events:none}
 .detail-sheet.has-club-identity::after{content:"";position:absolute;inset:0 0 auto;height:480px;background:linear-gradient(115deg,color-mix(in srgb,var(--club-accent) 35%,transparent),transparent 60%);pointer-events:none}
 .detail-sheet.has-club-identity #detailContent{position:relative;z-index:1}
 .detail-sheet.has-club-identity .close{z-index:7}
@@ -549,6 +559,11 @@ body.dark{
 .club-moment--graphic .club-moment__graphic b{position:absolute;left:20px;top:22px;color:color-mix(in srgb,var(--club-text) 16%,transparent);font:800 clamp(62px,10vw,116px)/1 Archivo,Arial,sans-serif;letter-spacing:-.08em}
 
 .detail-sheet[data-pattern="rings"]{background:radial-gradient(circle at 80% 14%,transparent 0 65px,color-mix(in srgb,var(--club-accent) 20%,transparent) 66px 68px,transparent 69px 105px,color-mix(in srgb,var(--club-accent) 12%,transparent) 106px 108px,transparent 109px),linear-gradient(160deg,var(--club-stripe),var(--club-surface) 48%)}
+.club-intro--palmeiras-charge .club-intro__stripes{background:radial-gradient(circle at 50% 30%,transparent 0 78px,color-mix(in srgb,var(--club-accent-bright) 24%,transparent) 79px 82px,transparent 83px 126px,color-mix(in srgb,var(--club-accent) 20%,transparent) 127px 130px,transparent 131px),linear-gradient(155deg,var(--club-stripe),var(--club-surface) 62%)}
+.club-intro--palmeiras-charge .club-intro__stripes::before{content:"";position:absolute;left:12%;right:12%;top:13%;height:4px;background:repeating-linear-gradient(90deg,var(--club-accent-bright) 0 7px,transparent 7px 22px);filter:drop-shadow(0 0 12px var(--club-accent-bright));opacity:.8}
+.detail-sheet[data-club="PAL"] .club-moment img{object-position:center 30%;filter:grayscale(1) sepia(.62) hue-rotate(72deg) saturate(1.25) contrast(1.1)}
+.detail-sheet[data-club="PAL"] .club-moment::after{background:linear-gradient(0deg,#03170f 4%,rgba(3,23,15,.12) 72%),linear-gradient(90deg,rgba(3,23,15,.5),transparent 60%)}
+.detail-sheet[data-club="PAL"] .club-moment{border-color:rgba(101,217,139,.32)}
 .detail-sheet[data-pattern="diagonal"]{background:repeating-linear-gradient(-14deg,var(--club-surface) 0 84px,var(--club-stripe) 85px 164px)}
 .detail-sheet[data-pattern="vertical"]{background:repeating-linear-gradient(90deg,var(--club-surface) 0 92px,var(--club-stripe) 93px 184px)}
 .detail-sheet[data-pattern="rays"]{background:conic-gradient(from 205deg at 78% 8%,var(--club-surface),var(--club-stripe),var(--club-surface),var(--club-stripe),var(--club-surface))}
@@ -586,6 +601,7 @@ body.dark{
 .capture-mode .detail-sheet.has-club-identity,.capture-mode .detail-sheet.has-club-identity.expanded{width:auto}
 @media(max-width:500px){
   .detail-sheet.has-club-identity,.detail-sheet.has-club-identity.expanded{width:100%}
+  .detail-sheet.has-club-art::before{top:32px;right:-9%;width:118%;height:410px;opacity:.22}
   .detail-sheet.has-club-identity .detail-top{min-height:170px}
   .detail-sheet.has-club-identity .detail-top h3{font-size:clamp(30px,9vw,36px)}
   .detail-sheet.has-club-identity .detail-top .crest{width:70px;height:70px}

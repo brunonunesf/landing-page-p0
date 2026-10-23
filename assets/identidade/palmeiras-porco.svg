@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 260" role="img" aria-labelledby="title desc">
+  <title id="title">Cabeça de porco do Palmeiras</title>
+  <desc id="desc">Silhueta autoral, frontal e angular de uma cabeça de porco.</desc>
+  <path fill="#65d98b" d="M160 24c-25 0-47 8-66 24L38 14l15 75c-18 24-25 53-18 83l25 29 33 15 19 30h96l19-30 33-15 25-29c7-30 0-59-18-83l15-75-56 34c-19-16-41-24-66-24Z"/>
+  <path fill="#3ebc6e" d="m55 43 41 25-29 30-12-55Zm210 0-41 25 29 30 12-55ZM81 112l32-38 16 51-31 31-27-8Zm158 0-32-38-16 51 31 31 27-8Z"/>
+  <path fill="#061b13" d="m76 115 49 9-20 19-34-10 5-18Zm168 0-49 9 20 19 34-10-5-18Z"/>
+  <path fill="#061b13" d="M104 166c5-32 24-50 56-50s51 18 56 50l-18 48-38 20-38-20-18-48Z" opacity=".92"/>
+  <path fill="#65d98b" d="M119 166c7-17 21-25 41-25s34 8 41 25l-8 32-33 18-33-18-8-32Z"/>
+  <ellipse cx="141" cy="174" rx="8" ry="12" fill="#061b13" transform="rotate(-15 141 174)"/>
+  <ellipse cx="179" cy="174" rx="8" ry="12" fill="#061b13" transform="rotate(15 179 174)"/>
+  <path fill="#f5fff7" d="M102 178c-13 4-25 2-36-5 8 22 22 36 43 42l14-19-21-18Zm116 0c13 4 25 2 36-5-8 22-22 36-43 42l-14-19 21-18Z"/>
+  <path fill="none" stroke="#f5fff7" stroke-linecap="round" stroke-width="5" d="m75 96 37-18m133 18-37-18" opacity=".55"/>
+</svg>
