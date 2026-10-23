@@ -141,6 +141,7 @@ body.dark{
   height:100%;
   display:block;
   object-position:var(--hero-focus,50% 40%);
+  transform-origin:var(--hero-focus,50% 40%);
   filter:grayscale(1) contrast(1.08);
   mix-blend-mode:luminosity;
   opacity:.96;

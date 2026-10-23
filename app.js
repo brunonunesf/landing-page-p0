@@ -212,10 +212,24 @@ const heroMoments=[
 const heroMedia=document.querySelector('#heroMedia');
 const heroPhotoLabel=document.querySelector('#heroPhotoLabel');
 const heroPhotoPause=document.querySelector('#pauseHeroPhotos');
+const heroPhotoDuration=5000;
 let heroPhotoIndex=0,heroPhotoTimer,heroPhotosPaused=reducedMotion.matches;
 
 heroMedia.innerHTML=heroMoments.map((moment,index)=>`<div class="hero-slide${index===0?' active':''}" data-title="${moment.title}"><img src="${moment.src}" alt="" ${index===0?'fetchpriority="high"':'loading="lazy"'} style="--hero-focus:${moment.focus};object-fit:${moment.fit||'cover'}"></div>`).join('');
 const heroSlides=[...heroMedia.querySelectorAll('.hero-slide')];
+const heroZooms=new Map();
+
+function startHeroZoom(){
+  const slide=heroSlides[heroPhotoIndex];
+  heroZooms.get(slide)?.cancel();
+  if(reducedMotion.matches)return;
+  const zoom=slide.querySelector('img').animate(
+    [{transform:'scale(1)'},{transform:'scale(1.08)'}],
+    {duration:heroPhotoDuration,easing:'linear',fill:'forwards'}
+  );
+  heroZooms.set(slide,zoom);
+  if(heroPhotosPaused||document.hidden)zoom.pause();
+}
 
 function showHeroPhoto(index){
   for(let checked=0;checked<heroSlides.length;checked++,index++){
@@ -226,15 +240,25 @@ function showHeroPhoto(index){
       heroPhotoIndex=next;
       heroSlides[heroPhotoIndex].classList.add('active');
       heroPhotoLabel.textContent=heroMoments[heroPhotoIndex].title;
+      startHeroZoom();
       return;
     }
   }
 }
 function scheduleHeroPhotos(){
-  clearInterval(heroPhotoTimer);
+  clearTimeout(heroPhotoTimer);
   heroPhotoPause.textContent=heroPhotosPaused?'Retomar':'Pausar';
   heroPhotoPause.setAttribute('aria-pressed',String(heroPhotosPaused));
-  if(!heroPhotosPaused&&!document.hidden)heroPhotoTimer=setInterval(()=>showHeroPhoto(heroPhotoIndex+1),6000);
+  if(reducedMotion.matches){
+    heroZooms.forEach(zoom=>zoom.cancel());
+    heroZooms.clear();
+  }
+  let zoom=heroZooms.get(heroSlides[heroPhotoIndex]);
+  if(!zoom&&!reducedMotion.matches){startHeroZoom();zoom=heroZooms.get(heroSlides[heroPhotoIndex])}
+  if(heroPhotosPaused||document.hidden){zoom?.pause();return}
+  zoom?.play();
+  const remaining=Math.max(0,heroPhotoDuration-(zoom?.currentTime||0));
+  heroPhotoTimer=setTimeout(()=>{showHeroPhoto(heroPhotoIndex+1);scheduleHeroPhotos()},remaining);
 }
 heroSlides.forEach(slide=>{
   const image=slide.querySelector('img');
