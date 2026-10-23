@@ -13,3 +13,7 @@ Todas as fotografias permanecem como material de prévia. Conferir a autorizaç�
 
 - **Abel Ferreira · Palmeiras, 2022** — partida contra o Athletico Paranaense, no então Allianz Parque, em 2 de julho de 2022. Foto: Fabio Giannelli / Soccer Digital. [Arquivo e informações de reutilização no Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Abel-Ferreira-Palmeiras-Athletico-jul-2022.jpg). A página do arquivo informa Public Domain Mark, revisada pelo Wikimedia Commons em 7 de julho de 2022.
 - `palmeiras-silhuetas.svg` e `palmeiras-porco.svg` são composições vetoriais originais produzidas para este projeto. A pose de Abel no primeiro arquivo foi simplificada a partir da fotografia acima; o estádio é uma interpretação geométrica, sem logotipos comerciais.
+
+## Flamengo · Urubu da vinheta
+
+- `flamengo-urubu.webp` — ilustração gerada com OpenAI ImageGen a partir das referências de mascotes e bandeirões fornecidas pelo usuário. Esboço aprovado em 23 de outubro de 2026; versão final com fundo transparente e codificação WebP para a vinheta. Sem patrocinadores.
