@@ -33,13 +33,21 @@ Object.values(window.marketData||{}).flatMap(club=>club.players||[]).forEach(pla
 playerPhotos['Jorge Carrascal']='https://storage.googleapis.com/crf-strapi-media-prd/CARRASCAL_Fut_Prof_Masc_69cb5c6eed/CARRASCAL_Fut_Prof_Masc_69cb5c6eed.png';
 let division='A',clubs=clubsA;
 
-const zone=p=>division==='B'?(p<=2?'#c8f631':p<=6?'#4bd57d':p>=17?'#ee604e':'transparent'):(p<=4?'#c8f631':p<=6?'#4bd57d':p<=12?'#52a7d8':p>=17?'#ee604e':'transparent');
+// Formatação altera somente a apresentação, nunca a referência de dados.
+function formatEuroMi(value){
+  if(value==null)return 'N/D';
+  if(typeof value==='string'&&!/[0-9]/.test(value))return value;
+  const numeric=typeof value==='number'?value:Number(String(value).replace(/[^0-9.,-]/g,'').replace(',','.').replace(/\.$/,''));
+  return Number.isFinite(numeric)?`€ ${new Intl.NumberFormat('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}).format(numeric)} mi.`:String(value);
+}
+const formatPercent=value=>new Intl.NumberFormat('pt-BR',{minimumFractionDigits:1,maximumFractionDigits:1}).format(value);
+const zone=p=>division==='B'?(p<=2?'var(--zone-title)':p<=6?'var(--zone-pre)':p>=17?'var(--zone-drop)':'transparent'):(p<=4?'var(--zone-title)':p<=6?'var(--zone-pre)':p<=12?'var(--zone-sula)':p>=17?'var(--zone-drop)':'transparent');
 const crest=c=>`${crestBase}${c}.png?v=escudos-oficiais-20261017`;
-const dots=f=>[...f].map(x=>`<i class="dot ${x}" title="${x==='V'?'Vitória':x==='D'?'Derrota':'Empate'}"></i>`).join('');
+const dots=f=>[...f].map(x=>`<i class="dot ${x}" role="img" aria-label="${x==='V'?'Vitória':x==='D'?'Derrota':'Empate'}" title="${x==='V'?'Vitória':x==='D'?'Derrota':'Empate'}"></i>`).join('');
 const table=document.querySelector('#tableBody');
 function renderTable(){
-  table.innerHTML=clubs.map(c=>`<div class="club-entry" style="--zone:${zone(c.pos)}"><div class="club-row row-grid" tabindex="0" role="button" aria-label="Ver detalhes do ${c.name}" data-code="${c.code}"><span class="pos">${String(c.pos).padStart(2,'0')}</span><span class="club"><img class="crest" src="${crest(c.code)}" alt="Escudo do ${c.name}" loading="lazy">${c.name}</span><strong class="pts">${c.pts}</strong><span class="stat">${c.j}</span><span class="stat">${c.v}</span><span class="stat">${c.gp}</span><span class="stat">${c.gc}</span><span class="stat">${c.gp-c.gc>0?'+':''}${c.gp-c.gc}</span><span class="form">${dots(c.form)}</span><span class="arrow">↗</span></div><div class="hover-details"><span><small>APROVEITAMENTO</small><b>${((c.pts/(c.j*3))*100).toFixed(1).replace('.',',')}%</b></span><span><small>VALOR DO ELENCO</small><b>${marketData[c.code]?.total||'N/D'}</b></span><span><small>PRÓXIMO</small><b>${c.next} · ${c.venue}</b></span><span class="hover-form"><small>RECENTE</small><span class="form">${dots(c.form)}</span></span><em>Clique para abrir a análise completa →</em></div></div>`).join('');
-  document.querySelector('#mobileCards').innerHTML=clubs.map(c=>`<article class="mobile-card" tabindex="0" role="button" data-code="${c.code}" style="--zone:${zone(c.pos)}"><i class="zone"></i><span class="pos">${String(c.pos).padStart(2,'0')}</span><img class="crest" src="${crest(c.code)}" alt="Escudo do ${c.name}" loading="lazy"><div><h3>${c.name}</h3><p class="form">${dots(c.form)}</p></div><div class="points"><strong>${c.pts}</strong><span>PONTOS</span></div></article>`).join('');
+  table.innerHTML=clubs.map(c=>`<div class="club-entry" style="--zone:${zone(c.pos)}"><div class="club-row row-grid" aria-haspopup="dialog" tabindex="0" role="button" aria-label="Ver detalhes do ${c.name}" data-code="${c.code}"><span class="pos">${String(c.pos).padStart(2,'0')}</span><span class="club"><img decoding="async" class="crest" width="43" height="43" src="${crest(c.code)}" alt="Escudo do ${c.name}" loading="lazy">${c.name}</span><strong class="pts">${c.pts}</strong><span class="stat">${c.j}</span><span class="stat">${c.v}</span><span class="stat">${c.gp}</span><span class="stat">${c.gc}</span><span class="stat">${c.gp-c.gc>0?'+':''}${c.gp-c.gc}</span><span class="form">${dots(c.form)}</span><span class="arrow">↗</span></div><div class="hover-details"><span><small>APROVEITAMENTO</small><b>${formatPercent((c.pts/(c.j*3))*100)}%</b></span><span><small>VALOR DO ELENCO</small><b>${formatEuroMi(marketData[c.code]?.total)}</b></span><span><small>PRÓXIMO</small><b>${c.next} · ${c.venue}</b></span><span class="hover-form"><small>RECENTE</small><span class="form">${dots(c.form)}</span></span><em>Clique para abrir a análise completa →</em></div></div>`).join('');
+  document.querySelector('#mobileCards').innerHTML=clubs.map(c=>`<article class="mobile-card" tabindex="0" role="button" aria-label="Ver detalhes do ${c.name}" aria-haspopup="dialog" data-code="${c.code}" style="--zone:${zone(c.pos)}"><i class="zone"></i><span class="pos">${String(c.pos).padStart(2,'0')}</span><img decoding="async" class="crest" width="43" height="43" src="${crest(c.code)}" alt="Escudo do ${c.name}" loading="lazy"><div><h3>${c.name}</h3><p class="mobile-games">${c.j} jogos disputados</p></div><div class="points"><strong>${c.pts}</strong><span>PONTOS</span></div></article>`).join('');
 }
 renderTable();
 
@@ -107,20 +115,28 @@ function playClubIntro(code){
   clubIntro.className=`club-intro club-intro--${intro.type}`;
   clubIntro.dataset.symbol=intro.symbol;
   clubIntro.style.setProperty('--intro-duration',`${intro.duration}ms`);
-  const symbol=intro.art?`<img class="club-intro__symbol-art" src="${intro.art}" alt="" aria-hidden="true">`:`<div class="club-intro__emblem" aria-hidden="true"><span>${intro.mark}</span></div>`;
+  const symbol=intro.art?`<img decoding="async" class="club-intro__symbol-art" width="180" height="180" src="${intro.art}" alt="" aria-hidden="true">`:`<div class="club-intro__emblem" aria-hidden="true"><span>${intro.mark}</span></div>`;
   clubIntro.innerHTML=`<div class="club-intro__stripes" aria-hidden="true"></div><div class="club-intro__stage">${symbol}<p>${intro.kicker}</p><strong aria-label="${club.name}">${introLetters(club.name.toUpperCase())}</strong><small>Clique, toque ou pressione Esc para continuar</small></div>`;
   clubIntro.hidden=false;
   void clubIntro.offsetWidth;
   clubIntro.classList.add('is-playing');
   introTimer=setTimeout(finishClubIntro,intro.duration);
 }
-function playerVisual(name,clubCode){const fallback=clubCode?crest(clubCode):'';return playerPhotos[name]?`<img class="avatar" src="${playerPhotos[name]}" alt="Foto de ${name}" onerror="this.onerror=null;this.src='${fallback}';this.classList.add('club-photo-fallback')">`:`<img class="avatar club-photo-fallback" src="${fallback}" alt="Escudo do clube de ${name}">`}
-let pinned=false,closeTimer,lastTrigger=null;
+// URLs do recorte que retornaram 404 na auditoria: manter dados e usar o escudo local.
+// TODO(asset): retratos licenciados dos jogadores com fotos remotas indisponíveis.
+const unavailableEspnPhotos=new Set(["115379", "119170", "121921", "131075", "140012", "143849", "145107", "145369", "146269", "155056", "158272", "162558", "166488", "167845", "168981", "174395", "174782", "182522", "182646", "197049", "198435", "198569", "198808", "199017", "199065", "199734", "200775", "205448", "206953", "210135", "210143", "218972", "219005", "223437", "235385", "236283", "236284", "236324", "236596", "237013", "237136", "240149", "241466", "250594", "252805", "253486", "254007", "266664", "267902", "269079", "269852", "270193", "270562", "271726", "272527", "282588", "285004", "285029", "286703", "286714", "287633", "287688", "293875", "297761", "298576", "299967", "302657", "304380", "306764", "307717", "309499", "3108270", "314545", "314603", "314825", "314915", "319422", "319696", "320082", "331074", "333314", "334723", "334756", "339844", "357900", "358788", "361359", "371527", "379785", "379922", "380327", "382870", "382994", "385289", "390671", "399179", "418241", "418256", "420672", "94225"]);
+function unavailablePhoto(src){const match=/espncdn\.com\/i\/headshots\/soccer\/players\/full\/(\d+)\.png$/.exec(src||'');return Boolean(match&&unavailableEspnPhotos.has(match[1]))}
+function playerVisual(name,clubCode){
+  const fallback=clubCode?crest(clubCode):'';
+  const photo=unavailablePhoto(playerPhotos[name])?null:playerPhotos[name];
+  return photo?`<img decoding="async" class="avatar" width="46" height="46" src="${photo}" alt="Foto de ${name}" onerror="this.onerror=null;this.src='${fallback}';this.classList.add('club-photo-fallback')">`:`<img decoding="async" class="avatar club-photo-fallback" width="46" height="46" src="${fallback}" alt="Escudo do clube de ${name}">`;
+}
+let pinned=false,closeTimer,lastTrigger=null,lastTriggerKeyboard=false;
 const rankList=(items,label,clubCode)=>items.map((s,i)=>{const[n,v]=s.split('|');return `<div class="scorer assist"><div class="assist-photo">${playerVisual(n,clubCode)}<span class="assist-rank">0${i+1}</span></div><b>${n}</b><em>${v} ${label}</em></div>`}).join('');
 const searchUrl=q=>`https://www.google.com/search?q=${encodeURIComponent(`${q} site:ge.globo.com antes:${division==='A'?'2026-10-21':'2026-10-18'}`)}`;
-const marketList=code=>(marketData[code]?.players||[]).map((p,i)=>`<a class="market-player" href="${marketData[code].kader}" target="_blank" rel="noreferrer"><img src="${p.photo}" alt="Foto de ${p.name}" loading="lazy" onerror="this.onerror=null;this.src='${crest(code)}';this.classList.add('club-photo-fallback')"><span><small>0${i+1}</small><b>${p.name}</b></span><em>${p.value}</em></a>`).join('');
+const marketList=code=>(marketData[code]?.players||[]).map((p,i)=>`<a class="market-player" href="${marketData[code].kader}" target="_blank" rel="noopener noreferrer"><img decoding="async" width="46" height="46" src="${p.photo}" alt="Foto de ${p.name}" loading="lazy" onerror="this.onerror=null;this.src='${crest(code)}';this.classList.add('club-photo-fallback')"><span><small>0${i+1}</small><b>${p.name}</b></span><em>${formatEuroMi(p.value)}</em></a>`).join('');
 function openClub(code,expanded=false){
-  const c=clubs.find(x=>x.code===code),x=extras[code],market=marketData[code],identity=clubIdentities[code],pct=((c.pts/(c.j*3))*100).toFixed(1).replace('.',',');
+  const c=clubs.find(x=>x.code===code),x=extras[code],market=marketData[code],identity=clubIdentities[code],pct=formatPercent((c.pts/(c.j*3))*100);
   sheet.dataset.club=code;
   sheet.scrollTop=0;
   applyClubIdentity(identity);
@@ -131,51 +147,78 @@ function openClub(code,expanded=false){
   const valuables=marketList(code)||'<div class="data-note">Avaliações individuais não disponíveis.</div>';
   const newsUrl=searchUrl(`${c.name} últimas notícias futebol`),previewUrl=searchUrl(`${c.name} x ${c.next} prévia próximo jogo`);
   const symbolField=identity?.symbols?.marks?`<div class="club-symbol-field" aria-hidden="true">${identity.symbols.marks.map(mark=>`<span>${mark}</span>`).join('')}</div>`:'';
-  const clubMoment=identity?.moment?`<figure class="club-moment${identity.moment.image?'':' club-moment--graphic'}">${identity.moment.image?`<img src="${identity.moment.image}" alt="${identity.moment.alt||''}" loading="lazy">`:`<div class="club-moment__graphic" aria-hidden="true"><img src="${crest(c.code)}" alt=""><b>${identity.moment.year}</b></div>`}<figcaption><small>${identity.moment.eyebrow}</small><h4>${identity.moment.title}</h4><p>${identity.moment.text}</p>${identity.moment.source?`<a href="${identity.moment.source}" target="_blank" rel="noreferrer">${identity.moment.credit} ↗</a>`:''}</figcaption></figure>`:'';
-  content.innerHTML=`${symbolField}<div class="detail-top"><img class="crest" src="${crest(c.code)}" alt="Escudo do ${c.name}"><div><small>SÉRIE ${division} · ${String(c.pos).padStart(2,'0')}º NA CLASSIFICAÇÃO</small><h3>${c.name}</h3>${identity?`<p class="club-tagline">${identity.tagline}</p>${identity.intro?`<button class="replay-celebration" type="button" data-replay-intro="${code}" aria-label="Rever comemoração do ${c.name}">↻ Rever comemoração</button>`:''}`:''}</div></div>
+// TODO(asset): fotografia alternativa do Flamengo com licença confirmada; usa silhueta existente.
+  const clubMoment=identity?.moment?`<figure class="club-moment${identity.moment.image?'':' club-moment--graphic'}">${identity.moment.image?`<img decoding="async" width="640" height="360" src="${code==='FLA'?'assets/identidade/flamengo-silhuetas.svg':identity.moment.image}" alt="${code==='FLA'?'Silhuetas que representam a torcida e os símbolos do Flamengo':identity.moment.alt||''}" loading="lazy">`:`<div class="club-moment__graphic" aria-hidden="true"><img decoding="async" width="130" height="130" src="${crest(c.code)}" alt=""><b>${identity.moment.year}</b></div>`}<figcaption><small>${identity.moment.eyebrow}</small><h4>${identity.moment.title}</h4><p>${identity.moment.text}</p>${identity.moment.source?`<a href="${identity.moment.source}" target="_blank" rel="noopener noreferrer">${code==='FLA'?'Fonte do momento histórico · ':''}${identity.moment.credit} ↗</a>`:''}</figcaption></figure>`:'';
+  content.innerHTML=`${symbolField}<div class="detail-top"><img decoding="async" class="crest" width="43" height="43" src="${crest(c.code)}" alt="Escudo do ${c.name}"><div><small>SÉRIE ${division} · ${String(c.pos).padStart(2,'0')}º NA CLASSIFICAÇÃO</small><h3 id="clubDialogTitle">${c.name}</h3>${identity?`<p class="club-tagline">${identity.tagline}</p>${identity.intro?`<button class="replay-celebration" type="button" data-replay-intro="${code}" aria-label="Rever comemoração do ${c.name}">↻ Rever comemoração</button>`:''}`:''}</div></div>
   <div class="detail-stats"><div class="detail-stat"><span>VITÓRIAS</span><strong>${c.v}</strong></div><div class="detail-stat"><span>GOLS PRÓ</span><strong>${c.gp}</strong></div><div class="detail-stat"><span>GOLS CONTRA</span><strong>${c.gc}</strong></div></div>
   ${clubMoment}
-  <div class="market-total"><span>VALOR DE MERCADO DO ELENCO</span><strong>${market?.total||'N/D'}</strong><a href="${market?.kader||'#'}" target="_blank" rel="noreferrer">VER NO TRANSFERMARKT ↗</a></div>
+  <div class="market-total"><span>VALOR DE MERCADO DO ELENCO</span><strong>${formatEuroMi(market?.total)}</strong><a href="${market?.kader||'#'}" target="_blank" rel="noopener noreferrer">VER NO TRANSFERMARKT ↗</a></div>
   <div class="detail-section"><h4>APROVEITAMENTO</h4><div class="percent">${pct}%</div></div>
   <div class="detail-section"><h4>FORMA · ÚLTIMOS 5</h4><div class="form large">${dots(c.form)}</div></div>${scorers}
   <div class="detail-section"><h4>TOP 3 MAIS VALIOSOS DO ELENCO</h4>${valuables}</div>
   ${expanded?`<div class="detail-section"><h4>ÚLTIMOS CINCO JOGOS</h4><div class="match-list">${games.map(g=>`<div class="match"><span class="result ${g.r}">${g.r}</span><b>${g.score}</b><span>${g.opp}</span></div>`).join('')}</div></div>${assists}`:`<button class="expand-hint" data-expand="${code}">Clique para ver jogos, mercado e notícias →</button>`}
   <div class="next-game"><small>PRÓXIMO JOGO APÓS O RECORTE</small><div class="fixture"><strong>${c.next}</strong><span class="venue">${c.venue} · ${c.venue==='C'?'CASA':'FORA'}</span></div><div class="next-date">${c.date}</div></div>
-  <div class="detail-section news-section"><h4>NOTÍCIAS E PRÉVIA</h4><a class="news-link featured" href="${previewUrl}" target="_blank" rel="noreferrer"><small>PRÉVIA DO PRÓXIMO JOGO</small><b>${c.name} × ${c.next}</b><span>ABRIR BUSCA NO GE ↗</span></a><a class="news-link" href="${newsUrl}" target="_blank" rel="noreferrer"><small>ÚLTIMAS NOTÍCIAS</small><b>Noticiário de ${c.name}</b><span>VER MATÉRIAS ↗</span></a></div>`;
-  sheet.classList.add('open');sheet.setAttribute('aria-hidden','false');playClubIntro(code);if(expanded){backdrop.classList.add('open');document.body.style.overflow='hidden';document.querySelector('#closeSheet').focus()}else{backdrop.classList.remove('open');document.body.style.overflow=''}
+  <div class="detail-section news-section"><h4>NOTÍCIAS E PRÉVIA</h4><a class="news-link featured" href="${previewUrl}" target="_blank" rel="noopener noreferrer"><small>PRÉVIA DO PRÓXIMO JOGO</small><b>${c.name} × ${c.next}</b><span>ABRIR BUSCA NO GE ↗</span></a><a class="news-link" href="${newsUrl}" target="_blank" rel="noopener noreferrer"><small>ÚLTIMAS NOTÍCIAS</small><b>Noticiário de ${c.name}</b><span>VER MATÉRIAS ↗</span></a></div>`;
+  sheet.inert=false;sheet.classList.add('open');sheet.setAttribute('aria-hidden','false');playClubIntro(code);if(expanded){backdrop.classList.add('open');document.body.style.overflow='hidden';document.querySelectorAll('header,main,footer,#backToTop').forEach(el=>el.inert=!document.body.classList.contains('capture-mode'));document.querySelector('#closeSheet').focus()}else{backdrop.classList.remove('open');document.body.style.overflow=''}
 }
-function close(){finishClubIntro();sheet.classList.remove('open');sheet.classList.remove('expanded');sheet.setAttribute('aria-hidden','true');backdrop.classList.remove('open');document.body.style.overflow='';if(lastTrigger?.isConnected)lastTrigger.focus();}
-document.addEventListener('click',e=>{const el=e.target.closest('[data-code],[data-expand]');if(el){lastTrigger=el;openClub(el.dataset.code||el.dataset.expand,true)}});
+function close(){document.querySelectorAll('.club-entry.preview-open').forEach(entry=>entry.classList.remove('preview-open'));finishClubIntro();document.querySelectorAll('header,main,footer,#backToTop').forEach(el=>el.inert=false);sheet.inert=true;sheet.classList.remove('open');sheet.classList.remove('expanded');sheet.setAttribute('aria-hidden','true');backdrop.classList.remove('open');document.body.style.overflow='';if(lastTrigger?.isConnected){lastTrigger.classList.add('focus-returned');lastTrigger.classList.toggle('pointer-returned',!lastTriggerKeyboard);lastTrigger.focus({preventScroll:true});}}
+document.addEventListener('click',e=>{const el=e.target.closest('[data-code],[data-expand]')||e.target.closest('.club-entry')?.querySelector('[data-code]');if(el){lastTriggerKeyboard=e.detail===0;lastTrigger=el;openClub(el.dataset.code||el.dataset.expand,true)}});
 document.addEventListener('click',e=>{const replay=e.target.closest('[data-replay-intro]');if(replay){sheet.scrollTop=0;playClubIntro(replay.dataset.replayIntro)}});
 clubIntro.addEventListener('click',finishClubIntro);
-document.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('[data-code]')){lastTrigger=e.target;openClub(e.target.dataset.code,true)}if(e.key==='Tab'&&pinned&&sheet.classList.contains('open')){const focusable=[...sheet.querySelectorAll('button,a[href],[tabindex]:not([tabindex="-1"])')].filter(el=>!el.disabled);const first=focusable[0],last=focusable.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}if(e.key==='Escape'){if(!clubIntro.hidden){finishClubIntro();return}pinned=false;close()}});
-document.querySelector('#closeSheet').addEventListener('click',()=>{pinned=false;close()});backdrop.addEventListener('click',()=>{pinned=false;close()});document.querySelector('#aboutBtn').addEventListener('click',()=>document.querySelector('.method').scrollIntoView({behavior:'smooth'}));
-function setDivision(next){division=next;clubs=division==='A'?clubsA:clubsB;close();document.querySelectorAll('[data-series]').forEach(b=>b.classList.toggle('active',b.dataset.series===division));document.querySelector('#heroSeries').textContent=`CAMPEONATO BRASILEIRO · SÉRIE ${division}`;document.querySelector('.round-select > span').textContent=division==='A'?'APÓS A RODADA':'RODADAS CONCLUÍDAS';document.querySelector('#roundLabel').textContent=division==='A'?'31 / 38':'33 / 38';document.querySelector('#heroDescription').innerHTML=division==='A'?'Classificação final da <strong>31ª rodada</strong>.':'Classificação da <strong>Série B até 17 de outubro</strong>, calculada partida a partida no mesmo recorte.';document.querySelector('#methodPrimary').innerHTML=division==='A'?'Esta é uma fotografia do campeonato <strong>ao apito final da rodada 31</strong>.':'A Série B considera <strong>todas as partidas concluídas até 17 de outubro</strong>; por isso alguns clubes têm número diferente de jogos.';document.querySelector('#methodSecondary').innerHTML=division==='A'?'Partidas, classificação e estatísticas da Série A consideram os jogos concluídos até 19 de outubro. Os “próximos jogos” exibem o primeiro compromisso agendado após esse momento.':'Partidas, classificação e estatísticas da Série B permanecem no recorte anterior de 17 de outubro.';document.querySelector('.legend').innerHTML=division==='A'?'<span><i class="key title"></i> Libertadores</span><span><i class="key pre"></i> Pré-Libertadores</span><span><i class="key sula"></i> Sul-Americana</span><span><i class="key drop"></i> Rebaixamento</span>':'<span><i class="key title"></i> Acesso direto</span><span><i class="key pre"></i> Playoffs de acesso</span><span><i class="key drop"></i> Rebaixamento</span>';document.querySelector('.stamp').innerHTML=division==='A'?'ATUALIZADO EM 20.10.2026<br>CLASSIFICAÇÃO: RODADA 31':'ATUALIZADO EM 17.10.2026<br>CLASSIFICAÇÃO: SÉRIE B';renderTable();localStorage.setItem('br26-series',division)}
+document.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('[data-code]')){e.preventDefault();lastTriggerKeyboard=true;e.target.classList.remove('focus-returned','pointer-returned');lastTrigger=e.target;openClub(e.target.dataset.code,true)}if(e.key==='Tab'&&pinned&&sheet.classList.contains('open')){const focusable=[...sheet.querySelectorAll('button,a[href],[tabindex]:not([tabindex="-1"])')].filter(el=>!el.disabled&&el.getClientRects().length);const first=focusable[0],last=focusable.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});
+document.querySelector('#closeSheet').addEventListener('click',()=>{pinned=false;close()});backdrop.addEventListener('click',()=>{pinned=false;close()});
+function setDivision(next){division=next;clubs=division==='A'?clubsA:clubsB;close();document.querySelectorAll('[data-series]').forEach(b=>b.classList.toggle('active',b.dataset.series===division));document.querySelector('#heroSeries').textContent=`CAMPEONATO BRASILEIRO · SÉRIE ${division}`;document.querySelector('.round-select > span').textContent=division==='A'?'APÓS A RODADA':'RODADAS CONCLUÍDAS';document.querySelector('#roundLabel').textContent=division==='A'?'31 / 38':'33 / 38';document.querySelector('#heroDescription').innerHTML=division==='A'?'Série A atualizada até a <strong>31ª rodada</strong>.':'Classificação da <strong>Série B até 17 de outubro</strong>, calculada partida a partida no mesmo recorte.';document.querySelector('#methodPrimary').innerHTML=division==='A'?'Esta é uma fotografia do campeonato <strong>ao apito final da rodada 31</strong>.':'A Série B considera <strong>todas as partidas concluídas até 17 de outubro</strong>; por isso alguns clubes têm número diferente de jogos.';document.querySelector('#methodSecondary').innerHTML=division==='A'?'Partidas, classificação e estatísticas da Série A consideram os jogos concluídos até 19 de outubro. Os “próximos jogos” exibem o primeiro compromisso agendado após esse momento.':'Partidas, classificação e estatísticas da Série B permanecem no recorte anterior de 17 de outubro.';document.querySelector('.legend').innerHTML=division==='A'?'<span><i class="key title"></i> Libertadores</span><span><i class="key pre"></i> Pré-Libertadores</span><span><i class="key sula"></i> Sul-Americana</span><span><i class="key drop"></i> Rebaixamento</span>':'<span><i class="key title"></i> Acesso direto</span><span><i class="key pre"></i> Playoffs de acesso</span><span><i class="key drop"></i> Rebaixamento</span>';document.querySelector('.stamp').innerHTML=division==='A'?'ATUALIZADO EM 20/10/2026<br>CLASSIFICAÇÃO: RODADA 31':'ATUALIZADO EM 17/10/2026<br>CLASSIFICAÇÃO: SÉRIE B';renderTable();localStorage.setItem('br26-series',division)}
 document.querySelectorAll('[data-series]').forEach(b=>b.addEventListener('click',()=>setDivision(b.dataset.series)));
 setDivision(localStorage.getItem('br26-series')==='B'?'B':'A');
 const themeBtn=document.querySelector('#themeBtn');
-function setTheme(dark){document.body.classList.toggle('dark',dark);themeBtn.setAttribute('aria-pressed',String(dark));themeBtn.querySelector('.theme-label').textContent=dark?'Modo claro':'Modo escuro';themeBtn.querySelector('.theme-icon').textContent=dark?'☀':'◐';localStorage.setItem('br26-theme',dark?'dark':'light')}
+function setTheme(dark){document.body.classList.toggle('dark',dark);themeBtn.setAttribute('aria-pressed',String(dark));themeBtn.setAttribute('aria-label',dark?'Ativar modo claro':'Ativar modo escuro');themeBtn.querySelector('.theme-label').textContent=dark?'Modo claro':'Modo escuro';themeBtn.querySelector('.theme-icon').textContent=dark?'☀':'◐';document.querySelector('meta[name="theme-color"]').content=getComputedStyle(document.body).getPropertyValue('--bg').trim();localStorage.setItem('br26-theme',dark?'dark':'light')}
 setTheme(localStorage.getItem('br26-theme')==='dark'||(!localStorage.getItem('br26-theme')&&matchMedia('(prefers-color-scheme:dark)').matches));
 themeBtn.addEventListener('click',()=>setTheme(!document.body.classList.contains('dark')));
 
 const backToTop=document.querySelector('#backToTop');
-let scrollTicking=false;
-function syncBackToTop(){
-  const visible=window.scrollY>Math.min(480,window.innerHeight*.6);
+const heroVisibility=new IntersectionObserver(entries=>{
+  const entry=entries[0];
+  const visible=!entry.isIntersecting&&entry.boundingClientRect.top<0;
+  syncActiveNavigation();
   backToTop.classList.toggle('is-visible',visible);
   backToTop.setAttribute('aria-hidden',String(!visible));
   backToTop.tabIndex=visible?0:-1;
-  scrollTicking=false;
+});
+heroVisibility.observe(document.querySelector('.hero'));
+const header=document.querySelector('.topbar');
+const sentinel=document.createElement('span');sentinel.className='scroll-sentinel';sentinel.setAttribute('aria-hidden','true');document.querySelector('main').prepend(sentinel);
+new IntersectionObserver(([entry])=>header.classList.toggle('is-scrolled',!entry.isIntersecting)).observe(sentinel);
+backToTop.addEventListener('click',()=>{document.querySelector('#top').focus({preventScroll:true});window.scrollTo({top:0,behavior:reducedMotion.matches?'instant':'smooth'})});
+const menuToggle=document.querySelector('#menuToggle');
+const mainNav=document.querySelector('#mainNav');
+function closeMenu(){menuToggle.setAttribute('aria-expanded','false');menuToggle.setAttribute('aria-label','Abrir navegação');mainNav.classList.remove('is-open')}
+menuToggle.addEventListener('click',()=>{const open=menuToggle.getAttribute('aria-expanded')!=='true';menuToggle.setAttribute('aria-expanded',String(open));menuToggle.setAttribute('aria-label',open?'Fechar navegação':'Abrir navegação');mainNav.classList.toggle('is-open',open)});
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&mainNav.classList.contains('is-open')){closeMenu();menuToggle.focus()}});
+document.addEventListener('click',event=>{if(!header.contains(event.target))closeMenu()});
+mainNav.addEventListener('click',event=>{
+  const link=event.target.closest('a');if(!link)return;closeMenu();
+  if(link.hash==='#regulamento'&&document.querySelector('#historyContent').hidden)document.querySelector('#historyToggle').click();
+  const section=document.querySelector(link.hash);
+  if(section?.tagName==='DETAILS')section.open=true;
+  requestAnimationFrame(()=>{section?.setAttribute('tabindex','-1');section?.focus({preventScroll:true});section?.scrollIntoView({behavior:reducedMotion.matches?'instant':'smooth',block:'start'})});
+});
+function syncActiveNavigation(){
+  const headerHeight=header.getBoundingClientRect().height;
+  const marker=headerHeight+Math.min(innerHeight*.25,180);
+  let active=null;
+  if(document.querySelector('.hero').getBoundingClientRect().bottom<=headerHeight+24){
+    active=['classificacao','historia','regulamento','sobre-dados'].map(id=>document.getElementById(id)).filter(section=>section.getClientRects().length&&section.getBoundingClientRect().top<=marker&&section.getBoundingClientRect().bottom>headerHeight).sort((a,b)=>b.getBoundingClientRect().top-a.getBoundingClientRect().top)[0];
+  }
+  mainNav.querySelectorAll('a').forEach(link=>{if(active&&link.hash===`#${active.id}`)link.setAttribute('aria-current','true');else link.removeAttribute('aria-current')});
 }
-window.addEventListener('scroll',()=>{if(!scrollTicking){scrollTicking=true;requestAnimationFrame(syncBackToTop)}},{passive:true});
-backToTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}));
-syncBackToTop();
+const navObserver=new IntersectionObserver(syncActiveNavigation,{rootMargin:'-15% 0px -60% 0px',threshold:0});
+['classificacao','historia','regulamento','sobre-dados'].forEach(id=>navObserver.observe(document.getElementById(id)));
 
 // Modo determinístico usado apenas para a captura de auditoria solicitada.
 if(new URLSearchParams(location.search).get('capture')==='round31'){
   document.body.classList.add('capture-mode');
   setDivision('A');
-  document.querySelector('main').insertBefore(sheet,document.querySelector('.method'));
+  document.querySelector('main').insertBefore(sheet,document.querySelector('.history'));
   openClub('FLA',true);
   document.body.style.overflow='auto';
 }
@@ -183,6 +226,7 @@ if(new URLSearchParams(location.search).get('capture')==='round31'){
 // A memória do campeonato é independente da divisão exibida na tabela.
 const historyToggle=document.querySelector('#historyToggle');
 const historyContent=document.querySelector('#historyContent');
+historyContent.hidden=true;
 historyToggle.addEventListener('click',()=>{
   const expanded=historyToggle.getAttribute('aria-expanded')!=='true';
   historyToggle.setAttribute('aria-expanded',String(expanded));
@@ -191,6 +235,7 @@ historyToggle.addEventListener('click',()=>{
   historyToggle.querySelector('.history-toggle-icon').textContent=expanded?'−':'+';
 });
 
+// TODO(asset): foto neutra de estádio, torcida ou taça com licença e crédito confirmados.
 const heroMoments=[
   {title:'Neymar · Santos, 2012',src:'assets/identidade/hero/02-neymar.jpg',focus:'50% 40%'},
   {title:'Falcão · Internacional',src:'assets/identidade/hero/16-falcao.jpg',focus:'52% 40%'},
@@ -215,7 +260,7 @@ const heroPhotoPause=document.querySelector('#pauseHeroPhotos');
 const heroPhotoDuration=5000;
 let heroPhotoIndex=0,heroPhotoTimer,heroPhotosPaused=reducedMotion.matches;
 
-heroMedia.innerHTML=heroMoments.map((moment,index)=>`<div class="hero-slide${index===0?' active':''}" data-title="${moment.title}"><img src="${moment.src}" alt="" ${index===0?'fetchpriority="high"':'loading="lazy"'} style="--hero-focus:${moment.focus};object-fit:${moment.fit||'cover'}"></div>`).join('');
+heroMedia.innerHTML=heroMoments.map((moment,index)=>`<div class="hero-slide${index===0?' active':''}" data-title="${moment.title}"><img decoding="async" width="1600" height="900" src="${moment.src}" alt="" ${index===0?'fetchpriority="high"':'loading="lazy"'} style="--hero-focus:${moment.focus};object-fit:${moment.fit||'cover'}"></div>`).join('');
 const heroSlides=[...heroMedia.querySelectorAll('.hero-slide')];
 const heroZooms=new Map();
 
@@ -240,6 +285,9 @@ function showHeroPhoto(index){
       heroPhotoIndex=next;
       heroSlides[heroPhotoIndex].classList.add('active');
       heroPhotoLabel.textContent=heroMoments[heroPhotoIndex].title;
+      const progress=document.querySelector('.hero-progress');
+      progress.setAttribute('aria-valuenow',String(heroPhotoIndex+1));
+      progress.querySelector('span').style.width=`${(heroPhotoIndex+1)/heroMoments.length*100}%`;
       startHeroZoom();
       return;
     }
@@ -247,7 +295,9 @@ function showHeroPhoto(index){
 }
 function scheduleHeroPhotos(){
   clearTimeout(heroPhotoTimer);
-  heroPhotoPause.textContent=heroPhotosPaused?'Retomar':'Pausar';
+  heroPhotoPause.textContent=heroPhotosPaused?'▶':'Ⅱ';
+  heroPhotoPause.setAttribute('aria-label',heroPhotosPaused?'Retomar fotografias':'Pausar fotografias');
+  heroPhotoPause.disabled=reducedMotion.matches;
   heroPhotoPause.setAttribute('aria-pressed',String(heroPhotosPaused));
   if(reducedMotion.matches){
     heroZooms.forEach(zoom=>zoom.cancel());
@@ -255,7 +305,7 @@ function scheduleHeroPhotos(){
   }
   let zoom=heroZooms.get(heroSlides[heroPhotoIndex]);
   if(!zoom&&!reducedMotion.matches){startHeroZoom();zoom=heroZooms.get(heroSlides[heroPhotoIndex])}
-  if(heroPhotosPaused||document.hidden){zoom?.pause();return}
+  if(heroPhotosPaused||document.hidden||reducedMotion.matches){zoom?.pause();return}
   zoom?.play();
   const remaining=Math.max(0,heroPhotoDuration-(zoom?.currentTime||0));
   heroPhotoTimer=setTimeout(()=>{showHeroPhoto(heroPhotoIndex+1);scheduleHeroPhotos()},remaining);
@@ -277,3 +327,103 @@ document.addEventListener('visibilitychange',scheduleHeroPhotos);
 const firstHeroImage=heroSlides[0].querySelector('img');
 if(firstHeroImage.complete)scheduleHeroPhotos();
 else firstHeroImage.addEventListener('load',scheduleHeroPhotos,{once:true});
+
+// Descida editorial com duração previsível e parada ao interagir.
+document.querySelector('.discover-link').addEventListener('click',event=>{
+  if(event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+  event.preventDefault();
+  const target=document.querySelector('#classificacao');
+  const title=document.querySelector('#tableTitle');
+  const start=window.scrollY;
+  const offset=parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop)||0;
+  const end=Math.max(0,target.getBoundingClientRect().top+start-offset);
+  const finish=()=>{
+    if(location.hash!=='#classificacao')history.pushState(null,'','#classificacao');
+    title.focus({preventScroll:true});
+  };
+  if(reducedMotion.matches){window.scrollTo({top:end,behavior:'instant'});finish();return}
+  const duration=1100;
+  let frame;
+  let started;
+  const events=['wheel','touchstart','keydown','pointerdown'];
+  const cancel=()=>{cancelAnimationFrame(frame);events.forEach(name=>window.removeEventListener(name,cancel))};
+  events.forEach(name=>window.addEventListener(name,cancel,{once:true,passive:true}));
+  const animate=time=>{
+    started??=time;
+    const progress=Math.min((time-started)/duration,1);
+    const eased=progress*progress*progress*(progress*(progress*6-15)+10);
+    window.scrollTo({top:start+(end-start)*eased,behavior:'instant'});
+    if(progress<1)frame=requestAnimationFrame(animate);
+    else{cancel();finish()}
+  };
+  frame=requestAnimationFrame(animate);
+});
+
+// Carrossel manual dos destaques: três cartões no desktop, um no celular.
+const historyPreview=document.querySelector('#historyPreview');
+const historyCards=[...historyPreview.children];
+let historyIndex=0;
+function showHistoryCard(index){
+  historyIndex=Math.max(0,Math.min(historyCards.length-1,index));
+  historyPreview.scrollTo({left:historyCards[historyIndex].offsetLeft,behavior:reducedMotion.matches?'instant':'smooth'});
+}
+function syncHistoryPosition(){
+  historyIndex=historyCards.reduce((best,card,index)=>Math.abs(card.offsetLeft-historyPreview.scrollLeft)<Math.abs(historyCards[best].offsetLeft-historyPreview.scrollLeft)?index:best,0);
+  document.querySelector('#historyPosition').textContent=`${historyIndex+1} de ${historyCards.length}`;
+  document.querySelector('#previousHistory').disabled=historyIndex===0;
+  document.querySelector('#nextHistory').disabled=historyIndex===historyCards.length-1;
+}
+historyPreview.addEventListener('scroll',syncHistoryPosition,{passive:true});
+document.querySelector('#previousHistory').addEventListener('click',()=>showHistoryCard(historyIndex-1));
+document.querySelector('#nextHistory').addEventListener('click',()=>showHistoryCard(historyIndex+1));
+historyPreview.addEventListener('keydown',event=>{if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();showHistoryCard(historyIndex+(event.key==='ArrowRight'?1:-1))}});
+syncHistoryPosition();
+
+// Um único reveal, progressivo: sem JavaScript o conteúdo já nasce visível.
+const revealTargets=document.querySelectorAll('.history-heading,.history-preview article,.history-timeline li,.history-facts article,.history-rules-intro');
+const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
+  if(entry.isIntersecting){entry.target.classList.remove('reveal-pending');revealObserver.unobserve(entry.target)}
+}),{threshold:.1});
+if(!reducedMotion.matches)revealTargets.forEach((element,index)=>{element.dataset.reveal='';element.style.setProperty('--reveal-delay',`${index%3*65}ms`);element.classList.add('reveal-pending');revealObserver.observe(element)});
+reducedMotion.addEventListener('change',()=>{if(reducedMotion.matches){revealTargets.forEach(element=>element.classList.remove('reveal-pending'));revealObserver.disconnect()}});
+
+// Links diretos ao regulamento também abrem o conteúdo histórico.
+function revealLinkedSection(){
+  if(location.hash==='#regulamento'){
+    if(historyContent.hidden)historyToggle.click();
+    requestAnimationFrame(()=>document.querySelector('#regulamento').scrollIntoView({behavior:'instant',block:'start'}));
+  }
+}
+window.addEventListener('hashchange',revealLinkedSection);
+revealLinkedSection();
+
+// Esc sempre fecha a gaveta, mesmo durante a comemoração ou em controles internos.
+document.addEventListener('keydown',event=>{
+  if(event.key==='Escape'&&sheet.classList.contains('open')){
+    event.preventDefault();event.stopImmediatePropagation();pinned=false;close();
+  }
+},true);
+// O foco devolvido não representa hover; o próximo foco de teclado reativa a prévia.
+document.addEventListener('focusout',event=>{
+  if(event.target.matches?.('[data-code]'))event.target.classList.remove('focus-returned','pointer-returned');
+});
+
+function closeRowPreviews(){document.querySelectorAll('.club-entry.preview-open').forEach(entry=>entry.classList.remove('preview-open'))}
+let previewPointer=null;
+document.addEventListener('pointermove',event=>{
+  const position=`${event.clientX},${event.clientY}`;
+  if(position===previewPointer)return;
+  previewPointer=position;
+  closeRowPreviews();
+  if(!sheet.classList.contains('open')&&event.pointerType!=='touch')event.target.closest('.club-entry')?.classList.add('preview-open');
+},{passive:true});
+document.documentElement.addEventListener('pointerleave',closeRowPreviews);
+document.addEventListener('focusin',event=>{
+  const row=event.target.closest('.club-row');
+  if(row&&!row.classList.contains('focus-returned')&&row.matches(':focus-visible')&&!sheet.classList.contains('open')){
+    closeRowPreviews();row.closest('.club-entry').classList.add('preview-open');
+  }
+});
+document.addEventListener('focusout',event=>{
+  if(event.target.matches?.('.club-row'))event.target.closest('.club-entry')?.classList.remove('preview-open');
+});

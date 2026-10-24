@@ -1,0 +1,36 @@
+[
+  {
+    "width": 390,
+    "duration": 1100,
+    "middle": 310,
+    "end": {
+      "y": 746,
+      "focus": "tableTitle",
+      "hash": "#classificacao"
+    },
+    "interruptionStops": true
+  },
+  {
+    "width": 390,
+    "reducedMotion": true,
+    "autoplayStopped": true,
+    "revealsVisible": true
+  },
+  {
+    "width": 1440,
+    "duration": 1100,
+    "middle": 282,
+    "end": {
+      "y": 784,
+      "focus": "tableTitle",
+      "hash": "#classificacao"
+    },
+    "interruptionStops": true
+  },
+  {
+    "width": 1440,
+    "reducedMotion": true,
+    "autoplayStopped": true,
+    "revealsVisible": true
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "enter": true,
+  "celebracoes": true,
+  "replay": true,
+  "escape": true,
+  "deepLink": true,
+  "noJsHistoryVisible": true,
+  "console": []
+}

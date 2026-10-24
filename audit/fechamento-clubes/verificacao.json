@@ -1,0 +1,88 @@
+[
+  {
+    "width": 1440,
+    "dark": false,
+    "series": "A",
+    "escape": true,
+    "previewClosed": true,
+    "hoverRestored": true,
+    "keyboardNavigation": true,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "dark": false,
+    "series": "B",
+    "escape": true,
+    "previewClosed": true,
+    "hoverRestored": true,
+    "keyboardNavigation": true,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "dark": true,
+    "series": "A",
+    "escape": true,
+    "previewClosed": true,
+    "hoverRestored": true,
+    "keyboardNavigation": true,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "dark": true,
+    "series": "B",
+    "escape": true,
+    "previewClosed": true,
+    "hoverRestored": true,
+    "keyboardNavigation": true,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "dark": false,
+    "series": "A",
+    "escape": true,
+    "previewClosed": true,
+    "hoverRestored": true,
+    "keyboardNavigation": true,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "dark": false,
+    "series": "B",
+    "escape": true,
+    "previewClosed": true,
+    "hoverRestored": true,
+    "keyboardNavigation": true,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "dark": true,
+    "series": "A",
+    "escape": true,
+    "previewClosed": true,
+    "hoverRestored": true,
+    "keyboardNavigation": true,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "dark": true,
+    "series": "B",
+    "escape": true,
+    "previewClosed": true,
+    "hoverRestored": true,
+    "keyboardNavigation": true,
+    "errors": []
+  },
+  {
+    "escapeDuringCelebration": true
+  },
+  {
+    "stationaryPointerAfterEscape": true
+  }
+]

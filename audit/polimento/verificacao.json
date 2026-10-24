@@ -1,0 +1,158 @@
+[
+  {
+    "width": 1440,
+    "dark": false,
+    "series": "A",
+    "money": "€ 211,25 mi.",
+    "errors": [],
+    "localErrors": []
+  },
+  {
+    "width": 1440,
+    "dark": false,
+    "series": "B",
+    "money": "€ 14,68 mi.",
+    "errors": [],
+    "localErrors": []
+  },
+  {
+    "width": 1440,
+    "dark": false,
+    "contrast": {
+      "checked": 573,
+      "images": 13,
+      "failures": [],
+      "small": []
+    }
+  },
+  {
+    "width": 1440,
+    "dark": true,
+    "series": "A",
+    "money": "€ 211,25 mi.",
+    "errors": [],
+    "localErrors": []
+  },
+  {
+    "width": 1440,
+    "dark": true,
+    "series": "B",
+    "money": "€ 14,68 mi.",
+    "errors": [],
+    "localErrors": []
+  },
+  {
+    "width": 1440,
+    "dark": true,
+    "contrast": {
+      "checked": 573,
+      "images": 13,
+      "failures": [],
+      "small": []
+    }
+  },
+  {
+    "width": 768,
+    "dark": false,
+    "series": "A",
+    "money": "€ 211,25 mi.",
+    "errors": [],
+    "localErrors": []
+  },
+  {
+    "width": 768,
+    "dark": false,
+    "series": "B",
+    "money": "€ 14,68 mi.",
+    "errors": [],
+    "localErrors": []
+  },
+  {
+    "width": 768,
+    "dark": false,
+    "contrast": {
+      "checked": 323,
+      "images": 13,
+      "failures": [],
+      "small": []
+    }
+  },
+  {
+    "width": 768,
+    "dark": true,
+    "series": "A",
+    "money": "€ 211,25 mi.",
+    "errors": [],
+    "localErrors": []
+  },
+  {
+    "width": 768,
+    "dark": true,
+    "series": "B",
+    "money": "€ 14,68 mi.",
+    "errors": [],
+    "localErrors": []
+  },
+  {
+    "width": 768,
+    "dark": true,
+    "contrast": {
+      "checked": 323,
+      "images": 13,
+      "failures": [],
+      "small": []
+    }
+  },
+  {
+    "width": 390,
+    "dark": false,
+    "series": "A",
+    "money": "€ 211,25 mi.",
+    "errors": [],
+    "localErrors": []
+  },
+  {
+    "width": 390,
+    "dark": false,
+    "series": "B",
+    "money": "€ 14,68 mi.",
+    "errors": [],
+    "localErrors": []
+  },
+  {
+    "width": 390,
+    "dark": false,
+    "contrast": {
+      "checked": 322,
+      "images": 13,
+      "failures": [],
+      "small": []
+    }
+  },
+  {
+    "width": 390,
+    "dark": true,
+    "series": "A",
+    "money": "€ 211,25 mi.",
+    "errors": [],
+    "localErrors": []
+  },
+  {
+    "width": 390,
+    "dark": true,
+    "series": "B",
+    "money": "€ 14,68 mi.",
+    "errors": [],
+    "localErrors": []
+  },
+  {
+    "width": 390,
+    "dark": true,
+    "contrast": {
+      "checked": 322,
+      "images": 13,
+      "failures": [],
+      "small": []
+    }
+  }
+]

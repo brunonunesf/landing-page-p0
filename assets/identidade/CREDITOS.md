@@ -17,3 +17,8 @@ Todas as fotografias permanecem como material de prévia. Conferir a autorizaç�
 ## Flamengo · Urubu da vinheta
 
 - `flamengo-urubu.webp` — ilustração gerada com OpenAI ImageGen a partir das referências de mascotes e bandeirões fornecidas pelo usuário. Esboço aprovado em 23 de outubro de 2026; versão final com fundo transparente e codificação WebP para a vinheta. Sem patrocinadores.
+
+## Ícones e imagem de compartilhamento · polimento visual
+
+- `favicon.svg` e `apple-touch-icon.png`: recortes do escudo já presente em `brasileirao-logo.png`, sem novo desenho nem nova fotografia. O SVG contém a matriz PNG original; uma versão vetorial oficial isolada permanece pendente.
+- `compartilhamento.png`: captura local do hero do projeto, em 1200 × 630 pixels, com a fotografia de Neymar já existente (`hero/02-neymar.jpg`). A referência e a pendência de autorização são as mesmas do item 2 em `design/identidade-brasileirao/curadoria-20.json`. Imagem preparada somente para prévia local, sem publicação nesta execução.
