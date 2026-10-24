@@ -26,11 +26,6 @@ clubsA.forEach((club,index)=>{club.pos=index+1});
 const clubsB=window.seriesBData||[];
 Object.entries(window.seriesPhotos||{}).forEach(([name,url])=>{if(!playerPhotos[name])playerPhotos[name]=url});
 const normalizedName=name=>name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
-Object.values(window.marketData||{}).flatMap(club=>club.players||[]).forEach(player=>{
-  const matchingName=[...clubsA,...clubsB].flatMap(club=>club.scorers||[]).map(item=>item.split('|')[0]).find(name=>normalizedName(name)===normalizedName(player.name));
-  if(matchingName)playerPhotos[matchingName]=player.photo;
-});
-playerPhotos['Jorge Carrascal']='https://storage.googleapis.com/crf-strapi-media-prd/CARRASCAL_Fut_Prof_Masc_69cb5c6eed/CARRASCAL_Fut_Prof_Masc_69cb5c6eed.png';
 let division='A',clubs=clubsA;
 
 // Formatação altera somente a apresentação, nunca a referência de dados.
@@ -123,18 +118,44 @@ function playClubIntro(code){
   introTimer=setTimeout(finishClubIntro,intro.duration);
 }
 // URLs do recorte que retornaram 404 na auditoria: manter dados e usar o escudo local.
-// TODO(asset): retratos licenciados dos jogadores com fotos remotas indisponíveis.
+// Novas fotos são locais e identificadas por clube; mantém compatibilidade com URLs antigas.
 const unavailableEspnPhotos=new Set(["115379", "119170", "121921", "131075", "140012", "143849", "145107", "145369", "146269", "155056", "158272", "162558", "166488", "167845", "168981", "174395", "174782", "182522", "182646", "197049", "198435", "198569", "198808", "199017", "199065", "199734", "200775", "205448", "206953", "210135", "210143", "218972", "219005", "223437", "235385", "236283", "236284", "236324", "236596", "237013", "237136", "240149", "241466", "250594", "252805", "253486", "254007", "266664", "267902", "269079", "269852", "270193", "270562", "271726", "272527", "282588", "285004", "285029", "286703", "286714", "287633", "287688", "293875", "297761", "298576", "299967", "302657", "304380", "306764", "307717", "309499", "3108270", "314545", "314603", "314825", "314915", "319422", "319696", "320082", "331074", "333314", "334723", "334756", "339844", "357900", "358788", "361359", "371527", "379785", "379922", "380327", "382870", "382994", "385289", "390671", "399179", "418241", "418256", "420672", "94225"]);
 function unavailablePhoto(src){const match=/espncdn\.com\/i\/headshots\/soccer\/players\/full\/(\d+)\.png$/.exec(src||'');return Boolean(match&&unavailableEspnPhotos.has(match[1]))}
 function playerVisual(name,clubCode){
   const fallback=clubCode?crest(clubCode):'';
-  const photo=unavailablePhoto(playerPhotos[name])?null:playerPhotos[name];
-  return photo?`<img decoding="async" class="avatar" width="46" height="46" src="${photo}" alt="Foto de ${name}" onerror="this.onerror=null;this.src='${fallback}';this.classList.add('club-photo-fallback')">`:`<img decoding="async" class="avatar club-photo-fallback" width="46" height="46" src="${fallback}" alt="Escudo do clube de ${name}">`;
+  const curated=window.clubPlayerImages?.[clubCode]?.[name];
+  const legacy=playerPhotos[name];
+  const photo=curated?.image||(!/transfermarkt|tmssl/i.test(legacy||'')&&!unavailablePhoto(legacy)?legacy:null);
+  return photo?`<img decoding="async" class="avatar" width="56" height="64" style="object-position:${curated?.position||'50% 22%'}" src="${photo}" alt="Foto de ${name}" onerror="this.onerror=null;this.src='${fallback}';this.classList.add('club-photo-fallback')">`:`<img decoding="async" class="avatar club-photo-fallback" width="46" height="46" src="${fallback}" alt="Escudo do clube de ${name}">`;
 }
 let pinned=false,closeTimer,lastTrigger=null,lastTriggerKeyboard=false;
 const rankList=(items,label,clubCode)=>items.map((s,i)=>{const[n,v]=s.split('|');return `<div class="scorer assist"><div class="assist-photo">${playerVisual(n,clubCode)}<span class="assist-rank">0${i+1}</span></div><b>${n}</b><em>${v} ${label}</em></div>`}).join('');
 const searchUrl=q=>`https://www.google.com/search?q=${encodeURIComponent(`${q} site:ge.globo.com antes:${division==='A'?'2026-10-21':'2026-10-18'}`)}`;
-const marketList=code=>(marketData[code]?.players||[]).map((p,i)=>`<a class="market-player" href="${marketData[code].kader}" target="_blank" rel="noopener noreferrer"><img decoding="async" width="46" height="46" src="${p.photo}" alt="Foto de ${p.name}" loading="lazy" onerror="this.onerror=null;this.src='${crest(code)}';this.classList.add('club-photo-fallback')"><span><small>0${i+1}</small><b>${p.name}</b></span><em>${formatEuroMi(p.value)}</em></a>`).join('');
+const marketList=code=>(marketData[code]?.players||[]).map((p,i)=>`<a class="market-player" href="${marketData[code].kader}" target="_blank" rel="noopener noreferrer">${playerVisual(p.name,code)}<span><small>0${i+1}</small><b>${p.name}</b></span><em>${formatEuroMi(p.value)}</em></a>`).join('');
+
+// Mesmos objetos e recorte da classificação; nenhum total é atualizado aqui.
+function seasonTopFive(field){
+  const entries=clubsA.flatMap(club=>(club[field]||[]).map(item=>{const[name,total]=item.split('|');return {name,total:Number(total),club}})).sort((a,b)=>b.total-a.total||a.name.localeCompare(b.name,'pt-BR'));
+  return entries.slice(0,5).map(entry=>({...entry,rank:entries.findIndex(other=>other.total===entry.total)+1}));
+}
+function renderSeasonRanking(field,target,label){
+  document.getElementById(target).innerHTML=seasonTopFive(field).map((entry,index)=>{
+    const photo=window.seasonActionImages?.[`${entry.club.code}:${entry.name}`];
+    return `<li value="${entry.rank}" class="season-player ${index===0?'season-player-leader':''}"><button type="button" class="season-player-button" data-season-club="${entry.club.code}" aria-haspopup="dialog" aria-label="${entry.rank}º lugar: ${entry.name}, ${entry.total} ${label==='gols'?'gols':'assistências'}. Ver detalhes do ${entry.club.name}"><span class="season-photo"><img src="${photo?.image||window.clubPlayerImages?.[entry.club.code]?.[entry.name]?.image||crest(entry.club.code)}" alt="${photo?.alt||entry.name}" loading="lazy" decoding="async" width="640" height="420" style="object-position:${photo?.position||'50% 35%'}" onerror="this.onerror=null;this.src='${crest(entry.club.code)}';this.classList.add('club-photo-fallback')"></span><span class="season-rank" aria-label="${entry.rank}º lugar">${String(entry.rank).padStart(2,'0')}</span><span class="season-player-name"><strong>${entry.name}</strong><span><img src="${crest(entry.club.code)}" alt="" width="20" height="20" loading="lazy">${entry.club.name}</span></span><span class="season-total"><strong>${entry.total}</strong><span>${label}</span></span><span class="season-arrow" aria-hidden="true">↗</span></button></li>`;
+  }).join('');
+}
+renderSeasonRanking('scorers','seasonScorers','gols');
+renderSeasonRanking('assists','seasonAssists','assist.');
+document.querySelectorAll('[data-season-club]').forEach(button=>button.addEventListener('click',event=>{
+  button.classList.remove('focus-returned','pointer-returned');lastTrigger=button;lastTriggerKeyboard=event.detail===0;
+  // Os destaques permanecem da Série A quando a tabela está na Série B.
+  const previousClubs=clubs,previousDivision=division;clubs=clubsA;division='A';openClub(button.dataset.seasonClub,true);clubs=previousClubs;division=previousDivision;
+}));
+const photoSources=new Map();
+Object.values(window.clubPlayerImages||{}).flatMap(Object.values).concat(Object.values(window.seasonActionImages||{})).forEach(photo=>{if(photo.source&&!photoSources.has(photo.source))photoSources.set(photo.source,photo.credit)});
+document.getElementById('playerPhotoSources').innerHTML=[...photoSources].map(([source,credit])=>`<li><a href="${source}" target="_blank" rel="noopener noreferrer">${credit} ↗</a></li>`).join('');
+document.querySelector('[data-open-sources]').addEventListener('click',()=>{document.getElementById('fontes-creditos').open=true});
+
 function openClub(code,expanded=false){
   const c=clubs.find(x=>x.code===code),x=extras[code],market=marketData[code],identity=clubIdentities[code],pct=formatPercent((c.pts/(c.j*3))*100);
   sheet.dataset.club=code;
@@ -405,7 +426,7 @@ document.addEventListener('keydown',event=>{
 },true);
 // O foco devolvido não representa hover; o próximo foco de teclado reativa a prévia.
 document.addEventListener('focusout',event=>{
-  if(event.target.matches?.('[data-code]'))event.target.classList.remove('focus-returned','pointer-returned');
+  if(event.target.matches?.('[data-code],[data-season-club]'))event.target.classList.remove('focus-returned','pointer-returned');
 });
 
 function closeRowPreviews(){document.querySelectorAll('.club-entry.preview-open').forEach(entry=>entry.classList.remove('preview-open'))}
