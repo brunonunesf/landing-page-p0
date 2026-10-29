@@ -610,3 +610,11 @@ body.dark{
   .club-intro__emblem span{font-size:42px}
   .club-moment--graphic .club-moment__graphic img{width:105px;height:105px;right:25px;top:32px}
 }
+
+/* A foto coletiva fica inteira e a legenda não cobre os jogadores. */
+.detail-sheet .club-moment--lineup{height:auto;min-height:0}
+.detail-sheet.has-club-identity .club-moment--lineup::after{display:none}
+.detail-sheet.has-club-identity .club-moment--lineup img{height:auto;min-height:0;object-fit:contain;object-position:center;filter:none}
+.detail-sheet .club-moment--lineup figcaption{position:static;padding:20px 22px 22px}
+.detail-sheet .club-moment--lineup h4{font-size:21px;margin:8px 0 14px}
+.detail-sheet .club-moment--lineup a{display:inline-block;line-height:1.6;overflow-wrap:anywhere}
