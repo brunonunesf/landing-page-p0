@@ -1,0 +1,162 @@
+[
+  {
+    "width": 390,
+    "serie": "A",
+    "dark": false,
+    "styles": {
+      "fontFamily": "Archivo, \"Times New Roman\", serif",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "lineHeight": "20px",
+      "backgroundColor": "rgb(200, 255, 0)",
+      "color": "rgb(16, 35, 12)",
+      "border": "1px solid rgb(66, 97, 23)",
+      "padding": "12px 16px",
+      "gap": "8px",
+      "borderRadius": "6px",
+      "width": 140.6875,
+      "height": 46,
+      "overflow": false
+    }
+  },
+  {
+    "width": 390,
+    "serie": "B",
+    "dark": false,
+    "styles": {
+      "fontFamily": "Archivo, \"Times New Roman\", serif",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "lineHeight": "20px",
+      "backgroundColor": "rgb(200, 255, 0)",
+      "color": "rgb(16, 35, 12)",
+      "border": "1px solid rgb(66, 97, 23)",
+      "padding": "12px 16px",
+      "gap": "8px",
+      "borderRadius": "6px",
+      "width": 140.6875,
+      "height": 46,
+      "overflow": false
+    }
+  },
+  {
+    "width": 390,
+    "serie": "A",
+    "dark": true,
+    "styles": {
+      "fontFamily": "Archivo, \"Times New Roman\", serif",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "lineHeight": "20px",
+      "backgroundColor": "rgb(200, 255, 0)",
+      "color": "rgb(16, 35, 12)",
+      "border": "1px solid rgb(66, 97, 23)",
+      "padding": "12px 16px",
+      "gap": "8px",
+      "borderRadius": "6px",
+      "width": 140.6875,
+      "height": 46,
+      "overflow": false
+    }
+  },
+  {
+    "width": 390,
+    "serie": "B",
+    "dark": true,
+    "styles": {
+      "fontFamily": "Archivo, \"Times New Roman\", serif",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "lineHeight": "20px",
+      "backgroundColor": "rgb(200, 255, 0)",
+      "color": "rgb(16, 35, 12)",
+      "border": "1px solid rgb(66, 97, 23)",
+      "padding": "12px 16px",
+      "gap": "8px",
+      "borderRadius": "6px",
+      "width": 140.6875,
+      "height": 46,
+      "overflow": false
+    }
+  },
+  {
+    "width": 1440,
+    "serie": "A",
+    "dark": false,
+    "styles": {
+      "fontFamily": "Archivo, \"Times New Roman\", serif",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "lineHeight": "20px",
+      "backgroundColor": "rgb(200, 255, 0)",
+      "color": "rgb(16, 35, 12)",
+      "border": "1px solid rgb(66, 97, 23)",
+      "padding": "12px 16px",
+      "gap": "8px",
+      "borderRadius": "6px",
+      "width": 140,
+      "height": 66,
+      "overflow": false
+    }
+  },
+  {
+    "width": 1440,
+    "serie": "B",
+    "dark": false,
+    "styles": {
+      "fontFamily": "Archivo, \"Times New Roman\", serif",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "lineHeight": "20px",
+      "backgroundColor": "rgb(200, 255, 0)",
+      "color": "rgb(16, 35, 12)",
+      "border": "1px solid rgb(66, 97, 23)",
+      "padding": "12px 16px",
+      "gap": "8px",
+      "borderRadius": "6px",
+      "width": 140,
+      "height": 66,
+      "overflow": false
+    }
+  },
+  {
+    "width": 1440,
+    "serie": "A",
+    "dark": true,
+    "styles": {
+      "fontFamily": "Archivo, \"Times New Roman\", serif",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "lineHeight": "20px",
+      "backgroundColor": "rgb(200, 255, 0)",
+      "color": "rgb(16, 35, 12)",
+      "border": "1px solid rgb(66, 97, 23)",
+      "padding": "12px 16px",
+      "gap": "8px",
+      "borderRadius": "6px",
+      "width": 140,
+      "height": 66,
+      "overflow": false
+    }
+  },
+  {
+    "width": 1440,
+    "serie": "B",
+    "dark": true,
+    "styles": {
+      "fontFamily": "Archivo, \"Times New Roman\", serif",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "lineHeight": "20px",
+      "backgroundColor": "rgb(200, 255, 0)",
+      "color": "rgb(16, 35, 12)",
+      "border": "1px solid rgb(66, 97, 23)",
+      "padding": "12px 16px",
+      "gap": "8px",
+      "borderRadius": "6px",
+      "width": 140,
+      "height": 66,
+      "overflow": false
+    }
+  }
+]

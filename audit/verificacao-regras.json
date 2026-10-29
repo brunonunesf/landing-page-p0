@@ -1,0 +1,14 @@
+{
+  "ambiente": "/var/folders/rk/chczq6911djb6njr9dzrj1l40000gn/T/commit-gate-test-z8938hjv",
+  "hook_identico": true,
+  "script_identico": true,
+  "hook_executavel": true,
+  "comando": "git commit -m \"Teste sem autorização\"",
+  "resultado": {
+    "code": 1,
+    "stdout": "",
+    "stderr": "COMMIT BLOQUEADO: mostre o resultado e as evidências de celular e computador; aguarde autorização explícita posterior do usuário."
+  },
+  "nenhum_commit_criado": true,
+  "approve_executado": false
+}

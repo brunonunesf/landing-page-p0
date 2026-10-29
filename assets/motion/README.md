@@ -1,0 +1,1 @@
+Variantes WebP dos originais em assets/escudos e assets/identidade/hero. Originais, autoria e créditos editoriais permanecem preservados. Regeneração opcional: tools/optimize-motion-assets.py com Pillow já instalado no runtime. Nenhum build é necessário.

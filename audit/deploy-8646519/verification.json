@@ -1,0 +1,110 @@
+[
+  {
+    "width": 1440,
+    "dark": false,
+    "series": "A",
+    "rankingsUnchanged": true,
+    "correctSerieADialog": true,
+    "escapeAndFocus": true,
+    "noHorizontalOverflow": true
+  },
+  {
+    "width": 1440,
+    "dark": false,
+    "series": "B",
+    "rankingsUnchanged": true,
+    "correctSerieADialog": true,
+    "escapeAndFocus": true,
+    "noHorizontalOverflow": true
+  },
+  {
+    "width": 1440,
+    "dark": true,
+    "series": "A",
+    "rankingsUnchanged": true,
+    "correctSerieADialog": true,
+    "escapeAndFocus": true,
+    "noHorizontalOverflow": true
+  },
+  {
+    "width": 1440,
+    "dark": true,
+    "series": "B",
+    "rankingsUnchanged": true,
+    "correctSerieADialog": true,
+    "escapeAndFocus": true,
+    "noHorizontalOverflow": true
+  },
+  {
+    "width": 768,
+    "dark": false,
+    "series": "A",
+    "rankingsUnchanged": true,
+    "correctSerieADialog": true,
+    "escapeAndFocus": true,
+    "noHorizontalOverflow": true
+  },
+  {
+    "width": 768,
+    "dark": false,
+    "series": "B",
+    "rankingsUnchanged": true,
+    "correctSerieADialog": true,
+    "escapeAndFocus": true,
+    "noHorizontalOverflow": true
+  },
+  {
+    "width": 768,
+    "dark": true,
+    "series": "A",
+    "rankingsUnchanged": true,
+    "correctSerieADialog": true,
+    "escapeAndFocus": true,
+    "noHorizontalOverflow": true
+  },
+  {
+    "width": 768,
+    "dark": true,
+    "series": "B",
+    "rankingsUnchanged": true,
+    "correctSerieADialog": true,
+    "escapeAndFocus": true,
+    "noHorizontalOverflow": true
+  },
+  {
+    "width": 390,
+    "dark": false,
+    "series": "A",
+    "rankingsUnchanged": true,
+    "correctSerieADialog": true,
+    "escapeAndFocus": true,
+    "noHorizontalOverflow": true
+  },
+  {
+    "width": 390,
+    "dark": false,
+    "series": "B",
+    "rankingsUnchanged": true,
+    "correctSerieADialog": true,
+    "escapeAndFocus": true,
+    "noHorizontalOverflow": true
+  },
+  {
+    "width": 390,
+    "dark": true,
+    "series": "A",
+    "rankingsUnchanged": true,
+    "correctSerieADialog": true,
+    "escapeAndFocus": true,
+    "noHorizontalOverflow": true
+  },
+  {
+    "width": 390,
+    "dark": true,
+    "series": "B",
+    "rankingsUnchanged": true,
+    "correctSerieADialog": true,
+    "escapeAndFocus": true,
+    "noHorizontalOverflow": true
+  }
+]

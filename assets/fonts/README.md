@@ -1,0 +1,1 @@
+Archivo (400–800 variável) e DM Mono (400/500), subconjunto latino, obtidos do Google Fonts. Mesmas famílias já usadas pelo site, agora locais para eliminar a dependência de rede na primeira renderização. Licenças OFL em archivo-OFL.txt e dmmono-OFL.txt. Origem: https://fonts.google.com/specimen/Archivo e https://fonts.google.com/specimen/DM+Mono.

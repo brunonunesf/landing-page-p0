@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 280" role="img" aria-labelledby="title desc">
+  <title id="title">Urubu rubro-negro</title>
+  <desc id="desc">Urubu de postura imponente, cabeça baixa, olhar raivoso e bico longo recurvado, com plumagem preta e peito em faixas vermelhas e pretas.</desc>
+  <!-- Silhueta compacta de busto: ombros largos e cabeça projetada à frente. -->
+  <path fill="#ed2338" stroke="#ed2338" stroke-width="12" stroke-linejoin="round" d="M35 241 48 193 87 164 118 156 112 135 88 115 100 73 127 49 171 33 219 45 243 73 240 99 275 115 290 138 285 173 266 195 249 186 236 195 258 207 275 230 285 251 239 267H80Z"/>
+  <path fill="#101014" d="m35 241 13-48 39-29 41-10 75 1 40 17 29 22 13 47-46 20H80Z"/>
+  <!-- Camisa rubro-negra: faixas horizontais, legíveis mesmo em tamanho pequeno. -->
+  <path fill="#d91e32" d="m51 198 36-24 37-10 77 1 40 17 23 16-34 10H82Zm-9 32 37-12h154l43 12 3 12-42 10H82l-43-13Z"/>
+  <path fill="#08090c" d="m87 174-10 38 9 39-28-9 2-40Zm154 8 17 21 10 36-28 12 6-38Z"/>
+  <!-- Pescoço curvado e gola irregular de penas, característica do urubu. -->
+  <path fill="#44434a" stroke="#08090c" stroke-width="8" stroke-linejoin="round" d="m127 118-9 37-24 20 21 1-4 20 22-8 9 22 18-16 20 12 9-21 23 4-8-20 18-2-30-33Z"/>
+  <path fill="#b9b5b2" d="m122 155-15 17 19-3-2 14 17-8 8 17 11-12 17 10 5-16 16 5-10-20-33-14Z"/>
+  <!-- Crânio alongado, sem crista de águia; nuca de penas curtas. -->
+  <path fill="#232329" stroke="#08090c" stroke-width="8" stroke-linejoin="round" d="m92 112 12-36 26-23 42-14 44 12 23 23-5 32-15 31-23 19-44 8-29-22-18-5 9-13Z"/>
+  <path fill="#414047" d="m108 81 26-20 38-13 37 10 17 17-40-11-36 9-30 25-16 15Z"/>
+  <path fill="#08090c" d="m98 112 23-25 40 7 25 20 23-21 26-2-12 29-31 19-32-14-28 2-18 17 1-20Z"/>
+  <!-- Sobrancelha pesada, olho semicerrado e pupila mirando para a frente. -->
+  <path fill="#fff4dc" d="m130 108 39 13-16 10-20-7Zm68 8 24-13-7 18-17 6Z"/>
+  <path fill="#e72336" d="m152 116 10 3-6 10-7-2Zm57-6 7-4-2 15-7 2Z"/>
+  <path fill="#08090c" d="m154 118 5 2-4 7-3-1Zm57-8 3-2-2 11-3 1Z"/>
+  <path fill="#656168" d="m120 94 24-10 27 21-28-10Zm80 4 14-20 14 5-16 4Z"/>
+  <!-- Bico comprido com ponta em gancho e mandíbula separada. -->
+  <path fill="#e9d1a4" stroke="#08090c" stroke-width="7" stroke-linejoin="round" d="m186 126 23-8 25-9 37 19 13 18-3 29-16 17 1-27-27-9-24 7-29-11-14-14Z"/>
+  <path fill="#b99463" d="m185 142 30 10 24-6 29 10 8 13-1-21-22-13-37 6-21-9Z"/>
+  <path fill="#fff0cf" d="m214 124 18-6 30 15-27-6-20 6Z"/>
+  <path fill="#101014" d="m226 132 10-3 9 7-16 1Z"/>
+  <path fill="#d8bb8b" stroke="#08090c" stroke-width="6" stroke-linejoin="round" d="m184 153 29 12 27-4 18 7-17 14-29 1-24-12-13-14Z"/>
+  <path fill="none" stroke="#77727a" stroke-width="4" stroke-linecap="round" d="m121 136 15 13 14 2"/>
+</svg>

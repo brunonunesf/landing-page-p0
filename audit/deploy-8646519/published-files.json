@@ -1,0 +1,1287 @@
+[
+  {
+    "path": "index.html",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "app.js",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "styles.css",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "player-images.js",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "data.js",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "photos.js",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/acg-david-terans.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/acg-gustavo-coutinho.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/acg-leo-jaco.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/acg-marrony.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/acg-matheusinho.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/amg-gonzalo-mastriani.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/amg-luca-sosa.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/amg-matias-segovia.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/amg-willian.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/ath-dixon-vera.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/ath-felipe-negrucci.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/ath-ian-luccas.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/ath-kauan-rodrigues.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/ath-lucas-belezi.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/ath-ronaldo-tavares.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/ava-daniel-penha.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/ava-leo-chu.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/ava-luiz-henrique.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/ava-paulo-vitor.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/ava-walace-franca.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/ava-wenderson.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/bah-erick-pulga.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/bah-erick.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/bah-everaldo.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/bah-everton-ribeiro.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/bah-jean-lucas.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/bah-luciano-juba.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/bah-rodrigo-nestor.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/bot-alex-telles.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/bot-alvaro-montoro.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/bot-arthur-cabral.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/bot-danilo-santos.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/bot-vitinho.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/bsp-everton-morelli.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/bsp-hygor.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/bsp-leandro-maciel.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/bsp-matheus-sales.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/bsp-patrick-brey.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cam-alan-minda.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cam-bernard.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cam-hulk.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cam-reiner.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cam-renan-lodi.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cam-tomas-cuello.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cam-victor-hugo.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cap-arthur-dias.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cap-gaston-benavidez.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cap-joao-cruz.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cap-kevin-viveros-acao.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cap-kevin-viveros.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cap-leozinho.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cap-lucas-esquivel.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cap-stiven-mendoza.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cea-matheus-andrade.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cea-matheus-araujo.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cea-melk.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cea-vinicius.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cea-wendel.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cea-zanocelo.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cfc-breno-lopes.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cfc-breno.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cfc-joao-pedro-chermont.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cfc-joaquin-lavega.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cfc-josue-acao.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cfc-josue.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cfc-lucas-ronier.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cfc-pedro-morisco.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cfc-pedro-rocha.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cha-bruno-pacheco.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cha-camilo.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cha-carvalheira.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cha-giovanni-augusto.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cha-marcinho.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cha-mauricio-garcez.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cha-tulio-eduardo-silva-de-oliveira.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cha-tulio-eduardo.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cha-yannick-bolasie.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cor-andre.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cor-breno-bidon.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cor-gustavo-henrique.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cor-kaio-cesar.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cor-rodrigo-garro.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cor-yuri-alberto.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/crb-crystopher.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/crb-dada.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/crb-danielzinho.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/crb-henri.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/crb-mikael.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/crb-patrick-de-lucca.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cri-fellipe-mateus.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cri-jhonata-robert.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cri-marcelo-hermes.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cri-waguininho.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cri-willean-lepo.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cru-christian.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cru-fagner.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cru-gerson.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cru-kaio-jorge-acao.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cru-kaio-jorge.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cru-matheus-pereira-acao.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cru-matheus-pereira.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cui-jean-dias.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cui-kauan.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cui-pedro-henrique.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cui-pepe.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cui-raul.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/cui-vinicius-peixoto-trindade-da-silva.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/fla-jorge-carrascal-acao.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/fla-jorge-carrascal.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/fla-lucas-paqueta.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/fla-pedro-acao.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/fla-pedro.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/fla-samuel-lino-acao.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/fla-samuel-lino.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/flu-agustin-canobbio.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/flu-hercules.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/flu-hulk.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/flu-jefferson-savarino.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/flu-john-kennedy.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/flu-kevin-serna.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/flu-lucho-acosta.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/flu-martinelli.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/for-juan-miritello.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/for-mailton-dos-santos.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/for-ronald.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/for-ryan.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/for-vitinho.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/goi-anselmo-ramon.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/goi-filipe-machado.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/goi-jean-carlos-alves-ferreira.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/goi-kadu.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/goi-lourenco.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/goi-tadeu.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/gre-carlos-vinicius-acao.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/gre-carlos-vinicius.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/gre-cristian-pavon.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/gre-francis-amuzu.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/gre-gustavo-martins.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/gre-jose-enamorado.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/gre-juan-nardoni.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/gre-tete.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/int-alan-patrick.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/int-alerrandro.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/int-alexander-bernabei.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/int-alexandro-bernabei.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/int-bruno-gomes.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/int-johan-carbonero.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/int-vitinho.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/juv-mandaca.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/juv-marcos-paulo.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/juv-nathan.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/juv-patryck.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/juv-rai.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/juv-safira.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/lon-andre-dhominique.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/lon-bruno-santos.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/lon-iago-teles-da-silva.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/lon-joao-vitor.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/lon-thalis.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/mir-alesson.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/mir-andre-luis.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/mir-carlos-eduardo.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/mir-igor-formiga.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/mir-igor-marques.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/mir-negueba.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/mir-reinaldo.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/nau-derek.webp",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/nau-jean-carlos.webp",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/nau-vinicius-rodrigues.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/nau-vinicius.webp",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/nau-wenderson.webp",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/nov-carlao.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/nov-juninho.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/nov-matheus-bianqui.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/nov-robson.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/nov-romulo-simao.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/nov-romulo.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/ope-gabriel-boschilia.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/ope-mikael-doka.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/ope-miranda.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/ope-pablo.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/ope-vinicius-diniz.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/pal-allan.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/pal-andreas-pereira-acao.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/pal-andreas-pereira.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/pal-joaquin-piquerez.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/pal-jose-manuel-lopez.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/pal-mauricio.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/pal-vitor-roque.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/pon-brandao.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/pon-david-conceicao.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/pon-kevyson.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/pon-lucas-cunha.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/pon-sergio-palacios.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/pon-william-pottker.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/rbb-agustin-sant-anna.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/rbb-fernando.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/rbb-henry-mosquera.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/rbb-isidro-pitta.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/rbb-juninho-capixaba.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/rbb-lucas-barbosa.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/rem-alef-manga.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/rem-antonio-galeano.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/rem-gabriel-taliari.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/rem-jaja.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/rem-leonel-picco.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/rem-vitor-bueno.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/rem-ze-ivaldo.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/san-alvaro-barreal.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/san-benjamin-rollheiser.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/san-gabriel-barbosa-acao.jpg",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/san-gabriel-barbosa.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/san-gabriel-bontempo.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/san-gabriel-brazao.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/san-neymar.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/sao-artur.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/sao-damian-bobadilla.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/sao-ferreira.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/sao-jonathan-calleri.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/sao-lucas-ramon.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/sao-luciano.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/sao-marcos-antonio.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/sao-wendell.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/sbe-fabricio-daniel.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/sbe-lucas-fernandes.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/sbe-pedrinho.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/sbe-pedro-vitor.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/sbe-rodrigo-ferreira.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/spo-chrystian-barletta.webp",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/spo-chrystian.webp",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/spo-claudinho.webp",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/spo-diego-hernandez.webp",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/spo-patrick-de-paula.webp",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/spo-pedro-perotti.webp",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/vas-andres-gomez.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/vas-cuiabano.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/vas-david.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/vas-jose-rodriguez.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/vas-robert-renan.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/vas-thiago-mendes.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/vil-andre-luis.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/vil-douglas-mendes.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/vil-dudu.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/vil-everton-galdino.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/vil-janderson.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/vit-erick.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/vit-gabriel-baralhas.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/vit-lucas-arcanjo.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/vit-matheus.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/vit-matheuzinho.png",
+    "status": 200,
+    "matchesCommit": true
+  },
+  {
+    "path": "assets/jogadores/edicao-2026/vit-rene.png",
+    "status": 200,
+    "matchesCommit": true
+  }
+]

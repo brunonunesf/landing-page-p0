@@ -1,0 +1,101 @@
+{
+  "results": [
+    {
+      "width": 390,
+      "serie": "A",
+      "dark": false,
+      "times": 20,
+      "teclado": true,
+      "retornoFoco": true,
+      "cliqueAuxiliar": true,
+      "contencaoFoco": true,
+      "zoom200": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "serie": "B",
+      "dark": false,
+      "times": 20,
+      "teclado": true,
+      "retornoFoco": true,
+      "cliqueAuxiliar": true,
+      "contencaoFoco": true,
+      "zoom200": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "serie": "A",
+      "dark": true,
+      "times": 20,
+      "teclado": true,
+      "retornoFoco": true,
+      "cliqueAuxiliar": true,
+      "contencaoFoco": true,
+      "zoom200": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "serie": "B",
+      "dark": true,
+      "times": 20,
+      "teclado": true,
+      "retornoFoco": true,
+      "cliqueAuxiliar": true,
+      "contencaoFoco": true,
+      "zoom200": true,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "serie": "A",
+      "dark": false,
+      "times": 20,
+      "teclado": true,
+      "retornoFoco": true,
+      "cliqueAuxiliar": true,
+      "contencaoFoco": true,
+      "zoom200": true,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "serie": "B",
+      "dark": false,
+      "times": 20,
+      "teclado": true,
+      "retornoFoco": true,
+      "cliqueAuxiliar": true,
+      "contencaoFoco": true,
+      "zoom200": true,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "serie": "A",
+      "dark": true,
+      "times": 20,
+      "teclado": true,
+      "retornoFoco": true,
+      "cliqueAuxiliar": true,
+      "contencaoFoco": true,
+      "zoom200": true,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "serie": "B",
+      "dark": true,
+      "times": 20,
+      "teclado": true,
+      "retornoFoco": true,
+      "cliqueAuxiliar": true,
+      "contencaoFoco": true,
+      "zoom200": true,
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

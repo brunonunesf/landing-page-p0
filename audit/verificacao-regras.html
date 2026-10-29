@@ -1,0 +1,14 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Relatório de verificação</title><style>body{margin:0;background:#eef3ef;color:#122b20;font:18px/1.5 system-ui}main{max-width:1000px;margin:auto;padding:32px 22px}h1{font-size:clamp(30px,5vw,48px);line-height:1.1}section{background:white;padding:22px;border-radius:14px;margin:20px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.6 monospace;background:#122b20;color:#e8fff0;padding:18px;border-radius:8px}small{color:#456452}strong{color:#106c3e}</style><main><small>RELATÓRIO DE VERIFICAÇÃO · 23/10/2026</small><h1>Evidências visuais e bloqueio de commit</h1><p>Auditoria das regras do projeto. Esta página é um relatório, não uma tela do produto.</p><section><h2>Skill carregada</h2><p>Leitura realizada neste pedido pela ferramenta de execução; conteúdo retornado integralmente.</p><pre>/Users/mac/Desktop/landing-page-p0/.agents/skills/evidencia-visual/SKILL.md</pre><p>A skill exige capturas reais em 390 px e 1440 px, inclusive para tarefas sem interface.</p></section><section><h2>Bloqueio executável confirmado</h2><p>Configuração local: <code>core.hooksPath=.githooks</code>. Hook executável chama <code>python3 tools/commit-approval.py check</code>.</p><p>Teste em repositório temporário, com cópias idênticas do hook e script, arquivo preparado e sem autorização.</p><pre>{
+  &quot;ambiente&quot;: &quot;/var/folders/rk/chczq6911djb6njr9dzrj1l40000gn/T/commit-gate-test-z8938hjv&quot;,
+  &quot;hook_identico&quot;: true,
+  &quot;script_identico&quot;: true,
+  &quot;hook_executavel&quot;: true,
+  &quot;comando&quot;: &quot;git commit -m \&quot;Teste sem autorização\&quot;&quot;,
+  &quot;resultado&quot;: {
+    &quot;code&quot;: 1,
+    &quot;stdout&quot;: &quot;&quot;,
+    &quot;stderr&quot;: &quot;COMMIT BLOQUEADO: mostre o resultado e as evidências de celular e computador; aguarde autorização explícita posterior do usuário.&quot;
+  },
+  &quot;nenhum_commit_criado&quot;: true,
+  &quot;approve_executado&quot;: false
+}</pre><p><strong>PASSOU: tentativa negada, saída 1, nenhum commit criado.</strong></p></section><section><h2>Limite do mecanismo</h2><p>O script verifica uma autorização técnica de uso único vinculada ao conteúdo preparado e ao HEAD. Ele não lê mensagens humanas nem verifica capturas: essa identificação continua sob responsabilidade do agente, conforme AGENTS.md.</p><p>Não foi executado approve. O teste não criou commit no projeto nem no repositório temporário.</p></section></main></html>

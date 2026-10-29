@@ -1,0 +1,722 @@
+[
+  {
+    "dark": false,
+    "series": "A",
+    "code": "FLA",
+    "checked": 72,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "A",
+    "code": "PAL",
+    "checked": 72,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "A",
+    "code": "CAP",
+    "checked": 71,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "A",
+    "code": "CRU",
+    "checked": 72,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "A",
+    "code": "FLU",
+    "checked": 72,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "A",
+    "code": "CAM",
+    "checked": 72,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "A",
+    "code": "BAH",
+    "checked": 72,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "A",
+    "code": "SAN",
+    "checked": 72,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "A",
+    "code": "SAO",
+    "checked": 71,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "A",
+    "code": "RBB",
+    "checked": 71,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "A",
+    "code": "BOT",
+    "checked": 71,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "A",
+    "code": "CFC",
+    "checked": 71,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "A",
+    "code": "VIT",
+    "checked": 71,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "A",
+    "code": "MIR",
+    "checked": 71,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "A",
+    "code": "VAS",
+    "checked": 72,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "A",
+    "code": "COR",
+    "checked": 72,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "A",
+    "code": "INT",
+    "checked": 72,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "A",
+    "code": "GRE",
+    "checked": 72,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "A",
+    "code": "REM",
+    "checked": 71,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "A",
+    "code": "CHA",
+    "checked": 71,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "B",
+    "code": "JUV",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "B",
+    "code": "VIL",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "B",
+    "code": "NOV",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "B",
+    "code": "FOR",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "B",
+    "code": "CRI",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "B",
+    "code": "ACG",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "B",
+    "code": "CRB",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "B",
+    "code": "SPO",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "B",
+    "code": "OPE",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "B",
+    "code": "GOI",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "B",
+    "code": "CUI",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "B",
+    "code": "SBE",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "B",
+    "code": "ATH",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "B",
+    "code": "CEA",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "B",
+    "code": "NAU",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "B",
+    "code": "BSP",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "B",
+    "code": "AVA",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "B",
+    "code": "LON",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "B",
+    "code": "AMG",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": false,
+    "series": "B",
+    "code": "PON",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "A",
+    "code": "FLA",
+    "checked": 72,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "A",
+    "code": "PAL",
+    "checked": 72,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "A",
+    "code": "CAP",
+    "checked": 71,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "A",
+    "code": "CRU",
+    "checked": 72,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "A",
+    "code": "FLU",
+    "checked": 72,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "A",
+    "code": "CAM",
+    "checked": 72,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "A",
+    "code": "BAH",
+    "checked": 72,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "A",
+    "code": "SAN",
+    "checked": 72,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "A",
+    "code": "SAO",
+    "checked": 71,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "A",
+    "code": "RBB",
+    "checked": 71,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "A",
+    "code": "BOT",
+    "checked": 71,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "A",
+    "code": "CFC",
+    "checked": 71,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "A",
+    "code": "VIT",
+    "checked": 71,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "A",
+    "code": "MIR",
+    "checked": 71,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "A",
+    "code": "VAS",
+    "checked": 72,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "A",
+    "code": "COR",
+    "checked": 72,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "A",
+    "code": "INT",
+    "checked": 72,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "A",
+    "code": "GRE",
+    "checked": 72,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "A",
+    "code": "REM",
+    "checked": 71,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "A",
+    "code": "CHA",
+    "checked": 71,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "B",
+    "code": "JUV",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "B",
+    "code": "VIL",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "B",
+    "code": "NOV",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "B",
+    "code": "FOR",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "B",
+    "code": "CRI",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "B",
+    "code": "ACG",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "B",
+    "code": "CRB",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "B",
+    "code": "SPO",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "B",
+    "code": "OPE",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "B",
+    "code": "GOI",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "B",
+    "code": "CUI",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "B",
+    "code": "SBE",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "B",
+    "code": "ATH",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "B",
+    "code": "CEA",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "B",
+    "code": "NAU",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "B",
+    "code": "BSP",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "B",
+    "code": "AVA",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "B",
+    "code": "LON",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "B",
+    "code": "AMG",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  },
+  {
+    "dark": true,
+    "series": "B",
+    "code": "PON",
+    "checked": 58,
+    "images": 0,
+    "failures": [],
+    "small": []
+  }
+]

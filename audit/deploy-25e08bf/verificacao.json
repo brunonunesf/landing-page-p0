@@ -1,0 +1,77 @@
+{
+  "origin": "https://landing-page-p0.vercel.app",
+  "commit": "25e08bf",
+  "filesMatchCommit": [
+    "index.html",
+    "app.js",
+    "styles.css",
+    "data.js",
+    "photos.js"
+  ],
+  "results": [
+    {
+      "width": 1440,
+      "dark": false,
+      "series": "A",
+      "escapeCloses": true,
+      "previewCollapsed": true,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "dark": false,
+      "series": "B",
+      "escapeCloses": true,
+      "previewCollapsed": true,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "dark": true,
+      "series": "A",
+      "escapeCloses": true,
+      "previewCollapsed": true,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "dark": true,
+      "series": "B",
+      "escapeCloses": true,
+      "previewCollapsed": true,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "dark": false,
+      "series": "A",
+      "escapeCloses": true,
+      "previewCollapsed": true,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "dark": false,
+      "series": "B",
+      "escapeCloses": true,
+      "previewCollapsed": true,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "dark": true,
+      "series": "A",
+      "escapeCloses": true,
+      "previewCollapsed": true,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "dark": true,
+      "series": "B",
+      "escapeCloses": true,
+      "previewCollapsed": true,
+      "errors": []
+    }
+  ]
+}

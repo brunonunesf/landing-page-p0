@@ -1,0 +1,20 @@
+const {chromium}=require('/Users/mac/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+(async()=>{
+ const browser=await chromium.launch({headless:true,executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'});
+ const page=await browser.newPage({viewport:{width:1280,height:900}});const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('http://localhost:8765/design/identidade-brasileirao/',{waitUntil:'networkidle'});
+ await page.locator('#pauseSlides').click();
+ while(!(await page.locator('#heroLabel').textContent()).startsWith('Neymar')) await page.locator('#previousSlide').click();
+ await page.locator('.hero').screenshot({path:__dirname+'/abertura-revisada.png'});
+ console.log('images',await page.locator('img').evaluateAll(es=>es.map(e=>({alt:e.alt||e.closest('.hero-slide')?.className,loaded:e.complete&&e.naturalWidth>0,src:e.src}))));
+ await page.locator('.club').screenshot({path:__dirname+'/flamengo-revisado.png'});
+ console.log('initial',await page.locator('#heroLabel').textContent());await page.locator('#nextSlide').click();console.log('next',await page.locator('#heroLabel').textContent());
+ await page.locator('[data-font=Arial]').click();console.log('font',await page.locator('body').evaluate(e=>getComputedStyle(e).fontFamily));
+ await page.locator('[data-font=Archivo]').click();
+ await page.locator('#previousSlide').click();
+ await page.screenshot({path:__dirname+'/previa-desktop.png',fullPage:true});
+ await page.setViewportSize({width:390,height:844});await page.screenshot({path:__dirname+'/previa-mobile.png',fullPage:true});console.log('overflow',await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth));
+ await page.emulateMedia({reducedMotion:'reduce'});await page.waitForFunction(()=>document.querySelector('#pauseSlides').textContent==='Retomar');console.log('reduced',await page.locator('#pauseSlides').textContent());console.log('errors',errors);
+ const auto=await browser.newPage({reducedMotion:'no-preference'});await auto.goto('http://localhost:8765/design/identidade-brasileirao/',{waitUntil:'networkidle'});const before=await auto.locator('#heroLabel').textContent();await auto.waitForTimeout(6500);console.log('automatic changes',before !== await auto.locator('#heroLabel').textContent());
+ await browser.close();
+})().catch(e=>{console.error(e);process.exit(1)});

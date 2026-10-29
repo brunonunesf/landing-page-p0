@@ -1,0 +1,16 @@
+{
+  "withoutTrace": {
+    "frames": 241,
+    "meanFrameMs": 16.66597510373444,
+    "p95FrameMs": 16.700000000000728,
+    "maxFrameMs": 16.800000000000182,
+    "estimatedFps": 60.002489729864315
+  },
+  "withTrace": {
+    "frames": 241,
+    "meanFrameMs": 16.66597510373444,
+    "p95FrameMs": 16.700000000000728,
+    "maxFrameMs": 16.800000000000182,
+    "estimatedFps": 60.002489729864315
+  }
+}

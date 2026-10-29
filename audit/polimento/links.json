@@ -1,0 +1,173 @@
+[
+  {
+    "url": "https://atletico.com.br/hulk-comemora-virada-e-exalta-espirito-de-luta-do-time/",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:Abel-Ferreira-Palmeiras-Athletico-jul-2022.jpg",
+    "status": 200
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:EdmundoVasco2008.jpg",
+    "status": 200
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:Fred_Silver_Boot%2C_Confederations_Cup_2013.jpg",
+    "status": 200
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:Roberto_Dinamite_Vasco_da_Gama.jpg",
+    "status": 200
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:Senadores_da_57%C2%AA_Legislatura_%2852689451805%29_%28cropped_-_3x4%29.jpg",
+    "status": 200
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:Zico6.jpg",
+    "status": 200
+  },
+  {
+    "url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "status": 200
+  },
+  {
+    "url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "status": 200
+  },
+  {
+    "url": "https://creativecommons.org/licenses/by/2.0",
+    "status": 200
+  },
+  {
+    "url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+    "status": 200
+  },
+  {
+    "url": "https://esportes.r7.com/futebol/fotos/veja-grandes-momentos-da-volta-de-marcelinho-carioca-ao-corinthians-12052018/",
+    "status": 200
+  },
+  {
+    "url": "https://ge.globo.com/futebol/brasileirao-serie-a/",
+    "status": 200
+  },
+  {
+    "url": "https://ge.globo.com/futebol/brasileirao-serie-a/noticia/2026/09/27/cbf-desmembra-rodadas-do-brasileirao-com-duas-semanas-completas-de-jogos-veja-as-datas.ghtml",
+    "status": 200
+  },
+  {
+    "url": "https://ge.globo.com/futebol/times/atletico-mg/noticia/vida-longa-mais-presente-no-atletico-mg-e-homenageado-em-titulo-reinaldo-completa-65-anos.ghtml",
+    "status": 200
+  },
+  {
+    "url": "https://ge.globo.com/futebol/times/cruzeiro/noticia/2015/05/cruzeiro-anuncia-homenagem-meia-alex-camisa-10-na-triplice-coroa.html",
+    "status": 200
+  },
+  {
+    "url": "https://ge.globo.com/futebol/times/flamengo/noticia/2014/03/devorador-de-pequenos-fla-tem-raros-exemplos-de-zebra-no-carioca.html",
+    "status": 200
+  },
+  {
+    "url": "https://ge.globo.com/futebol/times/fluminense/noticia/2022/11/11/ha-dez-anos-fluminense-era-tetracampeao-brasileiro-foi-um-ano-espetacular-lembra-fred.ghtml",
+    "status": 200
+  },
+  {
+    "url": "https://ge.globo.com/numerologos/noticia/flamengo-tem-quarta-melhor-campanha-de-1o-turno-na-era-dos-pontos-corridos-avai-condenado.ghtml",
+    "status": 200
+  },
+  {
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/REC_Brasileiro_SA_rie_A_2026_v15_12_2025_final_02692c1077.pdf",
+    "status": 200
+  },
+  {
+    "url": "https://televisao.uol.com.br/colunas/flavio-ricco/2012/04/13/neymar-participara-do-cqc.htm",
+    "status": 200
+  },
+  {
+    "url": "https://www.cbf.com.br/a-cbf/noticias/juridico/a/resolucao-da-presidencia-062011",
+    "status": null,
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>"
+  },
+  {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/noticias/campeonato-brasileiro-serie-a/a/empate-entre-corinthians-e-vitoria-encerra-31-rodada-do-brasileirao",
+    "status": null,
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>"
+  },
+  {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/noticias/campeonato-brasileiro-serie-a/a/gabigol-sobe-para-a-8-posicao-na-artilharia-historia-do-brasileirao",
+    "status": null,
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>"
+  },
+  {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/noticias/noticias-campeonato-brasileiro-serie-d/a/flamengo-e-campeao-do-brasileirao-betano-2025",
+    "status": null,
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>"
+  },
+  {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/noticias/supercopa-masculino/a/sao-paulo-x-flamengo-vale-a-lideranca-do-ranking-dos-pontos-corridos",
+    "status": null,
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>"
+  },
+  {
+    "url": "https://www.espn.com.br/futebol/classificacao/_/liga/bra.2",
+    "status": 200
+  },
+  {
+    "url": "https://www.lance.com.br/lancepedia/cruzeiro-2-x-3-internacional-brasileirao-1979.html",
+    "status": 200
+  },
+  {
+    "url": "https://www.ogol.com.br/historia/1988-com-elegancia-sutil-bahia-triunfa/12350",
+    "status": 200
+  },
+  {
+    "url": "https://www.opovo.com.br/esportes/futebol/2023/01/14/santos-usara-uniforme-especial-na-estreia-do-paulistao-em-homenagem-a-pele.html",
+    "status": 200
+  },
+  {
+    "url": "https://www.palmeiras.com.br/galeria-de-titulos/",
+    "status": 200
+  },
+  {
+    "url": "https://www.santosfc.com.br/titulos/",
+    "status": 200
+  },
+  {
+    "url": "https://www.saopaulofc.net/enciclopedia-campeonato-brasileiro-2/",
+    "status": 200
+  },
+  {
+    "url": "https://www.tituloscorinthians.com.br/",
+    "status": 200
+  },
+  {
+    "url": "https://www.transfermarkt.com.br/campeonato-brasileiro-serie-a/scorerliste/wettbewerb/BRA1",
+    "status": 202
+  },
+  {
+    "url": "https://www.transfermarkt.com.br/campeonato-brasileiro-serie-b/startseite/wettbewerb/BRA2",
+    "status": 202
+  },
+  {
+    "url": "https://www.tvgazeta.com.br/",
+    "status": 200
+  },
+  {
+    "url": "https://www.uol.com.br/ecoa/ultimas-noticias/2022/11/24/socrates-foi-o-jogador-de-futebol-mais-politizado-que-o-brasil-ja-teve.htm",
+    "status": 200
+  },
+  {
+    "url": "https://www.uol.com.br/esporte/",
+    "status": 200
+  },
+  {
+    "url": "https://www.uol.com.br/esporte/futebol/ultimas-noticias/2012/11/22/ronaldinho-janta-com-nova-namorada-em-restaurante-de-bh-come-costela-de-porco-e-da-autografos.htm",
+    "status": 200
+  },
+  {
+    "url": "https://www.uol.com.br/esporte/futebol/ultimas-noticias/lancepress/2022/11/06/ex-jogadores-do-vasco-romario-e-edmundo-comemoram-o-acesso-na-internet.htm",
+    "status": null,
+    "error": "The read operation timed out"
+  }
+]

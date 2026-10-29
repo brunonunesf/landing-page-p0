@@ -1,0 +1,58 @@
+[
+  {
+    "width": 390,
+    "serie": "A",
+    "tema": "claro",
+    "abre": true,
+    "fecha": true
+  },
+  {
+    "width": 390,
+    "serie": "B",
+    "tema": "claro",
+    "abre": true,
+    "fecha": true
+  },
+  {
+    "width": 390,
+    "serie": "A",
+    "tema": "escuro",
+    "abre": true,
+    "fecha": true
+  },
+  {
+    "width": 390,
+    "serie": "B",
+    "tema": "escuro",
+    "abre": true,
+    "fecha": true
+  },
+  {
+    "width": 1440,
+    "serie": "A",
+    "tema": "claro",
+    "abre": true,
+    "fecha": true
+  },
+  {
+    "width": 1440,
+    "serie": "B",
+    "tema": "claro",
+    "abre": true,
+    "fecha": true
+  },
+  {
+    "width": 1440,
+    "serie": "A",
+    "tema": "escuro",
+    "abre": true,
+    "fecha": true
+  },
+  {
+    "width": 1440,
+    "serie": "B",
+    "tema": "escuro",
+    "abre": true,
+    "fecha": true
+  }
+]

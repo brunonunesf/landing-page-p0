@@ -1,0 +1,72 @@
+[
+  {
+    "key": "RBB:Fernando",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/rbb-fernando.jpg",
+      "originalImage": "https://setelagoas.com.br/wp-content/uploads/2025/01/Fernando-base-Democrata-Foto-Ari-ferreira-Red-Bull-Bragantino.jpg",
+      "source": "https://setelagoas.com.br/noticias/esportes/228088-com-passagem-pela-base-do-democrata-fernando-e-anunciado-pelo-red-bull-bragantino/",
+      "credit": "Fernando · Ari Ferreira / Red Bull Bragantino"
+    },
+    "errors": []
+  },
+  {
+    "key": "CRI:Waguininho",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/cri-waguininho.png",
+      "originalImage": "https://www.criciuma.com.br/upload/jogadores/a-wagner-da-silva-souza.jpg",
+      "source": "https://www.criciuma.com.br/equipes/elenco-profissional",
+      "credit": "Elenco do CRI · site oficial do clube"
+    },
+    "errors": []
+  },
+  {
+    "key": "CRI:Fellipe Mateus",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/cri-fellipe-mateus.png",
+      "originalImage": "https://www.criciuma.com.br/upload/jogadores/m-fellipe-mateus-de-sena-araujo.jpg",
+      "source": "https://www.criciuma.com.br/equipes/elenco-profissional",
+      "credit": "Elenco do CRI · site oficial do clube"
+    },
+    "errors": []
+  },
+  {
+    "key": "CRI:Marcelo Hermes",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/cri-marcelo-hermes.png",
+      "originalImage": "https://www.criciuma.com.br/upload/jogadores/l-marcelo-hermes.jpg",
+      "source": "https://www.criciuma.com.br/equipes/elenco-profissional",
+      "credit": "Elenco do CRI · site oficial do clube"
+    },
+    "errors": []
+  },
+  {
+    "key": "CRI:Jhonata Robert",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/cri-jhonata-robert.png",
+      "originalImage": "https://www.criciuma.com.br/upload/jogadores/m-jhonata-robert-alves-da-silva.jpg",
+      "source": "https://www.criciuma.com.br/equipes/elenco-profissional",
+      "credit": "Elenco do CRI · site oficial do clube"
+    },
+    "errors": []
+  },
+  {
+    "key": "CRI:Willean Lepo",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/cri-willean-lepo.png",
+      "originalImage": "https://www.criciuma.com.br/upload/jogadores/v-willean-bernardo-willemen.jpg",
+      "source": "https://www.criciuma.com.br/equipes/elenco-profissional",
+      "credit": "Elenco do CRI · site oficial do clube"
+    },
+    "errors": []
+  },
+  {
+    "key": "PON:Kevyson",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/pon-kevyson.jpg",
+      "originalImage": "https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2026/01/28/760674244-psx20240920195442easy-resizecom.jpg",
+      "source": "https://www.terra.com.br/esportes/futebol/mercado-da-bola/santos-acerta-emprestimo-de-lateral-esquerdo-para-a-ponte-preta,7d38807db7657dab1c6eb566f8e4cfb1mna2z0cq.html",
+      "credit": "Kevyson · Terra / fotografia creditada na publicação"
+    },
+    "errors": []
+  }
+]

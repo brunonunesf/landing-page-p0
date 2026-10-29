@@ -1,0 +1,12 @@
+// Amostra de rolagem em rAF e trace real do Chrome; não substitui teste em celular físico.
+const {chromium}=require('/Users/mac/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');const fs=require('fs');
+(async()=>{const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'});const page=await browser.newPage({viewport:{width:1440,height:1000}});
+await page.goto('http://localhost:8765');await page.evaluate(()=>document.fonts.ready);await page.waitForTimeout(1000);
+const sampleScroll=()=>page.evaluate(()=>new Promise(resolve=>{const frames=[];let last,start;const end=document.documentElement.scrollHeight-innerHeight;function tick(t){start??=t;if(last)frames.push(t-last);last=t;const fraction=Math.min(1,(t-start)/4000);scrollTo({top:end*fraction,behavior:'instant'});if(fraction<1)requestAnimationFrame(tick);else{const sorted=[...frames].sort((a,b)=>a-b);resolve({frames:frames.length,meanFrameMs:frames.reduce((a,b)=>a+b,0)/frames.length,p95FrameMs:sorted[Math.floor(sorted.length*.95)],maxFrameMs:sorted.at(-1),estimatedFps:1000/(frames.reduce((a,b)=>a+b,0)/frames.length)});}}requestAnimationFrame(tick)}));
+const sample=await sampleScroll();
+await page.evaluate(()=>scrollTo({top:0,behavior:'instant'}));
+const client=await page.context().newCDPSession(page);await client.send('Tracing.start',{categories:'devtools.timeline,blink.user_timing',transferMode:'ReturnAsStream'});
+const tracedSample=await sampleScroll();
+const complete=new Promise(resolve=>client.once('Tracing.tracingComplete',resolve));await client.send('Tracing.end');const {stream}=await complete;let trace='';while(true){const part=await client.send('IO.read',{handle:stream});trace+=part.data;if(part.eof)break;}await client.send('IO.close',{handle:stream});fs.writeFileSync('audit/movimento/scroll-trace.json',trace);fs.writeFileSync('audit/movimento/scroll-performance.json',JSON.stringify({withoutTrace:sample,withTrace:tracedSample},null,2));console.log({withoutTrace:sample,withTrace:tracedSample});
+// Toque com WebKit é coberto pelo verificador; aqui o foco e destaque são inspecionáveis.
+await page.evaluate(()=>{setTheme(false);setDivision('A')});await page.locator('#classificacao').scrollIntoViewIfNeeded();await page.waitForTimeout(1600);await page.locator('#tableBody .club-entry').first().hover();await page.screenshot({path:'audit/movimento/tabela-1440.png'});await browser.close()})().catch(e=>{console.error(e);process.exit(1)});

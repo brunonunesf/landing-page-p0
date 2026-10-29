@@ -1,0 +1,282 @@
+[
+  {
+    "key": "CAP:João Cruz",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/cap-joao-cruz.jpg",
+      "originalImage": "https://s2-ge.glbimg.com/zJrbu2kdI64yrmH-g_kQ7XpjPD8%3D/0x0%3A1600x1280/600x0/smart/filters%3Agifv%28%29%3Astrip_icc%28%29/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/t/e/B1LyYpQyiPACP2Dy5A8g/whatsapp-image-2022-12-02-at-15.20.17.jpeg",
+      "source": "https://ge.globo.com/pr/futebol/times/athletico-pr/noticia/2022/12/04/athletico-assina-primeiro-contrato-profissional-com-meia-joao-cruz-multa-e-de-r-275-milhoes.ghtml",
+      "credit": "João Cruz · ge / fotografia creditada na publicação"
+    },
+    "errors": []
+  },
+  {
+    "key": "RBB:Juninho Capixaba",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/rbb-juninho-capixaba.jpg",
+      "originalImage": "https://img.redbullbragantino.com/images/c_limit,w_480,h_640/f_auto,q_auto/2026/3/13/qcknkekf5tdbpqoog7a3/juninho-capixaba",
+      "source": "https://www.redbullbragantino.com/br-pt/atletas/juninho-capixaba",
+      "credit": "Juninho Capixaba · site oficial do Bragantino"
+    },
+    "errors": []
+  },
+  {
+    "key": "RBB:Fernando",
+    "photo": null,
+    "errors": [
+      [
+        200,
+        "https://www.redbullbragantino.com.br/midia_imagens/391c2372a23749ea8dc5c29f6962b585.jpg"
+      ]
+    ]
+  },
+  {
+    "key": "GRE:Carlos Vinícius",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/gre-carlos-vinicius.png",
+      "originalImage": "https://gremio.blob.core.windows.net/imgs-site/md-jogador-acao-ff1b0fb15f1c0bf6c7b434368174ab97.png",
+      "source": "https://gremio.net/futebol/",
+      "credit": "Elenco do GRE · site oficial do clube"
+    },
+    "errors": []
+  },
+  {
+    "key": "GRE:Cristian Pavón",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/gre-cristian-pavon.png",
+      "originalImage": "https://gremio.blob.core.windows.net/imgs-site/md-jogador-acao-104744d56b3c243f5c320eb8432829a1.png",
+      "source": "https://gremio.net/futebol/",
+      "credit": "Elenco do GRE · site oficial do clube"
+    },
+    "errors": []
+  },
+  {
+    "key": "GRE:Gustavo Martins",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/gre-gustavo-martins.png",
+      "originalImage": "https://gremio.blob.core.windows.net/imgs-site/md-jogador-acao-c7a12af5244ca6fdb5dc3317958c9789.png",
+      "source": "https://gremio.net/futebol/",
+      "credit": "Elenco do GRE · site oficial do clube"
+    },
+    "errors": []
+  },
+  {
+    "key": "GRE:Francis Amuzu",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/gre-francis-amuzu.png",
+      "originalImage": "https://gremio.blob.core.windows.net/imgs-site/md-jogador-acao-4da497bae72262805fd4496e8cb7c874.png",
+      "source": "https://gremio.net/futebol/",
+      "credit": "Elenco do GRE · site oficial do clube"
+    },
+    "errors": []
+  },
+  {
+    "key": "GRE:José Enamorado",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/gre-jose-enamorado.png",
+      "originalImage": "https://gremio.blob.core.windows.net/imgs-site/md-jogador-acao-00fde92789d01aa83436883b856b1c9e.png",
+      "source": "https://gremio.net/futebol/",
+      "credit": "Elenco do GRE · site oficial do clube"
+    },
+    "errors": []
+  },
+  {
+    "key": "GRE:Juan Nardoni",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/gre-juan-nardoni.png",
+      "originalImage": "https://gremio.blob.core.windows.net/imgs-site/md-jogador-acao-97317365246556001582d24e82e748c8.png",
+      "source": "https://gremio.net/futebol/",
+      "credit": "Elenco do GRE · site oficial do clube"
+    },
+    "errors": []
+  },
+  {
+    "key": "GRE:Tetê",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/gre-tete.png",
+      "originalImage": "https://gremio.blob.core.windows.net/imgs-site/md-jogador-acao-7d9d4ce1d116722ddc98b49ecd941f6e.png",
+      "source": "https://gremio.net/futebol/",
+      "credit": "Elenco do GRE · site oficial do clube"
+    },
+    "errors": []
+  },
+  {
+    "key": "REM:Jajá",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/rem-jaja.png",
+      "originalImage": "https://pub-6456b24912b548d4bfaf1426a7c2a97d.r2.dev/players/812fe50f-ffd7-482d-aaa5-7b75081f4418.png",
+      "source": "https://www.clubedoremo.com.br/elenco",
+      "credit": "Jajá · site oficial do Remo"
+    },
+    "errors": []
+  },
+  {
+    "key": "CRI:Waguininho",
+    "photo": null,
+    "errors": [
+      [
+        200,
+        "https://www.criciuma.com.br/equipes/upload/jogadores/a-wagner-da-silva-souza.jpg"
+      ]
+    ]
+  },
+  {
+    "key": "CRI:Fellipe Mateus",
+    "photo": null,
+    "errors": [
+      [
+        200,
+        "https://www.criciuma.com.br/equipes/upload/jogadores/m-fellipe-mateus-de-sena-araujo.jpg"
+      ]
+    ]
+  },
+  {
+    "key": "CRI:Marcelo Hermes",
+    "photo": null,
+    "errors": [
+      [
+        200,
+        "https://www.criciuma.com.br/equipes/upload/jogadores/l-marcelo-hermes.jpg"
+      ]
+    ]
+  },
+  {
+    "key": "CRI:Jhonata Robert",
+    "photo": null,
+    "errors": [
+      [
+        200,
+        "https://www.criciuma.com.br/equipes/upload/jogadores/m-jhonata-robert-alves-da-silva.jpg"
+      ]
+    ]
+  },
+  {
+    "key": "CRI:Willean Lepo",
+    "photo": null,
+    "errors": [
+      [
+        200,
+        "https://www.criciuma.com.br/equipes/upload/jogadores/v-willean-bernardo-willemen.jpg"
+      ]
+    ]
+  },
+  {
+    "key": "SPO:Pedro Perotti",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/spo-pedro-perotti.webp",
+      "originalImage": "https://sportrecife.com.br/wp-content/uploads/1997/11/PEROTTI-scaled.jpg",
+      "source": "https://sportrecife.com.br/jogadores/",
+      "credit": "Elenco do SPO · site oficial do clube"
+    },
+    "errors": []
+  },
+  {
+    "key": "SPO:Chrystian",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/spo-chrystian.webp",
+      "originalImage": "https://sportrecife.com.br/wp-content/uploads/2026/03/BARLETTA-scaled.jpg",
+      "source": "https://sportrecife.com.br/jogadores/",
+      "credit": "Elenco do SPO · site oficial do clube"
+    },
+    "errors": []
+  },
+  {
+    "key": "SPO:Diego Hernández",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/spo-diego-hernandez.webp",
+      "originalImage": "https://sportrecife.com.br/wp-content/uploads/2000/06/DIEGO-HERNANDEZ-scaled.jpg",
+      "source": "https://sportrecife.com.br/jogadores/",
+      "credit": "Elenco do SPO · site oficial do clube"
+    },
+    "errors": []
+  },
+  {
+    "key": "SPO:Patrick de Paula",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/spo-patrick-de-paula.webp",
+      "originalImage": "https://sportrecife.com.br/wp-content/uploads/1999/09/P-scaled.jpg",
+      "source": "https://sportrecife.com.br/jogadores/",
+      "credit": "Elenco do SPO · site oficial do clube"
+    },
+    "errors": []
+  },
+  {
+    "key": "SPO:Chrystian Barletta",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/spo-chrystian-barletta.webp",
+      "originalImage": "https://sportrecife.com.br/wp-content/uploads/2026/03/BARLETTA-scaled.jpg",
+      "source": "https://sportrecife.com.br/jogadores/",
+      "credit": "Elenco do SPO · site oficial do clube"
+    },
+    "errors": []
+  },
+  {
+    "key": "SPO:Claudinho",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/spo-claudinho.webp",
+      "originalImage": "https://sportrecife.com.br/wp-content/uploads/2000/09/CLAUDINHO-scaled.jpg",
+      "source": "https://sportrecife.com.br/jogadores/",
+      "credit": "Elenco do SPO · site oficial do clube"
+    },
+    "errors": []
+  },
+  {
+    "key": "NAU:Vinícius",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/nau-vinicius.webp",
+      "originalImage": "https://clubenauticocapibaribe.com.br/assets/elenco/vinicius.webp",
+      "source": "https://clubenauticocapibaribe.com.br/elenco",
+      "credit": "Elenco do NAU · site oficial do clube"
+    },
+    "errors": []
+  },
+  {
+    "key": "NAU:Derek",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/nau-derek.webp",
+      "originalImage": "https://clubenauticocapibaribe.com.br/assets/elenco/derek.webp",
+      "source": "https://clubenauticocapibaribe.com.br/elenco",
+      "credit": "Elenco do NAU · site oficial do clube"
+    },
+    "errors": []
+  },
+  {
+    "key": "NAU:Jean Carlos",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/nau-jean-carlos.webp",
+      "originalImage": "https://clubenauticocapibaribe.com.br/assets/elenco/jean-carlos.webp",
+      "source": "https://clubenauticocapibaribe.com.br/elenco",
+      "credit": "Elenco do NAU · site oficial do clube"
+    },
+    "errors": []
+  },
+  {
+    "key": "NAU:Wenderson",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/nau-wenderson.webp",
+      "originalImage": "https://clubenauticocapibaribe.com.br/assets/elenco/wenderson.webp",
+      "source": "https://clubenauticocapibaribe.com.br/elenco",
+      "credit": "Elenco do NAU · site oficial do clube"
+    },
+    "errors": []
+  },
+  {
+    "key": "AVA:Daniel Penha",
+    "photo": {
+      "image": "assets/jogadores/edicao-2026/ava-daniel-penha.png",
+      "originalImage": "https://avai.com.br/wp-content/uploads/2026/10/Elenco-OUT-2026-Daniel-Penha.png",
+      "source": "https://avai.com.br/futebol/profissional/",
+      "credit": "Elenco do AVA · site oficial do clube"
+    },
+    "errors": []
+  },
+  {
+    "key": "PON:Kevyson",
+    "photo": null,
+    "errors": [
+      [
+        403,
+        "https://static.gazetaesportiva.com/uploads/2026/01/ponte-1.jpg"
+      ]
+    ]
+  }
+]

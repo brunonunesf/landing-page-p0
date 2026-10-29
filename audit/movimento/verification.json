@@ -1,0 +1,243 @@
+{
+  "results": [
+    {
+      "width": 390,
+      "reduced": false,
+      "dark": false,
+      "series": "A",
+      "overflow": false,
+      "counts": true,
+      "panelFocus": true
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "dark": false,
+      "series": "B",
+      "overflow": false,
+      "counts": true,
+      "panelFocus": true
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "dark": true,
+      "series": "A",
+      "overflow": false,
+      "counts": true,
+      "panelFocus": true
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "dark": true,
+      "series": "B",
+      "overflow": false,
+      "counts": true,
+      "panelFocus": true
+    },
+    {
+      "width": 390,
+      "cls": 0.0001532282051282051
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "dark": false,
+      "series": "A",
+      "overflow": false,
+      "counts": true,
+      "panelFocus": true
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "dark": false,
+      "series": "B",
+      "overflow": false,
+      "counts": true,
+      "panelFocus": true
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "dark": true,
+      "series": "A",
+      "overflow": false,
+      "counts": true,
+      "panelFocus": true
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "dark": true,
+      "series": "B",
+      "overflow": false,
+      "counts": true,
+      "panelFocus": true
+    },
+    {
+      "width": 768,
+      "reduced": false,
+      "dark": false,
+      "series": "A",
+      "overflow": false,
+      "counts": true,
+      "panelFocus": true
+    },
+    {
+      "width": 768,
+      "reduced": false,
+      "dark": false,
+      "series": "B",
+      "overflow": false,
+      "counts": true,
+      "panelFocus": true
+    },
+    {
+      "width": 768,
+      "reduced": false,
+      "dark": true,
+      "series": "A",
+      "overflow": false,
+      "counts": true,
+      "panelFocus": true
+    },
+    {
+      "width": 768,
+      "reduced": false,
+      "dark": true,
+      "series": "B",
+      "overflow": false,
+      "counts": true,
+      "panelFocus": true
+    },
+    {
+      "width": 768,
+      "cls": 0.000072296875
+    },
+    {
+      "width": 768,
+      "reduced": true,
+      "dark": false,
+      "series": "A",
+      "overflow": false,
+      "counts": true,
+      "panelFocus": true
+    },
+    {
+      "width": 768,
+      "reduced": true,
+      "dark": false,
+      "series": "B",
+      "overflow": false,
+      "counts": true,
+      "panelFocus": true
+    },
+    {
+      "width": 768,
+      "reduced": true,
+      "dark": true,
+      "series": "A",
+      "overflow": false,
+      "counts": true,
+      "panelFocus": true
+    },
+    {
+      "width": 768,
+      "reduced": true,
+      "dark": true,
+      "series": "B",
+      "overflow": false,
+      "counts": true,
+      "panelFocus": true
+    },
+    {
+      "width": 1440,
+      "reduced": false,
+      "dark": false,
+      "series": "A",
+      "overflow": false,
+      "counts": true,
+      "panelFocus": true
+    },
+    {
+      "width": 1440,
+      "reduced": false,
+      "dark": false,
+      "series": "B",
+      "overflow": false,
+      "counts": true,
+      "panelFocus": true
+    },
+    {
+      "width": 1440,
+      "reduced": false,
+      "dark": true,
+      "series": "A",
+      "overflow": false,
+      "counts": true,
+      "panelFocus": true
+    },
+    {
+      "width": 1440,
+      "reduced": false,
+      "dark": true,
+      "series": "B",
+      "overflow": false,
+      "counts": true,
+      "panelFocus": true
+    },
+    {
+      "width": 1440,
+      "cls": 0.00011540528850790894
+    },
+    {
+      "width": 1440,
+      "reduced": true,
+      "dark": false,
+      "series": "A",
+      "overflow": false,
+      "counts": true,
+      "panelFocus": true
+    },
+    {
+      "width": 1440,
+      "reduced": true,
+      "dark": false,
+      "series": "B",
+      "overflow": false,
+      "counts": true,
+      "panelFocus": true
+    },
+    {
+      "width": 1440,
+      "reduced": true,
+      "dark": true,
+      "series": "A",
+      "overflow": false,
+      "counts": true,
+      "panelFocus": true
+    },
+    {
+      "width": 1440,
+      "reduced": true,
+      "dark": true,
+      "series": "B",
+      "overflow": false,
+      "counts": true,
+      "panelFocus": true
+    }
+  ],
+  "errors": [],
+  "browserResults": [
+    {
+      "browser": "Firefox",
+      "passed": true
+    },
+    {
+      "browser": "WebKit",
+      "passed": true
+    }
+  ]
+}
