@@ -1243,3 +1243,11 @@ footer a{color:inherit}.sources-details{grid-column:1/-1}.sources-details>summar
   .js #heroTitle.is-revealing:not(.is-in) .line__inner{transform:translateY(120%)}
 }
 @media(prefers-reduced-motion:reduce){#heroTitle .line__inner{transform:none!important;transition:none!important}}
+
+/* A foto coletiva fica inteira e a legenda não cobre os jogadores. */
+.detail-sheet .club-moment--lineup{height:auto;min-height:0}
+.detail-sheet.has-club-identity .club-moment--lineup::after{display:none}
+.detail-sheet.has-club-identity .club-moment--lineup img{height:auto;min-height:0;object-fit:contain;object-position:center;filter:none}
+.detail-sheet .club-moment--lineup figcaption{position:static;padding:20px 22px 22px}
+.detail-sheet .club-moment--lineup h4{font-size:21px;margin:8px 0 14px}
+.detail-sheet .club-moment--lineup a{display:inline-block;line-height:1.6;overflow-wrap:anywhere}
