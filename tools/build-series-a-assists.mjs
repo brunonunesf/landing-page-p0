@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 
-const cutoff=new Date('2026-10-20T02:59:59Z');
+const cutoff=new Date('2026-10-30T02:59:59Z');
 const scoreboardUrl='https://site.api.espn.com/apis/site/v2/sports/soccer/bra.1/scoreboard?dates=2026&limit=1000';
 const teamsUrl='https://site.api.espn.com/apis/site/v2/sports/soccer/bra.1/teams?limit=100';
 const [scoreboard,teamsPayload]=await Promise.all([fetch(scoreboardUrl).then(r=>r.json()),fetch(teamsUrl).then(r=>r.json())]);

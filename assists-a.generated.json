@@ -1,19 +1,19 @@
 {
   "FLA": [
     {
+      "name": "Samuel Lino",
+      "assists": 9,
+      "id": "253937"
+    },
+    {
       "name": "Jorge Carrascal",
       "assists": 8,
       "id": "208700"
     },
     {
-      "name": "Samuel Lino",
-      "assists": 8,
-      "id": "253937"
-    },
-    {
-      "name": "Pedro",
+      "name": "Guillermo Varela",
       "assists": 6,
-      "id": "235017"
+      "id": "188368"
     }
   ],
   "COR": [
@@ -28,15 +28,15 @@
       "id": "409662"
     },
     {
-      "name": "Kaio César",
+      "name": "Breno Bidon",
       "assists": 2,
-      "id": null
+      "id": "338898"
     }
   ],
   "INT": [
     {
       "name": "Alerrandro",
-      "assists": 4,
+      "assists": 5,
       "id": null
     },
     {
@@ -45,26 +45,26 @@
       "id": "270246"
     },
     {
-      "name": "Vitinho",
+      "name": "Matheus Bahia",
       "assists": 3,
-      "id": "171652"
+      "id": "304656"
     }
   ],
   "CRU": [
     {
       "name": "Matheus Pereira",
-      "assists": 6,
+      "assists": 7,
       "id": "216098"
+    },
+    {
+      "name": "Keny Arroyo",
+      "assists": 5,
+      "id": "371534"
     },
     {
       "name": "Fágner",
       "assists": 4,
       "id": null
-    },
-    {
-      "name": "Gerson",
-      "assists": 4,
-      "id": "210135"
     }
   ],
   "SAO": [
@@ -79,9 +79,9 @@
       "id": "236596"
     },
     {
-      "name": "Lucas Ramon",
+      "name": "Damián Bobadilla",
       "assists": 2,
-      "id": "206953"
+      "id": "301516"
     }
   ],
   "PAL": [
@@ -103,6 +103,11 @@
   ],
   "SAN": [
     {
+      "name": "Benjamín Rollheiser",
+      "assists": 3,
+      "id": "269813"
+    },
+    {
       "name": "Gabriel Barbosa",
       "assists": 3,
       "id": "182522"
@@ -111,11 +116,6 @@
       "name": "Gabriel Bontempo",
       "assists": 3,
       "id": "399179"
-    },
-    {
-      "name": "Neymar",
-      "assists": 3,
-      "id": "132948"
     }
   ],
   "FLU": [
@@ -173,7 +173,7 @@
     {
       "name": "Erick",
       "assists": 5,
-      "id": "256044"
+      "id": "253796"
     },
     {
       "name": "Matheuzinho",
@@ -232,9 +232,9 @@
       "id": "287035"
     },
     {
-      "name": "Agustín Sant'Anna",
-      "assists": 2,
-      "id": "253486"
+      "name": "Lucas Barbosa",
+      "assists": 3,
+      "id": "248584"
     }
   ],
   "BOT": [
@@ -262,7 +262,7 @@
     },
     {
       "name": "Francis Amuzu",
-      "assists": 3,
+      "assists": 4,
       "id": "269079"
     },
     {
@@ -308,7 +308,7 @@
   "CHA": [
     {
       "name": "Giovanni Augusto",
-      "assists": 5,
+      "assists": 6,
       "id": "140012"
     },
     {
@@ -329,14 +329,14 @@
       "id": "199017"
     },
     {
+      "name": "Jean Lucas",
+      "assists": 4,
+      "id": "269910"
+    },
+    {
       "name": "Rodrigo Nestor",
       "assists": 4,
       "id": "266664"
-    },
-    {
-      "name": "Jean Lucas",
-      "assists": 3,
-      "id": "269910"
     }
   ]
 }

@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 
-const cutoff = new Date('2026-10-18T02:59:59Z');
+const cutoff = new Date('2026-10-30T02:59:59Z');
 const espnTeams = JSON.parse(await fs.readFile('/tmp/espn-b.json','utf8')).sports[0].leagues[0].teams.map(x=>x.team).filter(t=>t.logos?.[0]);
 const games = JSON.parse(await fs.readFile('/tmp/bgames.json','utf8')).events;
 const codeMap = {"América Mineiro":"AMG","Athletic":"ATH","Atlético Goianiense":"ACG","Avaí":"AVA","Botafogo-SP":"BSP","CRB":"CRB","Ceará":"CEA","Criciúma":"CRI","Cuiabá":"CUI","Fortaleza":"FOR","Goiás":"GOI","Juventude":"JUV","Londrina":"LON","Novorizontino":"NOV","Náutico":"NAU","Operário PR":"OPE","Ponte Preta":"PON","Sport":"SPO","São Bernardo":"SBE","Vila Nova":"VIL"};
@@ -20,5 +20,5 @@ for(const event of [...games].sort((a,b)=>new Date(a.date)-new Date(b.date))){
     for(const [side,opp] of [[home,away],[away,home]]){const r=records[side.team.displayName];if(!r.next)r.next={opp:opp.team.displayName,venue:side.homeAway==='home'?'C':'F',date:event.date};}
   }
 }
-const sorted=Object.values(records).sort((a,b)=>b.pts-a.pts||(b.gp-b.gc)-(a.gp-a.gc)||b.gp-a.gp||a.name.localeCompare(b.name,'pt-BR')).map((r,i)=>({...r,pos:i+1,recent:r.recent.slice(-5),scorers:Object.entries(scorerCounts[r.name]||{}).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([name,goals])=>({name,goals,id:playerIds[name]}))}));
+const sorted=Object.values(records).sort((a,b)=>b.pts-a.pts||b.v-a.v||(b.gp-b.gc)-(a.gp-a.gc)||b.gp-a.gp||a.name.localeCompare(b.name,'pt-BR')).map((r,i)=>({...r,pos:i+1,recent:r.recent.slice(-5),scorers:Object.entries(scorerCounts[r.name]||{}).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([name,goals])=>({name,goals,id:playerIds[name]}))}));
 await fs.writeFile('series-b.generated.json',JSON.stringify(sorted,null,2));

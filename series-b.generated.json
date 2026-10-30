@@ -1,21 +1,82 @@
 [
   {
-    "code": "JUV",
-    "name": "Juventude",
-    "pts": 61,
-    "j": 34,
-    "v": 17,
+    "code": "NOV",
+    "name": "Novorizontino",
+    "pts": 64,
+    "j": 35,
+    "v": 18,
     "e": 10,
     "d": 7,
-    "gp": 41,
-    "gc": 23,
+    "gp": 62,
+    "gc": 30,
     "recent": [
       {
         "result": "V",
-        "opp": "América Mineiro",
-        "score": "1–0",
-        "date": "2026-09-28T22:30Z"
+        "opp": "Goiás",
+        "score": "3–0",
+        "date": "2026-10-02T00:00Z"
       },
+      {
+        "result": "V",
+        "opp": "Náutico",
+        "score": "2–0",
+        "date": "2026-10-08T22:30Z"
+      },
+      {
+        "result": "V",
+        "opp": "Ponte Preta",
+        "score": "5–1",
+        "date": "2026-10-12T22:00Z"
+      },
+      {
+        "result": "E",
+        "opp": "Vila Nova",
+        "score": "2–2",
+        "date": "2026-10-18T21:00Z"
+      },
+      {
+        "result": "V",
+        "opp": "Atlético Goianiense",
+        "score": "1–0",
+        "date": "2026-10-24T19:30Z"
+      }
+    ],
+    "next": {
+      "opp": "Operário PR",
+      "venue": "C",
+      "date": "2026-11-01T21:30Z"
+    },
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18127.png",
+    "pos": 1,
+    "scorers": [
+      {
+        "name": "Robson",
+        "goals": 18,
+        "id": "145369"
+      },
+      {
+        "name": "Rômulo Simão",
+        "goals": 13,
+        "id": "314545"
+      },
+      {
+        "name": "Carlão",
+        "goals": 5,
+        "id": "145107"
+      }
+    ]
+  },
+  {
+    "code": "JUV",
+    "name": "Juventude",
+    "pts": 64,
+    "j": 35,
+    "v": 18,
+    "e": 10,
+    "d": 7,
+    "gp": 45,
+    "gc": 23,
+    "recent": [
       {
         "result": "V",
         "opp": "Operário PR",
@@ -39,19 +100,25 @@
         "opp": "Ceará",
         "score": "2–2",
         "date": "2026-10-17T19:30Z"
+      },
+      {
+        "result": "V",
+        "opp": "Náutico",
+        "score": "4–0",
+        "date": "2026-10-26T23:30Z"
       }
     ],
     "next": {
-      "opp": "Náutico",
-      "venue": "C",
-      "date": "2026-10-26T23:30Z"
+      "opp": "Vila Nova",
+      "venue": "F",
+      "date": "2026-10-31T20:30Z"
     },
     "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6270.png",
-    "pos": 1,
+    "pos": 2,
     "scorers": [
       {
         "name": "Raí",
-        "goals": 8,
+        "goals": 9,
         "id": "334723"
       },
       {
@@ -69,26 +136,14 @@
   {
     "code": "VIL",
     "name": "Vila Nova",
-    "pts": 61,
-    "j": 33,
+    "pts": 62,
+    "j": 35,
     "v": 18,
-    "e": 7,
-    "d": 8,
-    "gp": 46,
-    "gc": 31,
+    "e": 8,
+    "d": 9,
+    "gp": 50,
+    "gc": 36,
     "recent": [
-      {
-        "result": "V",
-        "opp": "América Mineiro",
-        "score": "1–0",
-        "date": "2026-09-18T22:30Z"
-      },
-      {
-        "result": "V",
-        "opp": "Londrina",
-        "score": "2–0",
-        "date": "2026-09-25T23:30Z"
-      },
       {
         "result": "V",
         "opp": "Botafogo-SP",
@@ -106,24 +161,36 @@
         "opp": "Náutico",
         "score": "2–0",
         "date": "2026-10-11T20:30Z"
+      },
+      {
+        "result": "E",
+        "opp": "Novorizontino",
+        "score": "2–2",
+        "date": "2026-10-18T21:00Z"
+      },
+      {
+        "result": "D",
+        "opp": "São Bernardo",
+        "score": "2–3",
+        "date": "2026-10-24T19:30Z"
       }
     ],
     "next": {
-      "opp": "Novorizontino",
+      "opp": "Juventude",
       "venue": "C",
-      "date": "2026-10-18T21:00Z"
+      "date": "2026-10-31T20:30Z"
     },
     "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9973.png",
-    "pos": 2,
+    "pos": 3,
     "scorers": [
       {
         "name": "Janderson",
-        "goals": 8,
+        "goals": 9,
         "id": "249846"
       },
       {
         "name": "André Luis",
-        "goals": 8,
+        "goals": 9,
         "id": "222200"
       },
       {
@@ -134,89 +201,16 @@
     ]
   },
   {
-    "code": "NOV",
-    "name": "Novorizontino",
-    "pts": 60,
-    "j": 33,
-    "v": 17,
-    "e": 9,
-    "d": 7,
-    "gp": 59,
-    "gc": 28,
-    "recent": [
-      {
-        "result": "D",
-        "opp": "Ceará",
-        "score": "1–2",
-        "date": "2026-09-18T23:30Z"
-      },
-      {
-        "result": "E",
-        "opp": "São Bernardo",
-        "score": "0–0",
-        "date": "2026-09-25T22:30Z"
-      },
-      {
-        "result": "V",
-        "opp": "Goiás",
-        "score": "3–0",
-        "date": "2026-10-02T00:00Z"
-      },
-      {
-        "result": "V",
-        "opp": "Náutico",
-        "score": "2–0",
-        "date": "2026-10-08T22:30Z"
-      },
-      {
-        "result": "V",
-        "opp": "Ponte Preta",
-        "score": "5–1",
-        "date": "2026-10-12T22:00Z"
-      }
-    ],
-    "next": {
-      "opp": "Vila Nova",
-      "venue": "F",
-      "date": "2026-10-18T21:00Z"
-    },
-    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18127.png",
-    "pos": 3,
-    "scorers": [
-      {
-        "name": "Robson",
-        "goals": 17,
-        "id": "145369"
-      },
-      {
-        "name": "Rômulo Simão",
-        "goals": 13,
-        "id": "314545"
-      },
-      {
-        "name": "Carlão",
-        "goals": 5,
-        "id": "145107"
-      }
-    ]
-  },
-  {
     "code": "FOR",
     "name": "Fortaleza",
-    "pts": 60,
-    "j": 34,
+    "pts": 61,
+    "j": 35,
     "v": 16,
-    "e": 12,
+    "e": 13,
     "d": 6,
-    "gp": 41,
-    "gc": 29,
+    "gp": 43,
+    "gc": 31,
     "recent": [
-      {
-        "result": "E",
-        "opp": "Athletic",
-        "score": "2–2",
-        "date": "2026-09-27T21:30Z"
-      },
       {
         "result": "E",
         "opp": "Náutico",
@@ -240,19 +234,25 @@
         "opp": "Sport",
         "score": "2–0",
         "date": "2026-10-16T23:30Z"
+      },
+      {
+        "result": "E",
+        "opp": "Ponte Preta",
+        "score": "2–2",
+        "date": "2026-10-24T21:30Z"
       }
     ],
     "next": {
-      "opp": "Ponte Preta",
-      "venue": "F",
-      "date": "2026-10-24T21:30Z"
+      "opp": "Atlético Goianiense",
+      "venue": "C",
+      "date": "2026-11-02T19:00Z"
     },
     "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6272.png",
     "pos": 4,
     "scorers": [
       {
         "name": "Maílton dos Santos",
-        "goals": 8,
+        "goals": 9,
         "id": "285004"
       },
       {
@@ -270,26 +270,14 @@
   {
     "code": "CRI",
     "name": "Criciúma",
-    "pts": 56,
-    "j": 33,
-    "v": 16,
+    "pts": 59,
+    "j": 35,
+    "v": 17,
     "e": 8,
-    "d": 9,
-    "gp": 34,
-    "gc": 28,
+    "d": 10,
+    "gp": 36,
+    "gc": 30,
     "recent": [
-      {
-        "result": "D",
-        "opp": "Operário PR",
-        "score": "0–2",
-        "date": "2026-09-22T22:30Z"
-      },
-      {
-        "result": "V",
-        "opp": "Avaí",
-        "score": "3–0",
-        "date": "2026-09-27T14:00Z"
-      },
       {
         "result": "V",
         "opp": "Londrina",
@@ -307,12 +295,24 @@
         "opp": "América Mineiro",
         "score": "1–0",
         "date": "2026-10-12T22:30Z"
+      },
+      {
+        "result": "V",
+        "opp": "São Bernardo",
+        "score": "1–0",
+        "date": "2026-10-18T19:00Z"
+      },
+      {
+        "result": "D",
+        "opp": "Sport",
+        "score": "1–2",
+        "date": "2026-10-24T00:00Z"
       }
     ],
     "next": {
-      "opp": "São Bernardo",
-      "venue": "F",
-      "date": "2026-10-18T19:00Z"
+      "opp": "Ponte Preta",
+      "venue": "C",
+      "date": "2026-10-30T22:30Z"
     },
     "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9971.png",
     "pos": 5,
@@ -324,7 +324,7 @@
       },
       {
         "name": "Fellipe Mateus",
-        "goals": 4,
+        "goals": 5,
         "id": "198569"
       },
       {
@@ -335,22 +335,150 @@
     ]
   },
   {
-    "code": "ACG",
-    "name": "Atlético Goianiense",
+    "code": "CRB",
+    "name": "CRB",
+    "pts": 55,
+    "j": 35,
+    "v": 16,
+    "e": 7,
+    "d": 12,
+    "gp": 53,
+    "gc": 49,
+    "recent": [
+      {
+        "result": "D",
+        "opp": "São Bernardo",
+        "score": "1–3",
+        "date": "2026-10-02T22:30Z"
+      },
+      {
+        "result": "V",
+        "opp": "Atlético Goianiense",
+        "score": "3–1",
+        "date": "2026-10-07T23:30Z"
+      },
+      {
+        "result": "E",
+        "opp": "Fortaleza",
+        "score": "2–2",
+        "date": "2026-10-12T19:00Z"
+      },
+      {
+        "result": "D",
+        "opp": "Botafogo-SP",
+        "score": "0–1",
+        "date": "2026-10-18T19:00Z"
+      },
+      {
+        "result": "V",
+        "opp": "Londrina",
+        "score": "2–1",
+        "date": "2026-10-24T21:30Z"
+      }
+    ],
+    "next": {
+      "opp": "Goiás",
+      "venue": "F",
+      "date": "2026-11-02T23:30Z"
+    },
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9970.png",
+    "pos": 6,
+    "scorers": [
+      {
+        "name": "Mikael",
+        "goals": 18,
+        "id": "293875"
+      },
+      {
+        "name": "Crystopher",
+        "goals": 7,
+        "id": "252805"
+      },
+      {
+        "name": "Dadá",
+        "goals": 5,
+        "id": "143849"
+      }
+    ]
+  },
+  {
+    "code": "SPO",
+    "name": "Sport",
     "pts": 54,
-    "j": 34,
+    "j": 35,
     "v": 14,
     "e": 12,
-    "d": 8,
-    "gp": 42,
-    "gc": 32,
+    "d": 9,
+    "gp": 47,
+    "gc": 38,
     "recent": [
       {
         "result": "V",
-        "opp": "Goiás",
-        "score": "1–0",
-        "date": "2026-09-26T21:30Z"
+        "opp": "Athletic",
+        "score": "2–1",
+        "date": "2026-10-01T23:30Z"
       },
+      {
+        "result": "V",
+        "opp": "São Bernardo",
+        "score": "2–1",
+        "date": "2026-10-06T22:30Z"
+      },
+      {
+        "result": "E",
+        "opp": "Atlético Goianiense",
+        "score": "1–1",
+        "date": "2026-10-11T19:10Z"
+      },
+      {
+        "result": "D",
+        "opp": "Fortaleza",
+        "score": "0–2",
+        "date": "2026-10-16T23:30Z"
+      },
+      {
+        "result": "V",
+        "opp": "Criciúma",
+        "score": "2–1",
+        "date": "2026-10-24T00:00Z"
+      }
+    ],
+    "next": {
+      "opp": "Botafogo-SP",
+      "venue": "F",
+      "date": "2026-10-31T19:00Z"
+    },
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7635.png",
+    "pos": 7,
+    "scorers": [
+      {
+        "name": "Chrystian",
+        "goals": 13,
+        "id": "339844"
+      },
+      {
+        "name": "Pedro Perotti",
+        "goals": 12,
+        "id": "237136"
+      },
+      {
+        "name": "Diego Hernández",
+        "goals": 3,
+        "id": "314825"
+      }
+    ]
+  },
+  {
+    "code": "ACG",
+    "name": "Atlético Goianiense",
+    "pts": 54,
+    "j": 35,
+    "v": 14,
+    "e": 12,
+    "d": 9,
+    "gp": 42,
+    "gc": 33,
+    "recent": [
       {
         "result": "V",
         "opp": "América Mineiro",
@@ -374,15 +502,21 @@
         "opp": "Ponte Preta",
         "score": "1–1",
         "date": "2026-10-16T22:30Z"
+      },
+      {
+        "result": "D",
+        "opp": "Novorizontino",
+        "score": "0–1",
+        "date": "2026-10-24T19:30Z"
       }
     ],
     "next": {
-      "opp": "Novorizontino",
-      "venue": "C",
-      "date": "2026-10-24T19:30Z"
+      "opp": "Fortaleza",
+      "venue": "F",
+      "date": "2026-11-02T19:00Z"
     },
     "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10357.png",
-    "pos": 6,
+    "pos": 8,
     "scorers": [
       {
         "name": "Gustavo Coutinho",
@@ -402,156 +536,83 @@
     ]
   },
   {
-    "code": "CRB",
-    "name": "CRB",
+    "code": "GOI",
+    "name": "Goiás",
     "pts": 52,
-    "j": 33,
+    "j": 35,
     "v": 15,
     "e": 7,
-    "d": 11,
-    "gp": 51,
-    "gc": 47,
+    "d": 13,
+    "gp": 36,
+    "gc": 40,
     "recent": [
       {
         "result": "D",
-        "opp": "Ponte Preta",
-        "score": "0–1",
-        "date": "2026-09-20T14:00Z"
-      },
-      {
-        "result": "V",
-        "opp": "Cuiabá",
-        "score": "3–0",
-        "date": "2026-09-27T19:00Z"
-      },
-      {
-        "result": "D",
-        "opp": "São Bernardo",
-        "score": "1–3",
-        "date": "2026-10-02T22:30Z"
-      },
-      {
-        "result": "V",
-        "opp": "Atlético Goianiense",
-        "score": "3–1",
-        "date": "2026-10-07T23:30Z"
-      },
-      {
-        "result": "E",
-        "opp": "Fortaleza",
-        "score": "2–2",
-        "date": "2026-10-12T19:00Z"
-      }
-    ],
-    "next": {
-      "opp": "Botafogo-SP",
-      "venue": "C",
-      "date": "2026-10-18T19:00Z"
-    },
-    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9970.png",
-    "pos": 7,
-    "scorers": [
-      {
-        "name": "Mikael",
-        "goals": 18,
-        "id": "293875"
-      },
-      {
-        "name": "Crystopher",
-        "goals": 6,
-        "id": "252805"
-      },
-      {
-        "name": "Dadá",
-        "goals": 5,
-        "id": "143849"
-      }
-    ]
-  },
-  {
-    "code": "SPO",
-    "name": "Sport",
-    "pts": 51,
-    "j": 34,
-    "v": 13,
-    "e": 12,
-    "d": 9,
-    "gp": 45,
-    "gc": 37,
-    "recent": [
-      {
-        "result": "D",
-        "opp": "Náutico",
-        "score": "1–3",
-        "date": "2026-09-26T19:30Z"
+        "opp": "Novorizontino",
+        "score": "0–3",
+        "date": "2026-10-02T00:00Z"
       },
       {
         "result": "V",
         "opp": "Athletic",
         "score": "2–1",
-        "date": "2026-10-01T23:30Z"
+        "date": "2026-10-06T23:30Z"
       },
       {
         "result": "V",
-        "opp": "São Bernardo",
-        "score": "2–1",
-        "date": "2026-10-06T22:30Z"
+        "opp": "Operário PR",
+        "score": "2–0",
+        "date": "2026-10-11T21:30Z"
       },
       {
         "result": "E",
-        "opp": "Atlético Goianiense",
-        "score": "1–1",
-        "date": "2026-10-11T19:10Z"
+        "opp": "Náutico",
+        "score": "0–0",
+        "date": "2026-10-19T22:30Z"
       },
       {
-        "result": "D",
-        "opp": "Fortaleza",
-        "score": "0–2",
-        "date": "2026-10-16T23:30Z"
+        "result": "V",
+        "opp": "Ceará",
+        "score": "2–0",
+        "date": "2026-10-27T23:00Z"
       }
     ],
     "next": {
-      "opp": "Criciúma",
+      "opp": "CRB",
       "venue": "C",
-      "date": "2026-10-24T00:00Z"
+      "date": "2026-11-02T23:30Z"
     },
-    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7635.png",
-    "pos": 8,
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3395.png",
+    "pos": 9,
     "scorers": [
       {
-        "name": "Pedro Perotti",
-        "goals": 12,
-        "id": "237136"
-      },
-      {
-        "name": "Chrystian",
+        "name": "Kadu",
         "goals": 11,
-        "id": "339844"
+        "id": "418241"
       },
       {
-        "name": "Diego Hernández",
+        "name": "Anselmo Ramon",
+        "goals": 5,
+        "id": "131075"
+      },
+      {
+        "name": "Jean Carlos Alves Ferreira",
         "goals": 3,
-        "id": "314825"
+        "id": "390671"
       }
     ]
   },
   {
     "code": "OPE",
     "name": "Operário PR",
-    "pts": 48,
-    "j": 34,
-    "v": 13,
+    "pts": 51,
+    "j": 35,
+    "v": 14,
     "e": 9,
     "d": 12,
-    "gp": 44,
+    "gp": 45,
     "gc": 46,
     "recent": [
-      {
-        "result": "E",
-        "opp": "Ceará",
-        "score": "2–2",
-        "date": "2026-09-26T19:30Z"
-      },
       {
         "result": "D",
         "opp": "Juventude",
@@ -575,15 +636,21 @@
         "opp": "América Mineiro",
         "score": "0–1",
         "date": "2026-10-17T21:30Z"
+      },
+      {
+        "result": "V",
+        "opp": "Athletic",
+        "score": "1–0",
+        "date": "2026-10-23T22:30Z"
       }
     ],
     "next": {
-      "opp": "Athletic",
-      "venue": "C",
-      "date": "2026-10-23T22:30Z"
+      "opp": "Novorizontino",
+      "venue": "F",
+      "date": "2026-11-01T21:30Z"
     },
     "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18187.png",
-    "pos": 9,
+    "pos": 10,
     "scorers": [
       {
         "name": "Gabriel Boschilia",
@@ -603,69 +670,136 @@
     ]
   },
   {
-    "code": "GOI",
-    "name": "Goiás",
-    "pts": 48,
-    "j": 33,
-    "v": 14,
-    "e": 6,
-    "d": 13,
-    "gp": 34,
-    "gc": 40,
+    "code": "SBE",
+    "name": "São Bernardo",
+    "pts": 49,
+    "j": 35,
+    "v": 13,
+    "e": 10,
+    "d": 12,
+    "gp": 49,
+    "gc": 39,
     "recent": [
       {
         "result": "V",
-        "opp": "Avaí",
-        "score": "2–1",
-        "date": "2026-09-20T19:00Z"
+        "opp": "CRB",
+        "score": "3–1",
+        "date": "2026-10-02T22:30Z"
       },
       {
         "result": "D",
-        "opp": "Atlético Goianiense",
+        "opp": "Sport",
+        "score": "1–2",
+        "date": "2026-10-06T22:30Z"
+      },
+      {
+        "result": "E",
+        "opp": "Juventude",
+        "score": "2–2",
+        "date": "2026-10-11T19:00Z"
+      },
+      {
+        "result": "D",
+        "opp": "Criciúma",
         "score": "0–1",
-        "date": "2026-09-26T21:30Z"
-      },
-      {
-        "result": "D",
-        "opp": "Novorizontino",
-        "score": "0–3",
-        "date": "2026-10-02T00:00Z"
+        "date": "2026-10-18T19:00Z"
       },
       {
         "result": "V",
-        "opp": "Athletic",
-        "score": "2–1",
-        "date": "2026-10-06T23:30Z"
+        "opp": "Vila Nova",
+        "score": "3–2",
+        "date": "2026-10-24T19:30Z"
+      }
+    ],
+    "next": {
+      "opp": "Cuiabá",
+      "venue": "F",
+      "date": "2026-11-01T21:30Z"
+    },
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11268.png",
+    "pos": 11,
+    "scorers": [
+      {
+        "name": "Pedrinho",
+        "goals": 6,
+        "id": "262873"
+      },
+      {
+        "name": "Rodrigo Ferreira",
+        "goals": 5,
+        "id": "198808"
+      },
+      {
+        "name": "Pedro Vitor",
+        "goals": 4,
+        "id": "240149"
+      }
+    ]
+  },
+  {
+    "code": "BSP",
+    "name": "Botafogo-SP",
+    "pts": 47,
+    "j": 35,
+    "v": 13,
+    "e": 8,
+    "d": 14,
+    "gp": 40,
+    "gc": 38,
+    "recent": [
+      {
+        "result": "D",
+        "opp": "Vila Nova",
+        "score": "0–1",
+        "date": "2026-10-03T21:30Z"
       },
       {
         "result": "V",
         "opp": "Operário PR",
+        "score": "2–1",
+        "date": "2026-10-07T22:30Z"
+      },
+      {
+        "result": "V",
+        "opp": "Ceará",
+        "score": "1–0",
+        "date": "2026-10-13T00:00Z"
+      },
+      {
+        "result": "V",
+        "opp": "CRB",
+        "score": "1–0",
+        "date": "2026-10-18T19:00Z"
+      },
+      {
+        "result": "V",
+        "opp": "Avaí",
         "score": "2–0",
-        "date": "2026-10-11T21:30Z"
+        "date": "2026-10-24T19:00Z"
       }
     ],
     "next": {
-      "opp": "Náutico",
+      "opp": "Sport",
       "venue": "C",
-      "date": "2026-10-19T22:30Z"
+      "date": "2026-10-31T19:00Z"
     },
-    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3395.png",
-    "pos": 10,
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10281.png",
+    "pos": 12,
     "scorers": [
       {
-        "name": "Kadu",
-        "goals": 9,
-        "id": "418241"
+        "name": "Everton Morelli",
+        "goals": 12,
+        "id": "271563"
       },
       {
-        "name": "Anselmo Ramon",
+        "name": "Hygor",
+        "goals": 10,
+        "id": "182646"
+      },
+      {
+        "name": "Patrick Brey",
         "goals": 5,
-        "id": "131075"
-      },
-      {
-        "name": "Jean Carlos Alves Ferreira",
-        "goals": 3,
-        "id": "390671"
+        "id": "236284"
       }
     ]
   },
@@ -673,25 +807,13 @@
     "code": "CUI",
     "name": "Cuiabá",
     "pts": 47,
-    "j": 33,
+    "j": 35,
     "v": 11,
     "e": 14,
-    "d": 8,
+    "d": 10,
     "gp": 32,
-    "gc": 26,
+    "gc": 28,
     "recent": [
-      {
-        "result": "V",
-        "opp": "Náutico",
-        "score": "3–0",
-        "date": "2026-09-22T00:30Z"
-      },
-      {
-        "result": "D",
-        "opp": "CRB",
-        "score": "0–3",
-        "date": "2026-09-27T19:00Z"
-      },
       {
         "result": "V",
         "opp": "Ponte Preta",
@@ -709,15 +831,27 @@
         "opp": "Avaí",
         "score": "0–1",
         "date": "2026-10-11T21:30Z"
+      },
+      {
+        "result": "D",
+        "opp": "Londrina",
+        "score": "0–1",
+        "date": "2026-10-20T22:30Z"
+      },
+      {
+        "result": "D",
+        "opp": "América Mineiro",
+        "score": "0–1",
+        "date": "2026-10-26T22:30Z"
       }
     ],
     "next": {
-      "opp": "Londrina",
-      "venue": "F",
-      "date": "2026-10-20T22:30Z"
+      "opp": "São Bernardo",
+      "venue": "C",
+      "date": "2026-11-01T21:30Z"
     },
     "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17313.png",
-    "pos": 11,
+    "pos": 13,
     "scorers": [
       {
         "name": "Kauan",
@@ -737,95 +871,16 @@
     ]
   },
   {
-    "code": "SBE",
-    "name": "São Bernardo",
-    "pts": 46,
-    "j": 33,
-    "v": 12,
-    "e": 10,
-    "d": 11,
-    "gp": 46,
-    "gc": 36,
-    "recent": [
-      {
-        "result": "V",
-        "opp": "Atlético Goianiense",
-        "score": "1–0",
-        "date": "2026-09-19T00:00Z"
-      },
-      {
-        "result": "E",
-        "opp": "Novorizontino",
-        "score": "0–0",
-        "date": "2026-09-25T22:30Z"
-      },
-      {
-        "result": "V",
-        "opp": "CRB",
-        "score": "3–1",
-        "date": "2026-10-02T22:30Z"
-      },
-      {
-        "result": "D",
-        "opp": "Sport",
-        "score": "1–2",
-        "date": "2026-10-06T22:30Z"
-      },
-      {
-        "result": "E",
-        "opp": "Juventude",
-        "score": "2–2",
-        "date": "2026-10-11T19:00Z"
-      }
-    ],
-    "next": {
-      "opp": "Criciúma",
-      "venue": "C",
-      "date": "2026-10-18T19:00Z"
-    },
-    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11268.png",
-    "pos": 12,
-    "scorers": [
-      {
-        "name": "Pedrinho",
-        "goals": 6,
-        "id": "262873"
-      },
-      {
-        "name": "Rodrigo Ferreira",
-        "goals": 4,
-        "id": "198808"
-      },
-      {
-        "name": "Pedro Vitor",
-        "goals": 4,
-        "id": "240149"
-      }
-    ]
-  },
-  {
     "code": "ATH",
     "name": "Athletic",
-    "pts": 43,
-    "j": 33,
+    "pts": 44,
+    "j": 35,
     "v": 10,
-    "e": 13,
-    "d": 10,
+    "e": 14,
+    "d": 11,
     "gp": 40,
-    "gc": 39,
+    "gc": 40,
     "recent": [
-      {
-        "result": "E",
-        "opp": "Botafogo-SP",
-        "score": "1–1",
-        "date": "2026-09-19T21:30Z"
-      },
-      {
-        "result": "E",
-        "opp": "Fortaleza",
-        "score": "2–2",
-        "date": "2026-09-27T21:30Z"
-      },
       {
         "result": "D",
         "opp": "Sport",
@@ -843,15 +898,27 @@
         "opp": "Londrina",
         "score": "2–2",
         "date": "2026-10-13T22:30Z"
+      },
+      {
+        "result": "E",
+        "opp": "Avaí",
+        "score": "0–0",
+        "date": "2026-10-18T19:00Z"
+      },
+      {
+        "result": "D",
+        "opp": "Operário PR",
+        "score": "0–1",
+        "date": "2026-10-23T22:30Z"
       }
     ],
     "next": {
-      "opp": "Avaí",
-      "venue": "F",
-      "date": "2026-10-18T19:00Z"
+      "opp": "Ceará",
+      "venue": "C",
+      "date": "2026-11-02T21:00Z"
     },
     "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20851.png",
-    "pos": 13,
+    "pos": 14,
     "scorers": [
       {
         "name": "Ronaldo Tavares",
@@ -871,22 +938,83 @@
     ]
   },
   {
-    "code": "CEA",
-    "name": "Ceará",
+    "code": "NAU",
+    "name": "Náutico",
     "pts": 43,
-    "j": 34,
+    "j": 35,
     "v": 11,
     "e": 10,
-    "d": 13,
-    "gp": 37,
-    "gc": 42,
+    "d": 14,
+    "gp": 39,
+    "gc": 46,
     "recent": [
       {
         "result": "E",
-        "opp": "Operário PR",
-        "score": "2–2",
-        "date": "2026-09-26T19:30Z"
+        "opp": "Fortaleza",
+        "score": "1–1",
+        "date": "2026-10-03T00:35Z"
       },
+      {
+        "result": "D",
+        "opp": "Novorizontino",
+        "score": "0–2",
+        "date": "2026-10-08T22:30Z"
+      },
+      {
+        "result": "D",
+        "opp": "Vila Nova",
+        "score": "0–2",
+        "date": "2026-10-11T20:30Z"
+      },
+      {
+        "result": "E",
+        "opp": "Goiás",
+        "score": "0–0",
+        "date": "2026-10-19T22:30Z"
+      },
+      {
+        "result": "D",
+        "opp": "Juventude",
+        "score": "0–4",
+        "date": "2026-10-26T23:30Z"
+      }
+    ],
+    "next": {
+      "opp": "Avaí",
+      "venue": "C",
+      "date": "2026-10-31T22:30Z"
+    },
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7633.png",
+    "pos": 15,
+    "scorers": [
+      {
+        "name": "Vinícius",
+        "goals": 9,
+        "id": "146269"
+      },
+      {
+        "name": "Vinicius Rodrigues",
+        "goals": 5,
+        "id": "302657"
+      },
+      {
+        "name": "Derek",
+        "goals": 3,
+        "id": "34580"
+      }
+    ]
+  },
+  {
+    "code": "CEA",
+    "name": "Ceará",
+    "pts": 43,
+    "j": 35,
+    "v": 11,
+    "e": 10,
+    "d": 14,
+    "gp": 37,
+    "gc": 44,
+    "recent": [
       {
         "result": "V",
         "opp": "Avaí",
@@ -910,15 +1038,21 @@
         "opp": "Juventude",
         "score": "2–2",
         "date": "2026-10-17T19:30Z"
+      },
+      {
+        "result": "D",
+        "opp": "Goiás",
+        "score": "0–2",
+        "date": "2026-10-27T23:00Z"
       }
     ],
     "next": {
-      "opp": "Goiás",
-      "venue": "C",
-      "date": "2026-10-27T23:00Z"
+      "opp": "Athletic",
+      "venue": "F",
+      "date": "2026-11-02T21:00Z"
     },
     "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9969.png",
-    "pos": 14,
+    "pos": 16,
     "scorers": [
       {
         "name": "Melk",
@@ -938,162 +1072,16 @@
     ]
   },
   {
-    "code": "NAU",
-    "name": "Náutico",
-    "pts": 42,
-    "j": 33,
-    "v": 11,
-    "e": 9,
-    "d": 13,
-    "gp": 39,
-    "gc": 42,
-    "recent": [
-      {
-        "result": "D",
-        "opp": "Cuiabá",
-        "score": "0–3",
-        "date": "2026-09-22T00:30Z"
-      },
-      {
-        "result": "V",
-        "opp": "Sport",
-        "score": "3–1",
-        "date": "2026-09-26T19:30Z"
-      },
-      {
-        "result": "E",
-        "opp": "Fortaleza",
-        "score": "1–1",
-        "date": "2026-10-03T00:35Z"
-      },
-      {
-        "result": "D",
-        "opp": "Novorizontino",
-        "score": "0–2",
-        "date": "2026-10-08T22:30Z"
-      },
-      {
-        "result": "D",
-        "opp": "Vila Nova",
-        "score": "0–2",
-        "date": "2026-10-11T20:30Z"
-      }
-    ],
-    "next": {
-      "opp": "Goiás",
-      "venue": "F",
-      "date": "2026-10-19T22:30Z"
-    },
-    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7633.png",
-    "pos": 15,
-    "scorers": [
-      {
-        "name": "Vinícius",
-        "goals": 9,
-        "id": "146269"
-      },
-      {
-        "name": "Vinicius Rodrigues",
-        "goals": 5,
-        "id": "302657"
-      },
-      {
-        "name": "Derek",
-        "goals": 3,
-        "id": "34580"
-      }
-    ]
-  },
-  {
-    "code": "BSP",
-    "name": "Botafogo-SP",
-    "pts": 41,
-    "j": 33,
-    "v": 11,
-    "e": 8,
-    "d": 14,
-    "gp": 37,
-    "gc": 38,
-    "recent": [
-      {
-        "result": "E",
-        "opp": "Athletic",
-        "score": "1–1",
-        "date": "2026-09-19T21:30Z"
-      },
-      {
-        "result": "V",
-        "opp": "Ponte Preta",
-        "score": "2–0",
-        "date": "2026-09-29T22:30Z"
-      },
-      {
-        "result": "D",
-        "opp": "Vila Nova",
-        "score": "0–1",
-        "date": "2026-10-03T21:30Z"
-      },
-      {
-        "result": "V",
-        "opp": "Operário PR",
-        "score": "2–1",
-        "date": "2026-10-07T22:30Z"
-      },
-      {
-        "result": "V",
-        "opp": "Ceará",
-        "score": "1–0",
-        "date": "2026-10-13T00:00Z"
-      }
-    ],
-    "next": {
-      "opp": "CRB",
-      "venue": "F",
-      "date": "2026-10-18T19:00Z"
-    },
-    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10281.png",
-    "pos": 16,
-    "scorers": [
-      {
-        "name": "Everton Morelli",
-        "goals": 11,
-        "id": "271563"
-      },
-      {
-        "name": "Hygor",
-        "goals": 9,
-        "id": "182646"
-      },
-      {
-        "name": "Patrick Brey",
-        "goals": 5,
-        "id": "236284"
-      }
-    ]
-  },
-  {
     "code": "AVA",
     "name": "Avaí",
-    "pts": 36,
-    "j": 33,
+    "pts": 37,
+    "j": 35,
     "v": 10,
-    "e": 6,
-    "d": 17,
+    "e": 7,
+    "d": 18,
     "gp": 33,
-    "gc": 43,
+    "gc": 45,
     "recent": [
-      {
-        "result": "D",
-        "opp": "Goiás",
-        "score": "1–2",
-        "date": "2026-09-20T19:00Z"
-      },
-      {
-        "result": "D",
-        "opp": "Criciúma",
-        "score": "0–3",
-        "date": "2026-09-27T14:00Z"
-      },
       {
         "result": "D",
         "opp": "Ceará",
@@ -1111,12 +1099,24 @@
         "opp": "Cuiabá",
         "score": "1–0",
         "date": "2026-10-11T21:30Z"
+      },
+      {
+        "result": "E",
+        "opp": "Athletic",
+        "score": "0–0",
+        "date": "2026-10-18T19:00Z"
+      },
+      {
+        "result": "D",
+        "opp": "Botafogo-SP",
+        "score": "0–2",
+        "date": "2026-10-24T19:00Z"
       }
     ],
     "next": {
-      "opp": "Athletic",
-      "venue": "C",
-      "date": "2026-10-18T19:00Z"
+      "opp": "Náutico",
+      "venue": "F",
+      "date": "2026-10-31T22:30Z"
     },
     "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9966.png",
     "pos": 17,
@@ -1141,26 +1141,14 @@
   {
     "code": "LON",
     "name": "Londrina",
-    "pts": 29,
-    "j": 33,
-    "v": 7,
+    "pts": 32,
+    "j": 35,
+    "v": 8,
     "e": 8,
-    "d": 18,
-    "gp": 42,
-    "gc": 49,
+    "d": 19,
+    "gp": 44,
+    "gc": 51,
     "recent": [
-      {
-        "result": "D",
-        "opp": "Fortaleza",
-        "score": "1–2",
-        "date": "2026-09-20T21:30Z"
-      },
-      {
-        "result": "D",
-        "opp": "Vila Nova",
-        "score": "0–2",
-        "date": "2026-09-25T23:30Z"
-      },
       {
         "result": "D",
         "opp": "Criciúma",
@@ -1178,12 +1166,24 @@
         "opp": "Athletic",
         "score": "2–2",
         "date": "2026-10-13T22:30Z"
+      },
+      {
+        "result": "V",
+        "opp": "Cuiabá",
+        "score": "1–0",
+        "date": "2026-10-20T22:30Z"
+      },
+      {
+        "result": "D",
+        "opp": "CRB",
+        "score": "1–2",
+        "date": "2026-10-24T21:30Z"
       }
     ],
     "next": {
-      "opp": "Cuiabá",
+      "opp": "América Mineiro",
       "venue": "C",
-      "date": "2026-10-20T22:30Z"
+      "date": "2026-11-01T19:00Z"
     },
     "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17333.png",
     "pos": 18,
@@ -1208,20 +1208,14 @@
   {
     "code": "AMG",
     "name": "América Mineiro",
-    "pts": 20,
-    "j": 34,
-    "v": 5,
+    "pts": 23,
+    "j": 35,
+    "v": 6,
     "e": 5,
     "d": 24,
-    "gp": 22,
+    "gp": 23,
     "gc": 54,
     "recent": [
-      {
-        "result": "D",
-        "opp": "Juventude",
-        "score": "0–1",
-        "date": "2026-09-28T22:30Z"
-      },
       {
         "result": "D",
         "opp": "Atlético Goianiense",
@@ -1245,12 +1239,18 @@
         "opp": "Operário PR",
         "score": "1–0",
         "date": "2026-10-17T21:30Z"
+      },
+      {
+        "result": "V",
+        "opp": "Cuiabá",
+        "score": "1–0",
+        "date": "2026-10-26T22:30Z"
       }
     ],
     "next": {
-      "opp": "Cuiabá",
-      "venue": "C",
-      "date": "2026-10-26T22:30Z"
+      "opp": "Londrina",
+      "venue": "F",
+      "date": "2026-11-01T19:00Z"
     },
     "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6154.png",
     "pos": 19,
@@ -1261,34 +1261,28 @@
         "id": "189900"
       },
       {
+        "name": "Matías Segovia",
+        "goals": 4,
+        "id": "289868"
+      },
+      {
         "name": "Willian",
         "goals": 4,
         "id": "119170"
-      },
-      {
-        "name": "Matías Segovia",
-        "goals": 3,
-        "id": "289868"
       }
     ]
   },
   {
     "code": "PON",
     "name": "Ponte Preta",
-    "pts": 14,
-    "j": 34,
+    "pts": 15,
+    "j": 35,
     "v": 3,
-    "e": 5,
+    "e": 6,
     "d": 26,
-    "gp": 19,
-    "gc": 74,
+    "gp": 21,
+    "gc": 76,
     "recent": [
-      {
-        "result": "D",
-        "opp": "Botafogo-SP",
-        "score": "0–2",
-        "date": "2026-09-29T22:30Z"
-      },
       {
         "result": "D",
         "opp": "Cuiabá",
@@ -1312,19 +1306,25 @@
         "opp": "Atlético Goianiense",
         "score": "1–1",
         "date": "2026-10-16T22:30Z"
+      },
+      {
+        "result": "E",
+        "opp": "Fortaleza",
+        "score": "2–2",
+        "date": "2026-10-24T21:30Z"
       }
     ],
     "next": {
-      "opp": "Fortaleza",
-      "venue": "C",
-      "date": "2026-10-24T21:30Z"
+      "opp": "Criciúma",
+      "venue": "F",
+      "date": "2026-10-30T22:30Z"
     },
     "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3459.png",
     "pos": 20,
     "scorers": [
       {
         "name": "Brandão",
-        "goals": 4,
+        "goals": 5,
         "id": "358788"
       },
       {

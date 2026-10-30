@@ -31,6 +31,23 @@
     animation.finished.catch(() => {}).finally(() => activeAnimations.delete(animation));
     return animation;
   }
+  function buildOdometer(el) {
+    if (el.dataset.odometerReady) return;
+    const value = String(el.dataset.odometer || '').trim();
+    if (!value || prefersReducedMotion()) return;
+    const source = $('span', el) || el;
+    const visual = document.createElement('span'); visual.className = 'odometer'; visual.setAttribute('aria-hidden', 'true');
+    [...value].forEach((character, index) => {
+      if (!/\d/.test(character)) {visual.append(character); return;}
+      const digit = document.createElement('span'); digit.className = 'odometer-digit';
+      const reel = document.createElement('span'); reel.className = 'odometer-reel'; reel.style.setProperty('--digit', character); reel.style.setProperty('--odometer-delay', `${index * 45}ms`);
+      reel.innerHTML = '0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9'; digit.append(reel); visual.append(digit);
+    });
+    if (source === el) {const suffix = el.textContent.replace(value, '');el.textContent = '';el.append(visual, document.createTextNode(suffix));}
+    else source.replaceWith(visual);
+    el.dataset.odometerReady = 'true';
+    requestAnimationFrame(() => visual.classList.add('is-running'));
+  }
   function onEnter(elements, callback, {threshold = .08, rootMargin = '0px', once = true} = {}) {
     if (!('IntersectionObserver' in window)) { [...elements].forEach(callback); return null; }
     const observer = new IntersectionObserver(entries => entries.forEach(entry => {
@@ -42,6 +59,7 @@
   function countUp(el) {
     if (completedCounts.has(el) || activeCounts.has(el)) return;
     completedCounts.add(el);
+    if (el.dataset.odometer) {buildOdometer(el); return;}
     const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
     let node; while ((node = walker.nextNode()) && !/\d/.test(node.textContent)) {}
     if (!node) return;
@@ -98,7 +116,8 @@
   document.addEventListener('visibilitychange', () => {syncContinuous(); if (document.hidden) cancelCounts();});
 
   // Hero: os contêineres de linha já reservam a altura final do texto.
-  $$('.line__inner').forEach((el, index) => animate(el, [{transform: 'translateY(110%)'}, {transform: 'translateY(0)'}], {duration: duration('dur-slow'), delay: index * duration('stagger')}));
+  const heroTitle = $('#heroTitle');
+  if (innerWidth > 768) $$('.line__inner').forEach((el, index) => animate(el, [{transform: 'translateY(110%)'}, {transform: 'translateY(0)'}], {duration: duration('dur-slow'), delay: index * duration('stagger')}));
   $$('.hero-eyebrow,.hero-meta,.discover-link,.hero-controls').forEach((el, i) => animate(el, [{opacity: 0, transform: 'translateY(16px)'}, {opacity: 1, transform: 'translateY(0)'}], {duration: duration('dur-slow'), delay: i * duration('stagger')}));
   const progress = document.createElement('span'); progress.className = 'reading-progress'; progress.setAttribute('aria-hidden', 'true'); $('.topbar').append(progress);
   let heroVisible = true;
@@ -171,6 +190,33 @@
   }
   renderTicker();
 
+  // Faixas editoriais usam somente termos que já existem no conteúdo e no recorte.
+  const marqueeAfterGames = document.createElement('div');
+  const marqueeBeforeHistory = document.createElement('div');
+  [marqueeAfterGames, marqueeBeforeHistory].forEach(marquee => {marquee.className = 'editorial-marquee continuous';marquee.setAttribute('aria-hidden','true');continuous(marquee);});
+  ticker.after(marqueeAfterGames); $('.history').before(marqueeBeforeHistory);
+  function renderMarquees() {
+    const division = $('.series-toggle .active')?.dataset.series || 'A';
+    const round = division === 'A' ? 'RODADA 31' : '33 RODADAS CONCLUÍDAS';
+    const fill = (target, terms) => {const content = terms.map(term => `<span>${term}</span>`).join('');target.innerHTML = `<div>${content}${content}</div>`;};
+    fill(marqueeAfterGames, [`BRASILEIRÃO 2026`, `SÉRIE ${division}`, round, 'CLASSIFICAÇÃO']);
+    fill(marqueeBeforeHistory, ['ARTILHEIROS', 'CAMPEÕES', 'HISTÓRIA', `SÉRIE ${division}`]);
+  }
+  renderMarquees();
+
+  // Créditos em grupos recolhíveis; os nós originais são apenas movidos, sem reescrever o conteúdo.
+  const creditsGrid = $('.credits-grid');
+  if (creditsGrid) [...creditsGrid.children].forEach((group, index) => {
+    const details = document.createElement('details'); details.className = 'credit-group surface-2'; details.open = index === 0;
+    const summary = document.createElement('summary'); summary.textContent = group.firstElementChild?.textContent.trim() || `Grupo de fontes ${index + 1}`;
+    group.before(details); details.append(summary, group);
+  });
+  $$('a[target="_blank"]').forEach(link => {
+    if ($('.external-icon', link)) return;
+    const external = document.createElementNS('http://www.w3.org/2000/svg','svg'); external.setAttribute('class','icon external-icon'); external.setAttribute('aria-hidden','true');
+    const use = document.createElementNS('http://www.w3.org/2000/svg','use'); use.setAttribute('href','#icon-arrow-up-right'); external.append(use); link.append(' ',external);
+  });
+
   // Observadores são desconectados antes de substituir linhas para não reter nós antigos.
   let tableResize, rowCursor;
   const entryCounts = new Set(), entryReveals = new Set();
@@ -239,7 +285,7 @@
     options[Math.max(0, index)].click(); options[Math.max(0, index)].focus();
   });
   setupTable();
-  document.addEventListener('motion:division', () => {lastRow = null;setupTable();renderTicker();animate($('#tableBody'), [{opacity: .35}, {opacity: 1}]);});
+  document.addEventListener('motion:division', () => {lastRow = null;setupTable();renderTicker();renderMarquees();observeCounts($$('[data-odometer]'));animate($('#tableBody'), [{opacity: .35}, {opacity: 1}]);});
 
   // Um listener por card; apenas os destaques indicados recebem inclinação.
   const cards = $$('.history-preview article,.history-scorer,.history-regulations,.season-player');
@@ -301,6 +347,9 @@
   reveal($$('.history-heading,.history-preview article,.history-timeline li,.history-rules-intro,.season-ranking'));
   $$('[data-reveal-group]').forEach(group => reveal([...group.children]));
   observeCounts($$('.history-scorer strong,.history-preview article > strong,.season-total strong'));
+  observeCounts($$('[data-odometer]'));
+  $$('.surface,.method,.history-preview article,.season-ranking,.sources-details').forEach(el => el.classList.add('surface-2'));
+  $$('.detail-sheet,.topbar').forEach(el => el.classList.add('surface-3'));
   root.classList.add('motion-ready');
   document.fonts?.ready.then(() => {syncPills();updateScroll();}); updateScroll();
 

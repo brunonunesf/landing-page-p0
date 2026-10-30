@@ -1136,3 +1136,81 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
 @media(hover:hover) and (pointer:fine){.season-player-button:hover .season-photo>img{filter:grayscale(0);transform:scale(1.05)}}
 @media(prefers-reduced-motion:reduce){.season-player-button:focus-visible .season-photo>img{transform:none}}
 @media(hover:hover) and (pointer:fine){#tableBody .club-entry:hover .club-row,#tableBody .club-entry:has(.club-details-button:focus-visible) .club-row{background:transparent;color:var(--text)}}
+
+/* Linguagem visual autoral — estádio, placar e editorial esportivo. */
+@font-face{font-family:'Big Shoulders Display';font-style:normal;font-weight:100 900;font-display:swap;src:url(assets/fonts/big-shoulders-display-variable.woff2) format('woff2')}
+:root{
+ --display:'Big Shoulders Display','Arial Narrow',Archivo,sans-serif;--body:Archivo,Arial,sans-serif;--mono:'DM Mono',ui-monospace,monospace;
+ --green-950:#081e16;--green-900:#102c20;--green-700:#426117;--green-500:#6c9a2b;--green-300:#b5d27d;--green-100:#edf3e4;
+ --surface-1:var(--surface);--surface-2:var(--surface-2);--surface-3:color-mix(in srgb,var(--surface) 92%,transparent);
+ --hairline:1px solid var(--border);--focus-inner:#f3f2e9;--focus-outer:#426117;
+ --type-display:clamp(4.25rem,10vw,10.5rem);--type-h2:clamp(3.25rem,7vw,7rem);--type-h3:clamp(2rem,4vw,4rem);
+ --shadow-stadium:0 24px 70px rgba(8,30,22,.18);--radius-cut:18px;
+}
+@supports (color:oklch(50% .1 140)){
+ :root{--bg:oklch(96.4% .014 105);--surface:oklch(99% .009 105);--surface-2:oklch(93.5% .018 130);--border:oklch(78% .028 145);--text:oklch(25% .055 150);--text-muted:oklch(43% .035 150);--accent:oklch(43% .105 130);--accent-fill:oklch(91% .25 122);--accent-ink:oklch(22% .06 135);--accent-soft:oklch(55% .11 135/.12);--accent-line:oklch(55% .11 135/.38);--hero-bg:oklch(18% .045 155);--hero-text:oklch(97% .014 115);--hero-muted:oklch(84% .025 145);--result-win:oklch(44% .105 155);--result-loss:oklch(47% .14 28);--result-draw:oklch(48% .02 145);--shadow-stadium:0 24px 70px oklch(18% .045 155/.18)}
+ html[data-theme=dark],body.dark{--bg:oklch(18% .045 155);--surface:oklch(23% .045 153);--surface-2:oklch(28% .04 150);--border:oklch(48% .045 150);--text:oklch(95% .016 120);--text-muted:oklch(76% .03 145);--accent:oklch(86% .22 122);--accent-fill:oklch(86% .22 122);--accent-ink:oklch(19% .05 145);--accent-soft:oklch(86% .22 122/.12);--accent-line:oklch(86% .22 122/.35)}
+}
+html[data-theme=dark] body,body.dark{--ink:var(--text);--paper:var(--bg);--line:var(--border);--muted:var(--text-muted);background:var(--bg);color:var(--text)}
+body{font-family:var(--body);font-variant-numeric:tabular-nums;background:var(--bg);color:var(--text)}
+::selection{background:var(--accent-fill);color:var(--accent-ink)}
+*{scrollbar-color:var(--accent) var(--surface-2)}
+:where(button,input,select,textarea){accent-color:var(--accent)}
+:where(a,button,summary,[tabindex]):focus-visible{outline:2px solid var(--focus-inner);box-shadow:0 0 0 5px var(--focus-outer);outline-offset:1px}
+.icon-sprite{position:absolute;width:0;height:0;overflow:hidden}.icon{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:-.18em}
+.surface-1{background:var(--surface-1)}.surface-2{background:var(--surface-2)}.surface-3{background:var(--surface-3)}
+.topbar,.detail-sheet{-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}.back-to-top{-webkit-backdrop-filter:none;backdrop-filter:none}
+p{max-width:65ch}.hero h1,.hero-title-outline,.board h2,.history h2,.season-leaders h2,.history-regulations h2,.footer-wordmark{font-family:var(--display);font-stretch:condensed;text-transform:uppercase}
+.hero{height:clamp(760px,calc(100svh - var(--header-height)),900px);min-height:760px;isolation:isolate;background:var(--hero-bg)}
+.hero:before{content:"";position:absolute;inset:-25% -20% 0;background:conic-gradient(from 82deg at 50% 0,transparent 0 35%,rgba(255,255,255,.16) 39%,transparent 44% 56%,rgba(255,255,255,.12) 61%,transparent 66%);opacity:.55;z-index:1;pointer-events:none}
+.hero:after{content:"BR 26";font-family:var(--display);font-size:clamp(18rem,38vw,42rem);inset:auto -2vw -20%;top:auto;letter-spacing:-.07em;opacity:.35}
+.hero-media{left:38%;clip-path:polygon(15% 0,100% 0,100% 100%,0 100%);-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 24%,#000 100%);mask-image:linear-gradient(90deg,transparent 0,#000 24%,#000 100%)}
+.hero-slide img{filter:none;mix-blend-mode:normal}.hero-slide:after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,var(--hero-bg) 0,transparent 50%),linear-gradient(0deg,var(--hero-bg),transparent 40%);mix-blend-mode:multiply}
+.js .hero-slide:first-child img{display:none}.hero-canvas{display:block;width:100%;height:100%}
+.hero-slide:first-child{transition:none}
+.hero-ambient i{display:none}.hero-content{max-width:min(1040px,82vw)}
+.hero h1{font-size:var(--type-display);line-height:.76;letter-spacing:-.035em;max-width:11ch;position:relative;z-index:3}.hero h1 em{font:inherit;color:var(--accent-fill)}
+.hero-content:before{content:"BRASILEIRÃO";position:absolute;right:-28vw;bottom:-8%;font-family:var(--display);font-size:clamp(8rem,20vw,22rem);line-height:.7;letter-spacing:-.035em;white-space:nowrap;color:transparent;-webkit-text-stroke:1px rgba(243,245,237,.32);opacity:.28;z-index:0;pointer-events:none}
+.hero-eyebrow,.led-label,.match-ticker>p,.editorial-marquee{font-family:var(--mono);letter-spacing:.12em}.hero-meta p{font-size:clamp(1rem,1.35vw,1.3rem);line-height:1.65}
+.discover-link{clip-path:polygon(0 0,94% 0,100% 50%,94% 100%,0 100%);padding-right:44px}
+.board,.season-leaders,.history,.history-regulations,footer{position:relative}.board:after,.season-leaders:after,.history:after{content:"";position:absolute;left:0;right:0;bottom:-26px;height:27px;background:inherit;clip-path:polygon(0 0,100% 0,100% 20%,68% 100%,0 32%);z-index:2;pointer-events:none}
+[data-section=classificacao]{background-image:linear-gradient(rgba(66,97,23,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(66,97,23,.055) 1px,transparent 1px);background-size:32px 32px}
+[data-section=protagonistas]{background:var(--bg)}[data-section=historia]{background:#e8ddc3;color:#2d2a22}[data-theme=dark] [data-section=historia]{background:#28271f;color:#f0eadc}
+[data-section=regulamento]{background-image:repeating-linear-gradient(0deg,transparent 0 31px,color-mix(in srgb,var(--border) 45%,transparent) 32px)}
+.board-head h2,.history-heading h2,.season-leaders h2,.history-rules-intro h2{font-size:var(--type-h2);line-height:.82;letter-spacing:-.025em}
+.section-num:before,.timeline-year,.history-preview article:nth-child(n+4)>strong{font-family:var(--display);font-weight:800;color:transparent;-webkit-text-stroke:1px currentColor}
+.round-select{padding:14px 18px;background:var(--hero-bg);color:var(--hero-text);border:0;box-shadow:0 0 28px rgba(200,255,0,.12);transform:skew(-5deg)}.round-select>*{transform:skew(5deg)}.round-select span{color:var(--hero-muted)}
+.scoreboard{display:grid;grid-template-columns:1fr;justify-items:start;color:var(--text);font-family:var(--display);line-height:.78}.led-label{font-size:9px;color:var(--text-muted);margin-top:5px}.odometer{display:inline-flex;height:.82em;overflow:hidden}.odometer-digit{display:inline-block;height:.82em;overflow:hidden}.odometer-reel{display:block;line-height:.82em;transform:translateY(0);transition:transform var(--dur-count) var(--ease-out) var(--odometer-delay)}.odometer.is-running .odometer-reel{transform:translateY(calc(var(--digit) * -.82em))}
+.club b{font:inherit}.club small{display:none;font:500 11px var(--mono);color:var(--text-muted)}.club-entry.podium .pos{font-family:var(--display);font-size:24px;color:var(--accent)}.club-entry.podium{background:color-mix(in srgb,var(--accent-fill) 5%,transparent)}
+.club-details-button .icon,.hover-details .icon,.season-arrow .icon{transition:transform var(--dur-fast)}
+.history-preview article:nth-child(1),.season-player-leader,.history-regulations{clip-path:polygon(0 0,96% 0,100% 7%,100% 100%,0 100%)}
+.history-preview article:nth-child(n+4):before{content:"";position:absolute;right:18px;top:18px;width:10px;height:20px;border-radius:2px;background:#e4bb2d;box-shadow:16px 0 #b53228}
+.season-photo,.preview-legend,.history-portrait,.club-moment{isolation:isolate}.season-photo:after,.preview-legend:before,.history-portrait:after,.club-moment:after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 50% 35%,transparent 25%,rgba(8,30,22,.48) 100%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Cpath filter='url(%23n)' opacity='.11' d='M0 0h90v90H0z'/%3E%3C/svg%3E")}
+.season-photo img,.preview-legend>img,.history-portrait img{filter:grayscale(1) sepia(.18) contrast(1.08)}
+.editorial-marquee{overflow:hidden;border-block:var(--hairline);background:var(--hero-bg);color:var(--accent-fill);font-size:clamp(1rem,2vw,1.55rem);font-weight:500}.editorial-marquee>div{display:flex;width:max-content;animation:ticker-travel 42s linear infinite}.editorial-marquee span{display:inline-flex;align-items:center;min-height:64px;padding-inline:4vw;white-space:nowrap}.editorial-marquee span:after{content:"✦";margin-left:8vw;color:var(--hero-text)}.editorial-marquee:nth-of-type(even)>div{animation-direction:reverse}
+footer[data-section=rodape]{display:grid;background:var(--hero-bg);color:var(--hero-text);padding-top:clamp(70px,10vw,150px)}.footer-wordmark{grid-column:1/-1;color:transparent;-webkit-text-stroke:1px var(--hero-text);font-size:clamp(5rem,17vw,16rem);line-height:.7;letter-spacing:-.035em;text-decoration:none}.footer-wordmark span{color:var(--accent-fill);-webkit-text-stroke:0}footer[data-section=rodape] :is(.independent-note,.stamp){color:var(--hero-muted)}
+footer a{color:inherit}.sources-details{grid-column:1/-1}.sources-details>summary{font-family:var(--display);font-size:clamp(1.7rem,3vw,3rem)}.sources-details :is(.sources,.history-sources,.history-credits,.player-photo-credits,.opening-credits){border-top:1px solid rgba(255,255,255,.22);padding-block:22px}
+.credit-group{border:0;border-top:1px solid rgba(255,255,255,.24);background:transparent}.credit-group>summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;padding:18px 0;font:500 13px var(--mono);text-transform:uppercase;letter-spacing:.08em}.credit-group>summary::-webkit-details-marker{display:none}.credit-group>summary:after{content:"+";font-size:20px}.credit-group[open]>summary:after{content:"−"}.credit-group>:not(summary){animation:credit-open var(--dur-base) var(--ease-out)}@keyframes credit-open{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}.external-icon{font-size:.85em;margin-left:.2em}
+.match-ticker>p,.ticker-track small{font-size:12px}.ticker-track li{font-size:13px}
+@media(hover:hover) and (pointer:fine){.season-photo:hover img,.preview-legend:hover>img,.history-portrait:hover img{filter:grayscale(0) sepia(0);transform:scale(1.035)}.club-details-button:hover .icon,.hover-details:hover .icon{transform:translate(3px,-3px)}}
+@media(max-width:850px){
+ .desktop-table{display:block}.table-header{display:none}.board{padding-inline:4vw}.row-grid{grid-template-columns:30px minmax(0,1fr) 58px minmax(112px,auto)!important;gap:9px}.club-row{padding:12px 6px;min-height:76px}.club-row>.stat,.club-row>.form{display:none}.club{min-width:0;display:grid;grid-template-columns:38px minmax(0,1fr);column-gap:9px}.club .crest{grid-row:1/3}.club b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.club small{display:block}.pts{justify-self:end}.club-details-button{font-size:0;padding:11px}.club-details-button .icon{font-size:18px}.hover-details{display:none}.legend{margin-left:0}.scoreboard{justify-items:end}.hero-media{left:42%;clip-path:polygon(15% 0,100% 0,100% 100%,0 100%);opacity:.64;-webkit-mask-image:linear-gradient(0deg,transparent 0,#000 45%);mask-image:linear-gradient(0deg,transparent 0,#000 45%)}
+ .hero{height:820px;min-height:820px;padding-top:100px;padding-bottom:100px}.hero h1{font-size:clamp(3.7rem,16vw,5rem);max-width:10ch}.hero-content:before{font-size:9rem;right:-220px;bottom:30%;transform:rotate(-90deg)}.hero-content{max-width:100%}.hero-meta{margin-top:24px}.hero-controls{max-width:90vw}.history-preview article:nth-child(1),.season-player-leader,.history-regulations{clip-path:polygon(0 0,94% 0,100% 4%,100% 100%,0 100%)}
+ footer[data-section=rodape]{grid-template-columns:1fr;gap:32px}.footer-wordmark{font-size:22vw}.sources-details{grid-column:auto}
+}
+@media(prefers-contrast:more){:root{--border:currentColor;--text-muted:var(--text)}.surface-1,.surface-2,.surface-3,.club-entry{border:2px solid currentColor}.hero-slide img{filter:none}.section-num:before{opacity:.7}}
+@media(forced-colors:active){*{forced-color-adjust:auto}.hero:before,.hero:after,.season-photo:after,.preview-legend:before,.editorial-marquee{display:none}.key,.dot{border:1px solid CanvasText}.club-row:before{background:CanvasText}.discover-link,.history-preview article,.season-player-leader,.history-regulations{clip-path:none}}
+@media(prefers-reduced-motion:reduce){.odometer-reel{transform:translateY(calc(var(--digit) * -.82em))!important}.editorial-marquee>div{animation:none!important}.editorial-marquee span:nth-child(n+5){display:none}.hero-slide img{mix-blend-mode:normal}}
+
+/* A prévia termina suavemente junto à ação que revela o restante da história. */
+.history{--history-bg:#e8ddc3}
+[data-theme=dark] .history{--history-bg:#28271f}
+.history-more{display:none}
+.js .history-more{display:flex;flex-direction:column;align-items:center;gap:16px;margin-top:4px;text-align:center;position:relative}
+.history-more p{max-width:440px;margin:0;color:var(--muted);font-size:var(--fs-sm);line-height:1.65}
+.history-more p[hidden]{display:none}
+.js .history:not(.is-expanded) .history-preview{position:relative;max-height:460px;overflow:hidden}
+.js .history:not(.is-expanded) .history-preview::after{content:"";position:absolute;z-index:2;inset:auto 0 0;height:130px;pointer-events:none;background:linear-gradient(to bottom,transparent,var(--history-bg) 92%)}
+.js .history.is-expanded .history-more{margin-top:28px}
+@media(max-width:500px){.js .history:not(.is-expanded) .history-preview{max-height:480px}.history-more .history-toggle{width:auto;min-width:230px}}
+@media(forced-colors:active){.js .history:not(.is-expanded) .history-preview::after{display:none}}
