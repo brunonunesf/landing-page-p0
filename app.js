@@ -264,8 +264,8 @@ historyToggle.addEventListener('click',()=>{
 
 // TODO(asset): foto neutra de estádio, torcida ou taça com licença e crédito confirmados.
 const heroMoments=[
-  {title:'Neymar · Santos, 2012',src:'assets/identidade/hero/02-neymar.jpg',focus:'50% 40%'},
-  {title:'Falcão · Internacional',src:'assets/identidade/hero/16-falcao.jpg',focus:'52% 40%'},
+  {title:'Neymar · Santos, 2012',src:'assets/identidade/hero/02-neymar.jpg',focus:'50% 40%',mobileFocus:'70% 40%'},
+  {title:'Falcão · Internacional',src:'assets/identidade/hero/16-falcao.jpg',focus:'52% 40%',mobileFocus:'32% 40%'},
   {title:'Romário e Edmundo · Vasco, 2000',src:'assets/identidade/hero/07-romario-edmundo.jpg',focus:'50% 40%'},
   {title:'Sócrates · Corinthians',src:'assets/identidade/hero/08-socrates.jpg',focus:'50% 38%',fit:'contain'},
   {title:'Filipe Luís · Flamengo, 2025',src:'assets/identidade/hero/20-filipe-luis.jpg',focus:'50% 34%'},
@@ -273,7 +273,7 @@ const heroMoments=[
   {title:'Pelé · Santos',src:'assets/identidade/hero/01-pele-horizontal.jpg',focus:'52% 38%'},
   {title:'Ronaldinho · Atlético-MG, 2012',src:'assets/identidade/hero/14-ronaldinho.jpg',focus:'50% 40%'},
   {title:'Marcelinho Carioca · Corinthians',src:'assets/identidade/hero/09-marcelinho.jpg',focus:'50% 40%'},
-  {title:'Zico · Flamengo',src:'assets/identidade/hero/04-zico.jpg',focus:'50% 40%'},
+  {title:'Zico · Flamengo',src:'assets/identidade/hero/04-zico.jpg',focus:'50% 40%',mobileFocus:'32% 40%'},
   {title:'Bobô · Bahia',src:'assets/identidade/hero/18-bobo.png',focus:'50% 40%'},
   {title:'Hulk · Atlético-MG, 2021',src:'assets/identidade/hero/17-hulk.jpg',focus:'50% 40%'},
   {title:'Alex · Cruzeiro, 2003',src:'assets/identidade/hero/12-alex.jpg',focus:'50% 34%'},
@@ -293,17 +293,21 @@ let heroZoomDeferred=true;
 
 const initialHeroSlide=heroMedia.querySelector('.hero-slide');
 initialHeroSlide.dataset.title=heroMoments[0].title;
+initialHeroSlide.style.setProperty('--hero-focus',heroMoments[0].focus);
+initialHeroSlide.style.setProperty('--hero-mobile-focus',heroMoments[0].mobileFocus||heroMoments[0].focus);
 const initialHeroImage=initialHeroSlide.querySelector('img');
 const initialHeroCanvas=document.createElement('canvas');initialHeroCanvas.className='hero-canvas';initialHeroCanvas.setAttribute('aria-hidden','true');initialHeroSlide.append(initialHeroCanvas);
 function paintInitialHero(){
   if(!initialHeroImage.naturalWidth)return;
   const rect=initialHeroSlide.getBoundingClientRect(),scale=Math.min(devicePixelRatio||1,2),w=Math.max(1,Math.round(rect.width*scale)),h=Math.max(1,Math.round(rect.height*scale));
   if(initialHeroCanvas.width===w&&initialHeroCanvas.height===h)return;initialHeroCanvas.width=w;initialHeroCanvas.height=h;
-  const iw=initialHeroImage.naturalWidth,ih=initialHeroImage.naturalHeight,cover=Math.max(w/iw,h/ih),sw=w/cover,sh=h/cover,sx=(iw-sw)*.5,sy=Math.max(0,Math.min(ih-sh,(ih-sh)*.4));
-  initialHeroCanvas.getContext('2d').drawImage(initialHeroImage,sx,sy,sw,sh,0,0,w,h);
+  const iw=initialHeroImage.naturalWidth,ih=initialHeroImage.naturalHeight;
+  const imageStyle=getComputedStyle(initialHeroImage),focus=imageStyle.objectPosition.split(' ').map(value=>parseFloat(value)/100);
+  const fit=imageStyle.objectFit==='contain'?Math.min(w/iw,h/ih):Math.max(w/iw,h/ih),dw=iw*fit,dh=ih*fit;
+  initialHeroCanvas.getContext('2d').drawImage(initialHeroImage,(w-dw)*(focus[0]??.5),(h-dh)*(focus[1]??.5),dw,dh);
 }
 if(initialHeroImage.complete)paintInitialHero();else initialHeroImage.addEventListener('load',paintInitialHero,{once:true});window.addEventListener('resize',paintInitialHero,{passive:true});
-heroMedia.insertAdjacentHTML('beforeend',heroMoments.slice(1).map(moment=>`<div class="hero-slide" data-title="${moment.title}"><img decoding="async" width="1600" height="900" data-src="${heroAsset(moment.src,1600)}" data-srcset="${heroAsset(moment.src,800)} 800w, ${heroAsset(moment.src,1600)} 1600w" sizes="(max-width:768px) 100vw, 65vw" alt="" loading="lazy" style="--hero-focus:${moment.focus};object-fit:${moment.fit||'cover'}"></div>`).join(''));
+heroMedia.insertAdjacentHTML('beforeend',heroMoments.slice(1).map(moment=>`<div class="hero-slide" data-title="${moment.title}"><img decoding="async" width="1600" height="900" data-src="${heroAsset(moment.src,1600)}" data-srcset="${heroAsset(moment.src,800)} 800w, ${heroAsset(moment.src,1600)} 1600w" sizes="(max-width:768px) 100vw, 65vw" alt="" loading="lazy" style="--hero-focus:${moment.focus};--hero-mobile-focus:${moment.mobileFocus||moment.focus};object-fit:${moment.fit||'cover'}"></div>`).join(''));
 const heroSlides=[...heroMedia.querySelectorAll('.hero-slide')];
 const heroZooms=new Map();
 

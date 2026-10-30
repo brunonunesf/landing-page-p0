@@ -1161,16 +1161,17 @@ body{font-family:var(--body);font-variant-numeric:tabular-nums;background:var(--
 .surface-1{background:var(--surface-1)}.surface-2{background:var(--surface-2)}.surface-3{background:var(--surface-3)}
 .topbar,.detail-sheet{-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}.back-to-top{-webkit-backdrop-filter:none;backdrop-filter:none}
 p{max-width:65ch}.hero h1,.hero-title-outline,.board h2,.history h2,.season-leaders h2,.history-regulations h2,.footer-wordmark{font-family:var(--display);font-stretch:condensed;text-transform:uppercase}
-.hero{height:clamp(760px,calc(100svh - var(--header-height)),900px);min-height:760px;isolation:isolate;background:var(--hero-bg)}
+.hero{height:clamp(760px,calc(100svh - var(--header-height)),900px);min-height:760px;overflow:clip;isolation:isolate;background:var(--hero-bg)}
 .hero:before{content:"";position:absolute;inset:-25% -20% 0;background:conic-gradient(from 82deg at 50% 0,transparent 0 35%,rgba(255,255,255,.16) 39%,transparent 44% 56%,rgba(255,255,255,.12) 61%,transparent 66%);opacity:.55;z-index:1;pointer-events:none}
 .hero:after{content:"BR 26";font-family:var(--display);font-size:clamp(18rem,38vw,42rem);inset:auto -2vw -20%;top:auto;letter-spacing:-.07em;opacity:.35}
-.hero-media{left:38%;clip-path:polygon(15% 0,100% 0,100% 100%,0 100%);-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 24%,#000 100%);mask-image:linear-gradient(90deg,transparent 0,#000 24%,#000 100%)}
-.hero-slide img{filter:none;mix-blend-mode:normal}.hero-slide:after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,var(--hero-bg) 0,transparent 50%),linear-gradient(0deg,var(--hero-bg),transparent 40%);mix-blend-mode:multiply}
-.js .hero-slide:first-child img{display:none}.hero-canvas{display:block;width:100%;height:100%}
+.hero-media{left:32%;clip-path:none;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 20%);mask-image:linear-gradient(90deg,transparent 0,#000 20%)}
+.hero-slide,.hero-slide[data-title^="Alex"]{inset:0;mask-image:none}
+.hero-slide img,.hero-slide[data-title^="Alex"] img{filter:none;mix-blend-mode:normal}.hero-slide:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,color-mix(in srgb,var(--hero-bg) 75%,transparent),transparent 55%),linear-gradient(0deg,color-mix(in srgb,var(--hero-bg) 80%,transparent),transparent 32%)}
+.js .hero-slide:first-child img{display:none}.hero-canvas{display:block;width:100%;height:100%;transform-origin:var(--hero-focus,50% 40%)}
 .hero-slide:first-child{transition:none}
 .hero-ambient i{display:none}.hero-content{max-width:min(1040px,82vw)}
-.hero h1{font-size:var(--type-display);line-height:.76;letter-spacing:-.035em;max-width:11ch;position:relative;z-index:3}.hero h1 em{font:inherit;color:var(--accent-fill)}
-.hero-content:before{content:"BRASILEIRÃO";position:absolute;right:-28vw;bottom:-8%;font-family:var(--display);font-size:clamp(8rem,20vw,22rem);line-height:.7;letter-spacing:-.035em;white-space:nowrap;color:transparent;-webkit-text-stroke:1px rgba(243,245,237,.32);opacity:.28;z-index:0;pointer-events:none}
+.hero h1{font-size:clamp(3.4rem,8vw,8.4rem);line-height:.76;letter-spacing:-.035em;max-width:11ch;position:relative;z-index:3}.hero h1 em{font:inherit;color:var(--accent-fill)}
+.hero-title-outline{position:absolute;right:-28vw;bottom:-8%;font-family:var(--display);font-size:clamp(8rem,20vw,22rem);line-height:.7;letter-spacing:-.035em;white-space:nowrap;color:transparent;-webkit-text-stroke:1px rgba(243,245,237,.32);opacity:.28;z-index:0;pointer-events:none}
 .hero-eyebrow,.led-label,.match-ticker>p,.editorial-marquee{font-family:var(--mono);letter-spacing:.12em}.hero-meta p{font-size:clamp(1rem,1.35vw,1.3rem);line-height:1.65}
 .discover-link{clip-path:polygon(0 0,94% 0,100% 50%,94% 100%,0 100%);padding-right:44px}
 .board,.season-leaders,.history,.history-regulations,footer{position:relative}.board:after,.season-leaders:after,.history:after{content:"";position:absolute;left:0;right:0;bottom:-26px;height:27px;background:inherit;clip-path:polygon(0 0,100% 0,100% 20%,68% 100%,0 32%);z-index:2;pointer-events:none}
@@ -1194,8 +1195,10 @@ footer a{color:inherit}.sources-details{grid-column:1/-1}.sources-details>summar
 .match-ticker>p,.ticker-track small{font-size:12px}.ticker-track li{font-size:13px}
 @media(hover:hover) and (pointer:fine){.season-photo:hover img,.preview-legend:hover>img,.history-portrait:hover img{filter:grayscale(0) sepia(0);transform:scale(1.035)}.club-details-button:hover .icon,.hover-details:hover .icon{transform:translate(3px,-3px)}}
 @media(max-width:850px){
- .desktop-table{display:block}.table-header{display:none}.board{padding-inline:4vw}.row-grid{grid-template-columns:30px minmax(0,1fr) 58px minmax(112px,auto)!important;gap:9px}.club-row{padding:12px 6px;min-height:76px}.club-row>.stat,.club-row>.form{display:none}.club{min-width:0;display:grid;grid-template-columns:38px minmax(0,1fr);column-gap:9px}.club .crest{grid-row:1/3}.club b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.club small{display:block}.pts{justify-self:end}.club-details-button{font-size:0;padding:11px}.club-details-button .icon{font-size:18px}.hover-details{display:none}.legend{margin-left:0}.scoreboard{justify-items:end}.hero-media{left:42%;clip-path:polygon(15% 0,100% 0,100% 100%,0 100%);opacity:.64;-webkit-mask-image:linear-gradient(0deg,transparent 0,#000 45%);mask-image:linear-gradient(0deg,transparent 0,#000 45%)}
- .hero{height:820px;min-height:820px;padding-top:100px;padding-bottom:100px}.hero h1{font-size:clamp(3.7rem,16vw,5rem);max-width:10ch}.hero-content:before{font-size:9rem;right:-220px;bottom:30%;transform:rotate(-90deg)}.hero-content{max-width:100%}.hero-meta{margin-top:24px}.hero-controls{max-width:90vw}.history-preview article:nth-child(1),.season-player-leader,.history-regulations{clip-path:polygon(0 0,94% 0,100% 4%,100% 100%,0 100%)}
+ .desktop-table{display:block}.table-header{display:none}.board{padding-inline:4vw}.row-grid{grid-template-columns:30px minmax(0,1fr) 58px minmax(112px,auto)!important;gap:9px}.club-row{padding:12px 6px;min-height:76px}.club-row>.stat,.club-row>.form{display:none}.club{min-width:0;display:grid;grid-template-columns:38px minmax(0,1fr);column-gap:9px}.club .crest{grid-row:1/3}.club b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.club small{display:block}.pts{justify-self:end}.club-details-button{font-size:0;padding:11px}.club-details-button .icon{font-size:18px}.hover-details{display:none}.legend{margin-left:0}.scoreboard{justify-items:end}.hero-media{left:0;clip-path:none;opacity:1;-webkit-mask-image:none;mask-image:none}
+ .hero-slide img,.hero-canvas{object-position:var(--hero-mobile-focus,var(--hero-focus,50% 40%));transform-origin:var(--hero-mobile-focus,var(--hero-focus,50% 40%))}
+ .hero-slide:after{background:linear-gradient(90deg,color-mix(in srgb,var(--hero-bg) 90%,transparent) 0,color-mix(in srgb,var(--hero-bg) 55%,transparent) 42%,transparent 85%),linear-gradient(0deg,var(--hero-bg),transparent 65%)}
+ .hero{height:820px;min-height:820px;padding-top:100px;padding-bottom:100px}.hero h1{font-size:clamp(2.96rem,12.8vw,4rem);line-height:1;max-width:10ch}.hero-title-outline{font-size:9rem;right:-220px;bottom:30%;transform:rotate(-90deg)}.hero-content{max-width:100%}.hero-meta{margin-top:24px}.hero-controls{max-width:90vw}.history-preview article:nth-child(1),.season-player-leader,.history-regulations{clip-path:polygon(0 0,94% 0,100% 4%,100% 100%,0 100%)}
  footer[data-section=rodape]{grid-template-columns:1fr;gap:32px}.footer-wordmark{font-size:22vw}.sources-details{grid-column:auto}
 }
 @media(prefers-contrast:more){:root{--border:currentColor;--text-muted:var(--text)}.surface-1,.surface-2,.surface-3,.club-entry{border:2px solid currentColor}.hero-slide img{filter:none}.section-num:before{opacity:.7}}
@@ -1214,3 +1217,29 @@ footer a{color:inherit}.sources-details{grid-column:1/-1}.sources-details>summar
 .js .history.is-expanded .history-more{margin-top:28px}
 @media(max-width:500px){.js .history:not(.is-expanded) .history-preview{max-height:480px}.history-more .history-toggle{width:auto;min-width:230px}}
 @media(forced-colors:active){.js .history:not(.is-expanded) .history-preview::after{display:none}}
+
+/* Título do hero: métricas e recorte preservam os acentos em todas as linhas. */
+@font-face{
+  font-family:'Hero Display Fallback';src:local('ArialNarrow-Bold'),local('Arial Narrow Bold');
+  font-style:normal;font-weight:800;size-adjust:79.1893%;ascent-override:124.2593%;descent-override:26.8976%;line-gap-override:0%;
+}
+#heroTitle.hero__title{
+  font-family:'Big Shoulders Display','Hero Display Fallback',sans-serif;
+  font-size:clamp(2.4rem,6.4vw,5.6rem);line-height:1.04;letter-spacing:-.01em;
+  width:min(100%,32rem);max-width:100%;height:auto;max-height:none;
+  overflow:visible;overflow-wrap:break-word;text-wrap:balance;
+  text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;
+}
+#heroTitle .line{
+  display:block;position:relative;overflow:visible;
+  clip-path:inset(-.35em -.06em -.08em -.06em);
+  padding:.12em 0 .04em;margin:0;height:auto;max-height:none;
+}
+#heroTitle .line:nth-child(2){--i:1}
+#heroTitle .line:nth-child(3){--i:2}
+#heroTitle .line__inner{display:block;transform:none;text-shadow:0 0 .06em rgb(0 0 0 / .72)}
+@media(prefers-reduced-motion:no-preference){
+  .js #heroTitle.is-revealing .line__inner{transition:transform .9s var(--ease-out,cubic-bezier(.22,1,.36,1));transition-delay:calc(var(--i,0) * 80ms)}
+  .js #heroTitle.is-revealing:not(.is-in) .line__inner{transform:translateY(120%)}
+}
+@media(prefers-reduced-motion:reduce){#heroTitle .line__inner{transform:none!important;transition:none!important}}

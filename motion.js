@@ -117,7 +117,10 @@
 
   // Hero: os contêineres de linha já reservam a altura final do texto.
   const heroTitle = $('#heroTitle');
-  if (innerWidth > 768) $$('.line__inner').forEach((el, index) => animate(el, [{transform: 'translateY(110%)'}, {transform: 'translateY(0)'}], {duration: duration('dur-slow'), delay: index * duration('stagger')}));
+  heroTitle.classList.add('is-revealing');
+  const revealHeroTitle = () => requestAnimationFrame(() => requestAnimationFrame(() => heroTitle.classList.add('is-in')));
+  if (document.fonts) document.fonts.ready.then(revealHeroTitle, revealHeroTitle);
+  else revealHeroTitle();
   $$('.hero-eyebrow,.hero-meta,.discover-link,.hero-controls').forEach((el, i) => animate(el, [{opacity: 0, transform: 'translateY(16px)'}, {opacity: 1, transform: 'translateY(0)'}], {duration: duration('dur-slow'), delay: i * duration('stagger')}));
   const progress = document.createElement('span'); progress.className = 'reading-progress'; progress.setAttribute('aria-hidden', 'true'); $('.topbar').append(progress);
   let heroVisible = true;
